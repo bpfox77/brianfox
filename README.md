@@ -1,1 +1,1 @@
-A DAO to save humanity
+A DAO to save humanity. 🙏🏽
