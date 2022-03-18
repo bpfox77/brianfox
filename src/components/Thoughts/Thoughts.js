@@ -1,6 +1,6 @@
 import React from "react";
 
-function Projects() {
+function Thoughts() {
   return (
     <section>
       <div className="home-header">
@@ -14,4 +14,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Thoughts;

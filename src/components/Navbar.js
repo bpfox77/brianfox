@@ -55,7 +55,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/about"
+                to="/team"
                 onClick={() => updateExpanded(false)}
               >
                 <GiGooeyEyedSun style={{ marginBottom: "2px" }} /> Team
@@ -65,7 +65,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/project"
+                to="/thoughts"
                 onClick={() => updateExpanded(false)}
               >
                 <ImRocket style={{ marginBottom: "2px" }} /> Thoughts NFT
@@ -79,7 +79,7 @@ function NavBar() {
                 // rel="noreferrer"
 
                 as={Link}
-                to="/personal"
+                to="/game"
                 onClick={() => updateExpanded(false)}
               >
                 <GiDreamCatcher style={{ marginBottom: "2px" }} /> Now the Game
@@ -89,10 +89,10 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/resume"
+                to="/info"
                 onClick={() => updateExpanded(false)}
               >
-                <GoBeaker style={{ marginBottom: "2px" }} /> Whitepaper
+                <GoBeaker style={{ marginBottom: "2px" }} /> The Information
               </Nav.Link>
             </Nav.Item>
           </Nav>

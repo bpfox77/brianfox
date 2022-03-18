@@ -47,6 +47,7 @@ a:active {
 
 .myAvtar {
   padding-top: 50px !important;
+  padding-bottom: 20px !important;
   /* padding-bottom: 40px !important; */
 }
 
@@ -392,19 +393,12 @@ a:active {
   padding-top: 380px !important;
 } */
 .connect-wallet {
-  /* flex-direction: column; */
   position: relative;
-  /* width: 960px;
-   max-width: calc(100% - 1rem); */
-  /* padding-left: 0.5rem;
-   padding-right: 0.5rem; */
   margin: auto;
   align-content: left;
-  /* display: flex; */
   text-align: center;
   /* added from portfolio css / left it in their sections as well */
   z-index: 1;
-
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -441,7 +435,7 @@ a:active {
   text-align: center;
   /* added from portfolio css / left it in their sections as well */
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -585,7 +579,7 @@ button:disabled {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #141416d8 !important;
+  background-color: #1c1c35d8 !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -704,7 +698,7 @@ button:disabled {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #161518;
+  background: #e5e2eb;
   bottom: 1px;
   left: 0;
   z-index: -1;

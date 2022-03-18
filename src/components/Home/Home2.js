@@ -26,11 +26,12 @@ function Home2() {
               <br />
               <br />
               The DAO is fed through a cross cultural{" "}
-              <b className="purple">NFT narrative </b> that will be told over
-              time to reveal the Monomyth that is humanity. An onchain&nbsp;
-              <b className="purple">Game</b> medically vetted to slow the
-              perception of time and utilizing the dual mechanistic science of{" "}
-              <b className="purple">Gaming and Philanthropy.</b>
+              <b className="purple">NFT narrative </b> that will be released
+              over time to reveal the Monomyth that is humanity. Separately an
+              onchain&nbsp;
+              <b className="purple">Game</b> utilizes numerous scientific
+              modalities to slow the perception of time and enhance{" "}
+              <b className="purple">Wellbeing.</b>
               <br />
               <Col md={12} className="myAvtar">
                 <img src={myImg} className="img-fluid" alt="avatar" />
@@ -51,11 +52,9 @@ function Home2() {
               </i>
               <br />
               <br />
-              &nbsp;Check out the Whitepaper for the near term releases and ten
-              year road map.
-              <i>
-                <b className="purple"> Namaste.</b>
-              </i>
+              &nbsp;Check out <b className="purple">The Information </b> for the
+              near term releases and ten year road map.
+              <b className="purple"> Namaste.</b>
             </p>
           </Col>
         </Row>

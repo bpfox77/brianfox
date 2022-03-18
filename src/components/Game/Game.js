@@ -1,13 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./PersonalCards";
-
 import now from "../../Assets/Projects/now.png";
-import stars from "../../Assets/Projects/stars.jpg";
-import alex from "../../Assets/Projects/alex.png";
-import dodger from "../../Assets/Projects/dodger.png";
 
-function Personal() {
+function Game() {
   return (
     <Container fluid className="project-section">
       <Container>
@@ -32,4 +28,4 @@ function Personal() {
   );
 }
 
-export default Personal;
+export default Game;

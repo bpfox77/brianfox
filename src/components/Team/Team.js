@@ -6,7 +6,7 @@ import amy from "../../Assets/Projects/Amy.jpg";
 import chris from "../../Assets/Projects/Chris.jpeg";
 import brian from "../../Assets/Projects/me.jpeg";
 
-function About() {
+function Team() {
   return (
     <Container fluid className="project-section">
       <Container>
@@ -60,4 +60,4 @@ function About() {
   );
 }
 
-export default About;
+export default Team;
