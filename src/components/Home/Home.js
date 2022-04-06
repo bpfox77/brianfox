@@ -233,7 +233,10 @@ const Home = () => {
           <h1>NowDao</h1>
           <p>Let's change the world</p>
           <div>
+            {/* <div></div> */}
             <div>
+              <p></p>
+
               <h2>Member List</h2>
               <table className="card">
                 <thead>
@@ -255,6 +258,8 @@ const Home = () => {
               </table>
             </div>
             <div>
+              <p></p>
+
               <h2>Active Proposals</h2>
               <form
                 onSubmit={async (e) => {

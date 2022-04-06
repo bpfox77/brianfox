@@ -18,6 +18,15 @@ html {
 
 h1 {
   font-size: 5rem;
+  color: rgb(213, 213, 223);
+}
+
+h2 {
+  color: rgb(213, 213, 223);
+}
+
+p {
+  color: rgb(213, 213, 223);
 }
 @media screen and (max-width: 768px) {
   h1 {
@@ -367,8 +376,11 @@ a:active {
   max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  padding-top: 150px;
+  padding-bottom: 150px;
   margin: auto;
-  padding: 1rem;
+  top: 50%;
+  color: rgb(213, 213, 223);
 }
 
 .error {
@@ -427,14 +439,14 @@ a:active {
   position: relative;
   /* width: 960px;
   max-width: calc(100% - 1rem); */
-  /* padding-left: 0.5rem;
-  padding-right: 0.5rem; */
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   margin: auto;
   align-content: left;
   /* display: flex; */
   text-align: center;
   /* added from portfolio css / left it in their sections as well */
-  z-index: -1;
+  z-index: 1;
   /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
   background-position: top center;
   background-repeat: no-repeat;
@@ -707,4 +719,61 @@ button:disabled {
 
 .navbar-nav .nav-item a:hover::after {
   width: 100%;
+}
+
+/* nft gallery imported css */
+
+.thought {
+  display: block;
+  margin: 5%;
+  margin-top: 2%;
+
+  border-radius: 25px 25px 25px 25px;
+  min-height: 100vh;
+  height: fit-content;
+}
+
+.text {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.nft-container {
+  display: grid;
+  grid-gap: 3%;
+  margin: 3%;
+  margin-top: 80px;
+  grid-template-columns: repeat(auto-fill, 21.05%);
+}
+
+.nft-card {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.nft-card:hover {
+  background-color: rgb(134, 45, 45);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+  transform: scale(1.05);
+}
+
+.nft-image {
+  border-radius: 0 0 0 0;
+  width: 100%;
+  height: 200px;
+}
+
+.card {
+  margin: 2%;
+}
+
+.content.item {
+  border-bottom: 2px solid deepskyblue;
+}
+
+.address {
+  font-size: 12px;
 }

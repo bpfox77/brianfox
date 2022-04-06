@@ -30,8 +30,9 @@ function Home2() {
               over time to reveal the Monomyth that is humanity. Separately an
               onchain&nbsp;
               <b className="purple">Game</b> utilizes numerous scientific
-              modalities to slow the perception of time and enhance{" "}
-              <b className="purple">Wellbeing.</b>
+              modalities to slow the perception of time and enhance mental
+              wellbeing in the pursuit of{" "}
+              <b className="purple">Human Optimization.</b>
               <br />
               <Col md={12} className="myAvtar">
                 <img src={myImg} className="img-fluid" alt="avatar" />
@@ -47,9 +48,7 @@ function Home2() {
                 decentralized A.I.'s
               </b>{" "}
               for real time
-              <i>
-                <b className="purple"> aid relief.</b>
-              </i>
+              <b className="purple"> aid relief.</b>
               <br />
               <br />
               &nbsp;Check out <b className="purple">The Information </b> for the
