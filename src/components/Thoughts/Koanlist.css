@@ -1,0 +1,13 @@
+.koanlist {
+  cursor: pointer;
+  display: flex;
+  overflow: scroll;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid white;
+}
+
+.koanlist ::-webkit-scrollbar {
+  display: none;
+}
