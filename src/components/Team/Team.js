@@ -1,10 +1,10 @@
-import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./TeamCard";
+import { Container, Row, Col } from 'react-bootstrap';
+import ProjectCard from './TeamCard';
 
 // import TeamCard from "./TeamCard";
-import amy from "../../Assets/Projects/Amy.jpg";
-import chris from "../../Assets/Projects/Chris.jpeg";
-import brian from "../../Assets/Projects/me.jpeg";
+import amy from '../../Assets/Projects/Amy.jpg';
+import chris from '../../Assets/Projects/Chris.jpeg';
+import brian from '../../Assets/Projects/me.jpeg';
 
 function Team() {
   return (
@@ -14,13 +14,13 @@ function Team() {
           How we <strong className="purple">spend time</strong>
         </h1>
 
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={brian}
               isBlog={false}
               title="Brian Fox"
-              description="Innovation Lead @Meta - Creator / Developer of Now "
+              description="Innovation Lead @Meta - Creator / Developer of Now, Novelist, Filmmaker "
               link="https://github.com/bpfox77/indraWhitepaper/blob/917cda0b5742145774ccfa1910661d4b7d9c74f9/Change.pdf"
             />
           </Col>
@@ -30,8 +30,8 @@ function Team() {
               imgPath={chris}
               isBlog={false}
               title="Chris Heddon"
-              description="A doctor and entreprenuer currently building A.I. systems throughout the land."
-              link="https://www.amazon.com/Stars-Now-Brian-Fox-ebook/dp/B00HZVJYHM"
+              description="A doctor, entreprenuer and yogi currently building medical A.I. systems throughout the land."
+              //link="https://www.amazon.com/Stars-Now-Brian-Fox-ebook/dp/B00HZVJYHM"
             />
           </Col>
 
@@ -40,7 +40,7 @@ function Team() {
               imgPath={amy}
               isBlog={false}
               title="Amy Karr"
-              description="A humanitarian, Forbes 30 under 30, Seeker of light."
+              description="Director, Human Rights Foundation, a humanitarian, Forbes 30 under 30, Seeker of light."
               // link="https://github.com/soumyajit4419/Editor.io"
             />
           </Col>

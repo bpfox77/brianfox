@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Koanlist from './Koanlist';
 import Main from './Main';
+import './main.css';
 import ThoughtHeader from './ThoughtHeader';
 
 function Thoughts() {

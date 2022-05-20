@@ -7,7 +7,8 @@ const ThoughtHeader = () => {
       <h5>
         {' '}
         <div className="purple1">
-          Thoughts are Science Fiction Satori. Each one a Koan
+          Thoughts tell the monomyth of timeless existence. In total, it is
+          Science Fiction Satori with each one a Koan.
         </div>
         <div
           className="openSea"
