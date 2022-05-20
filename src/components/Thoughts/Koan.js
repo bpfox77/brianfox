@@ -1,10 +1,11 @@
 import React from 'react';
-//import './App.css';
+import './Koanlist.css';
 //import Header from './components/Header';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Koanlist from './Koanlist';
 import Main from './Main';
+import ThoughtHeader from './ThoughtHeader';
 
 function Thoughts() {
   const [koanListData, setKoanListData] = useState([]);
@@ -25,6 +26,7 @@ function Thoughts() {
     <div className="app">
       {koanListData.length > 0 && (
         <>
+          <ThoughtHeader />
           <Main koanListData={koanListData} selectedKoan={selectedKoan} />
           <Koanlist
             koanListData={koanListData}

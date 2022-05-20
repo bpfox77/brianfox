@@ -1,9 +1,9 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/Tokenomics.svg";
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import myImg from '../../Assets/Tokenomics.svg';
 
-import { AiOutlineTwitter, AiFillInstagram } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { AiOutlineTwitter, AiFillInstagram } from 'react-icons/ai';
+import { FaLinkedinIn } from 'react-icons/fa';
 
 function Home2() {
   return (
@@ -11,7 +11,7 @@ function Home2() {
       <Container>
         <Row>
           <Col md={12} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
+            <h1 style={{ fontSize: '2.6em' }}>
               Let's save <span className="purple"> Humanity </span>
             </h1>
             <br />
@@ -20,40 +20,56 @@ function Home2() {
               With a blend of optimism and reality NowDao takes a holistic
               approach to
               <a href="https://www.effectivealtruism.org/" target="_blank">
-                {" "}
-                <b className="purple"> Effective Altruism.</b>{" "}
+                {' '}
+                <b className="purple"> Effective Altruism.</b>{' '}
               </a>
               <br />
               <br />
-              The DAO is fed through a cross cultural{" "}
-              <b className="purple">NFT narrative </b> that will be released
-              over time to reveal the Monomyth that is humanity. Separately an
-              onchain&nbsp;
-              <b className="purple">Game</b> utilizes numerous scientific
-              modalities to slow the perception of time and enhance mental
-              wellbeing in the pursuit of{" "}
-              <b className="purple">Human Optimization.</b>
+              The DAO will initially be fed through a cross cultural NFT
+              narrative, <b className="purple">Thoughts. </b> The 49 piece
+              collection tells the monomyth through Science Fiction Satori. It
+              is NFT native poetry with each piece being a koan unto itself. The
+              collection is a celebration of existence and transcendance. It is
+              an homage to the infinite possibilities of computational logic and
+              web3.
+              <br />
+              <br />
+              Thoughts are a conversation through time and the initial launch
+              will be followed by quest authors and artists and lead to an
+              interactive exhibit of Thoughts entitled “I WAS HERE”. The exhibit
+              will enable individuals to mint their own Thoughts and indelibly
+              proclaim their existence on-chain.
+              <br />
+              <br />
+              The DAO’s main purpose is to continue development of &nbsp;
+              <b className="purple">NOW the Game. </b>
+              It is a micro donation based game incorporating ZK rollups that
+              not only uses the proven dual mechanisms of gaming and giving to
+              enhance mental wellbeing, but will also utilize time entrainment
+              to slow the perception of time. The ambitious ten year roadmap is
+              available in&nbsp;
+              <b className="purple">The Information </b> section. To begin we
+              have purposely simplified the DAO mechanics to minimize the attack
+              surface and will utilize votes to direct donations. Next step is
+              based off of CultDAO’s transaction tax we will incorporate a
+              similar mechanism for NOW's native token, PHOTON.
+              <br />
               <br />
               <Col md={12} className="myAvtar">
                 <img src={myImg} className="img-fluid" alt="avatar" />
               </Col>
               <br />
-              The NFT's, game and DAO all funnel donations direct to
+              The NFT's, game and DAO all will initially funnel donations direct
+              to
               <a href="https://Givewell.org" target="_blank">
-                {" "}
-                Givewell.org{" "}
+                {' '}
+                Givewell.org{' '}
               </a>
-              and ultimately to <b className="purple">
-                {" "}
-                decentralized A.I.'s
-              </b>{" "}
-              for real time
+              then by votes of the community and ultimately to{' '}
+              <b className="purple"> decentralized A.I.'s</b> for real time
               <b className="purple"> aid relief.</b>
               <br />
               <br />
-              &nbsp;Check out <b className="purple">The Information </b> for the
-              near term releases and ten year road map.
-              <b className="purple"> Namaste.</b>
             </p>
           </Col>
         </Row>
@@ -61,7 +77,8 @@ function Home2() {
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Feel free to <span className="purple">connect </span>as I've too
+              much history to be anon.
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">

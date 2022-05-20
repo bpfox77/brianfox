@@ -1,14 +1,14 @@
-import { ethers } from "ethers";
-import sdk from "./1-initialize-sdk.js";
+import { ethers } from 'ethers';
+import sdk from './1-initialize-sdk.js';
 
 // This is the address of our ERC-20 contract printed out in the step before.
 const tokenModule = sdk.getTokenModule(
-  "0x540922F4F16cb0d27EDC1569dF7760e50e0eAEe8"
+  '0x540922F4F16cb0d27EDC1569dF7760e50e0eAEe8'
 );
 
 (async () => {
   try {
-    // What's the max supply you want to set? 1,000,000 is a nice number!
+    // What's the max supply you want to set?
     const amount = 7_777_777;
     // We use the util function from "ethers" to convert the amount
     // to have 18 decimals (which is the standard for ERC20 tokens).
@@ -19,11 +19,11 @@ const tokenModule = sdk.getTokenModule(
 
     // Print out how many of our token's are out there now!
     console.log(
-      "✅ There now is",
+      '✅ There now is',
       ethers.utils.formatUnits(totalSupply, 18),
-      "$PHOTON in circulation"
+      '$PHOTON in circulation'
     );
   } catch (error) {
-    console.error("Failed to print money", error);
+    console.error('Failed to print money', error);
   }
 })();

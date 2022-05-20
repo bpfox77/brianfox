@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-// import instagramLogo from '../assets/owner/instagram.png';
-// import twitterLogo from '../assets/owner/twitter.png';
-// import moreIcon from '../assets/owner/more.png';
+// import instagramLogo from '../../Assets/instagram.png';
+// import twitterLogo from '../../Assets/twitter.png';
+// import moreIcon from '../../Assets/more.png';
 import './main.css';
 
 const Main = ({ selectedKoan, koanListData }) => {
@@ -23,8 +23,16 @@ const Main = ({ selectedKoan, koanListData }) => {
         <div className="KoanDetails" style={{ color: '#fff' }}>
           <div className="title">
             {activeKoan.name}
-            <span className="itemNumber">.#{activeKoan.token_id}</span>
+            <span className="itemNumber">....#{activeKoan.token_id}</span>
           </div>
+
+          {/* <div
+            className="openSea"
+            onClick={() => window.open('https://opensea.io/', '_blank')}
+          >
+            {' '}
+            View the collection on OpenSea
+          </div> */}
 
           <div className="owner">
             <div className="ownerImageContainer">
@@ -34,8 +42,8 @@ const Main = ({ selectedKoan, koanListData }) => {
             <div className="ownerDetails">
               <div className="ownerNameAndHandle">
                 <div>{activeKoan.owner.address}</div>
-                <div className="ownerHandle">@buddhaloop</div>
-                {/* <div className="ownerLink">
+                {/* <div className="ownerHandle">@buddhaloop</div>
+                <div className="ownerLink">
                   <img src={instagramLogo} alt="" />
                 </div>
                 <div className="ownerLink">
@@ -49,7 +57,6 @@ const Main = ({ selectedKoan, koanListData }) => {
           </div>
         </div>
       </div>
-      //
     </div>
   );
 };
