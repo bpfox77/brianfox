@@ -9,7 +9,6 @@ const CollectionCard = ({ koan, id, name, traits, image, setSelectedKoan }) => {
         src={image}
         alt=""
         onClick={() => {
-          console.log("Selected Koan: ", id);
           setSelectedKoan(id);
         }}
       />

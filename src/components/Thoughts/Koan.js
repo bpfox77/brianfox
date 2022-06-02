@@ -17,7 +17,6 @@ function Thoughts() {
       const openseaData = await axios.get(
         "https://testnets-api.opensea.io/assets?asset_contract_address=0x93F93B8E9293147D7C7C1795b4E72B665ea1FA6a&order_direction=asc"
       );
-      console.log("Fetched: ", openseaData.data.assets);
       setKoanListData(openseaData.data.assets);
     }
     fetchData();
