@@ -3,21 +3,21 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 function Info() {
   return (
-    <Container fluid className="home-about-section" id="about">
+    <Container fluid className="home-about-section2" id="about">
       <Container>
         <Row>
-          <Col md={12} className="home-about-description">
+          <Col md={12} className="home-about-description2">
             <h1 style={{ fontSize: '2.6em' }}>
               Let's play <span className="purple"> a Game </span>
             </h1>
             <br />
 
             <p className="home-about-body">
-              I have been Working in various forms of emerging technology for 2
-              decades and storytelling for even longer. I bought my first eth in
-              July '17, subsequently gaining and losing money and belief a
-              hundred times over. I could have kicked myself for my losses, but
-              instead my experience forced me to really want to understand
+              I have been working in various forms of emerging technology for
+              over 2 decades and storytelling for even longer. I bought my first
+              eth in July '17, subsequently gaining and losing money and belief
+              a hundred times over. I could have kicked myself for my losses,
+              but instead my experience forced me to really want to understand
               everything about the technology. So I dove deep into web3 and
               eventually had the epiphany we all share - the infinite promise. I
               understood that we are only limited by logic and realized an idea
@@ -25,6 +25,10 @@ function Info() {
               blockchain. In June 2021 I went to the Colorado mountains to
               collate my thoughts and pinpoint the feasibility of a global
               donation based game in a grandiose attempt to save the planet.
+              What I can call a litepaper is a wide ranging write up
+              incorporating my experience in technology, artificial
+              intelligence, love of theoretical physics, philosophy and
+              storytelling.
               <br />
               <br />
               <a
@@ -34,16 +38,14 @@ function Info() {
                 {' '}
                 <b className="purple">
                   {' '}
-                  https://mirror.xyz/subek.eth/Ay-Oy8eAMJjDD-9pBNbaXH9ucXGQ7BqD_lv-o9heHiA
+                  Ender's Game, Creating the Simulation.
                 </b>{' '}
               </a>
               <br />
               <br />
-              What I can call a litepaper is a wide ranging write up
-              incorporating my experience in technology, love of theoretical
-              physics and philosophy. In the year since, an idea that would seem
-              far too grandiose is rapidly becoming even more feasible through
-              converging technologies.
+              In the year since, an idea that would seem far too grandiose is
+              rapidly becoming even more feasible through converging
+              technologies.
               <br />
               <br />
               <a
@@ -51,10 +53,7 @@ function Info() {
                 target="_blank"
               >
                 {' '}
-                <b className="purple">
-                  {' '}
-                  https://blogs.nvidia.com/blog/2021/11/12/earth-2-supercomputer/
-                </b>{' '}
+                <b className="purple"> Complete Simulation of the Earth</b>{' '}
               </a>
               <br />
               <br />
@@ -62,57 +61,67 @@ function Info() {
                 {' '}
                 <b className="purple">
                   {' '}
-                  https://www.inworld.ai/. "Brains for Virtual Characters"
+                  "Brains for Virtual Characters" will replicate humanity
                 </b>{' '}
               </a>
               <br />
               <br />
-              Since that time I'm have the good fortune to work with some
-              amazing minds/people to continue development of the prototype.
-              Since having written my original lite paper a year ago a number of
-              developments that are hastening the possibilities Of a complete
-              simulation of our planet.
+              All of life is a narrative, a timeless Hero's journey, endlessly
+              researched and elucicidated from Joseph Campell's peremeation of
+              american culture to modern day quantification of myths.
               <br />
               <br />
-              The DAO’s main purpose is to continue development of{' '}
-              <a
-                href="https://blogs.nvidia.com/blog/2021/11/12/earth-2-supercomputer/"
-                target="_self"
-              >
+              <a href="https://www.angusfletcher.co/" target="_blank">
                 {' '}
-                <b className="purple"> NOW the Game.</b>{' '}
-              </a>{' '}
-              It is a micro donation based game incorporating ZK rollups that
-              not only uses the proven dual mechanisms of gaming and giving to
-              enhance mental wellbeing, but will also utilize time entrainment
-              to slow the player's perception of time. The front end will evolve
-              from a thumbtapping time passer to incorporate the evolving
-              economics of NVIDIA GPU's for realtime photoreal enviornments and
-              other rapidly advancing techology like A.I. NPC's. The ambitious
-              ten year roadmap is available in{' '}
-              <a href="http://localhost:3000/#/info" target="_self">
-                {' '}
-                <b className="purple"> THE INFORMATION.</b>{' '}
-              </a>{' '}
-              section. To begin we have purposely simplified the DAO mechanics
-              to minimize the attack surface and will utilize votes to direct
-              donations. Next step is based off of CultDAO’s transaction tax we
-              will incorporate a similar mechanism for NOW's native token,
-              PHOTON. Each movement of a PHOTON will have a .7% tax to fund the
-              DAO.
+                <b className="purple">
+                  {' '}
+                  Myth, Storytelling and Neuroscience
+                </b>{' '}
+              </a>
               <br />
               <br />
-              The NFT's, game and DAO all will initially funnel donations direct
-              to
+              You are living it now. What will you decide? I encourage you to
+              read the Thoughts NFT launch and join those of us deconstructing
+              time to see through this plane and onto the next stage of human
+              evolution - all while helping those we can.
+              <br />
+              <br />
+              Since the litepaper I've had the good fortune to continue working
+              with some amazing minds and humanitarians to continue development
+              of the prototype for Now the game. We will utilze the funds from
+              the THOUGHTS NFT collection to further Solidity development and
+              audits along with launching the beta front end towards the end of
+              2022. For the DAO We will look to build off the emergent open
+              source ecosystem to captialize on advances like CultDAO's push
+              towards decentralization and - although the main purpose of the
+              Game and DAO will be towards donations - we will also be looking
+              at incorporating the latest innovations to become a small part of
+              the overall UBI ecosystem.
+              <br />
+              <br />
+              Again the NFT's, game and DAO all will initially funnel donations
+              direct to
               <a href="https://Givewell.org" target="_blank">
                 {' '}
                 Givewell.org{' '}
               </a>
-              then by votes of the community and ultimately to{' '}
+              following that by votes of the community and ultimately to{' '}
               <b className="purple"> decentralized A.I.'s</b> for real time
               <b className="purple"> aid relief.</b>
               <br />
               <br />
+              <a
+                href="https://docs.google.com/presentation/d/1WP4XNYRZH8f1XIr7fxcM-ybX4DRX_GntNBAOH88CB8Y/edit#slide=id.g1061335e89a_0_23"
+                target="_blank"
+              >
+                {' '}
+                <b className="purple"> Full roadmap here</b>{' '}
+              </a>
+              <br />
+              <br />
+              <h1 style={{ fontSize: '2.6em' }}>
+                Wanna feel <span className="purple"> good? </span>
+              </h1>
             </p>
           </Col>
         </Row>

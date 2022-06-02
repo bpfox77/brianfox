@@ -5,7 +5,7 @@
 .mainContent {
   display: flex;
   padding-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 80px;
   border-bottom: 1px solid #fff;
 }
 
@@ -20,13 +20,15 @@
   border-radius: 20px;
   overflow: hidden;
   display: flex;
-  margin-right: 35px;
+  max-height: 40vh;
+  margin-right: 15px;
 }
 
 .selectedKoan {
+  display: flex;
   object-fit: contain;
   max-width: min(30vw 40vh);
-  max-height: 50vw;
+  max-height: 40vh;
 }
 
 .KoanDetails {
@@ -34,6 +36,16 @@
   flex-direction: column;
   align-items: flex-start;
   margin-right: auto;
+}
+
+.collectionDescription {
+  flex-direction: column;
+  /* align-content: space-between; */
+  /* margin-right: auto; */
+
+  align-self: flex-end;
+  text-align: left;
+  margin-top: auto;
 }
 
 .title {

@@ -27,7 +27,7 @@ function Thoughts() {
     <div className="app">
       {koanListData.length > 0 && (
         <>
-          <ThoughtHeader />
+          {/* <ThoughtHeader /> */}
           <Main koanListData={koanListData} selectedKoan={selectedKoan} />
           <Koanlist
             koanListData={koanListData}

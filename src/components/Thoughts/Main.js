@@ -22,16 +22,18 @@ const Main = ({ selectedKoan, koanListData }) => {
             {activeKoan.name}
             <span className="itemNumber">....#{activeKoan.token_id}</span>
           </div>
-
-          <div className="owner">
-            <div className="ownerImageContainer">
-              <img src={activeKoan.owner.profile_img_url} alt="" />
-            </div>
-
-            <div className="ownerDetails">
-              <div className="ownerNameAndHandle">
-                <div>{activeKoan.owner.address}</div>
-              </div>
+          <div className="collectionDescription">
+            {' '}
+            <b className="purple"> THOUGHTS</b> tell the monomyth of timeless
+            existence. <br /> In it's totality, it is{' '}
+            <b className="purple"> science fiction satori</b> <br />
+            with each of the 49 pieces being a <b className="purple"> Koan.</b>
+            <div
+              className="openSea"
+              onClick={() => window.open('https://opensea.io/', '_blank')}
+            >
+              {' '}
+              View the collection on OpenSea
             </div>
           </div>
         </div>
