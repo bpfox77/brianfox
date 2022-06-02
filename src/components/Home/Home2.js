@@ -26,33 +26,48 @@ function Home2() {
               <br />
               <br />
               The DAO will initially be fed through a cross cultural NFT
-              narrative, <b className="purple">Thoughts. </b> The 49 piece
-              collection tells the monomyth through Science Fiction Satori. It
-              is NFT native poetry with each piece being a koan unto itself. The
-              collection is a celebration of existence and transcendance. It is
-              an homage to the infinite possibilities of computational logic and
-              web3.
+              narrative,{' '}
+              <a href="http://localhost:3000/#/thoughts" target="_self">
+                {' '}
+                <b className="purple"> THOUGHTS.</b>{' '}
+              </a>{' '}
+              The 49 piece collection tells the monomyth through Science Fiction
+              Satori. It is NFT native poetry with each piece being a koan unto
+              itself. The collection is a celebration of existence and
+              transcendance. It is an homage to the infinite possibilities of
+              computational logic and web3.
               <br />
               <br />
               Thoughts are a conversation through time and the initial launch
-              will be followed by quest authors and artists and lead to an
-              interactive exhibit of Thoughts entitled “I WAS HERE”. The exhibit
-              will enable individuals to mint their own Thoughts and indelibly
-              proclaim their existence on-chain.
+              will be followed by quest authors and artists ultimately building
+              to an interactive exhibit of Thoughts entitled “I WAS HERE”. The
+              exhibit will enable individuals to mint their own Thoughts and
+              indelibly proclaim their existence on-chain.
               <br />
               <br />
-              The DAO’s main purpose is to continue development of &nbsp;
-              <b className="purple">NOW the Game. </b>
+              The DAO’s main purpose is to continue development of{' '}
+              <a href="http://localhost:3000/#/game" target="_self">
+                {' '}
+                <b className="purple"> NOW the Game.</b>{' '}
+              </a>{' '}
               It is a micro donation based game incorporating ZK rollups that
               not only uses the proven dual mechanisms of gaming and giving to
               enhance mental wellbeing, but will also utilize time entrainment
-              to slow the perception of time. The ambitious ten year roadmap is
-              available in&nbsp;
-              <b className="purple">The Information </b> section. To begin we
-              have purposely simplified the DAO mechanics to minimize the attack
-              surface and will utilize votes to direct donations. Next step is
-              based off of CultDAO’s transaction tax we will incorporate a
-              similar mechanism for NOW's native token, PHOTON.
+              to slow the player's perception of time. The front end will evolve
+              from a thumbtapping time passer to incorporate the evolving
+              economics of NVIDIA GPU's for realtime photoreal enviornments and
+              other rapidly advancing techology like A.I. NPC's. The ambitious
+              ten year roadmap is available in{' '}
+              <a href="http://localhost:3000/#/info" target="_self">
+                {' '}
+                <b className="purple"> THE INFORMATION.</b>{' '}
+              </a>{' '}
+              section. To begin we have purposely simplified the DAO mechanics
+              to minimize the attack surface and will utilize votes to direct
+              donations. Next step is based off of CultDAO’s transaction tax we
+              will incorporate a similar mechanism for NOW's native token,
+              PHOTON. Each movement of a PHOTON will have a .7% tax to fund the
+              DAO.
               <br />
               <br />
               <Col md={12} className="myAvtar">
@@ -75,7 +90,7 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
+            <h1>BE SOCIAL ON</h1>
             <p>
               Feel free to <span className="purple">connect </span>as I've too
               much history to be anon.

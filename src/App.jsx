@@ -35,7 +35,7 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/thoughts" component={Thoughts} />
           <Route path="/team" component={Team} />
-          <Route path="/game" component={Game} />
+          {/* <Route path="/game" component={Game} /> */}
           <Route path="/info" component={Info} />
         </Switch>
         <Footer />
