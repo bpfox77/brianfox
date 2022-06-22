@@ -1,12 +1,12 @@
-import React from "react";
-import "./KoanGallery.css";
+import React from 'react';
+import './KoanGallery.css';
 //import Header from './components/Header';
-import { useState, useEffect } from "react";
-import axios from "axios";
-import KoanGallery from "./KoanGallery";
-import KoanHero from "./KoanHero";
-import "./koanHero.css";
-import ThoughtHeader from "./ThoughtHeader";
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import KoanGallery from './KoanGallery';
+import KoanHero from './KoanHero';
+import './koanHero.css';
+import ThoughtHeader from './ThoughtHeader';
 
 function Thoughts() {
   const [koanListData, setKoanListData] = useState([]);
@@ -15,7 +15,7 @@ function Thoughts() {
   useEffect(() => {
     async function fetchData() {
       const openseaData = await axios.get(
-        "https://testnets-api.opensea.io/assets?asset_contract_address=0x93F93B8E9293147D7C7C1795b4E72B665ea1FA6a&order_direction=asc"
+        'https://testnets-api.opensea.io/assets?asset_contract_address=0x93F93B8E9293147D7C7C1795b4E72B665ea1FA6a&order_direction=asc'
       );
       setKoanListData(openseaData.data.assets);
     }

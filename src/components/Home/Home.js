@@ -1,431 +1,171 @@
-import { useEffect, useMemo, useState } from "react";
-import { ethers } from "ethers";
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import myImg from '../../Assets/Tokenomics.svg';
+// import Particle from '../Particle';
 
-// import thirdweb
-import { useWeb3 } from "@3rdweb/hooks";
-import { ThirdwebSDK } from "@3rdweb/sdk";
+import { AiOutlineTwitter, AiFillInstagram } from 'react-icons/ai';
+import { FaLinkedinIn } from 'react-icons/fa';
 
-import { UnsupportedChainIdError } from "@web3-react/core";
-
-import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
-import Home2 from "./Home2";
-
-// We instantiate the sdk on Rinkeby.
-const sdk = new ThirdwebSDK("rinkeby");
-
-// We can grab a reference to our ERC-1155 contract.
-const bundleDropModule = sdk.getBundleDropModule(
-  "0xEB48C5daF3F6d0c1A70821d85751CD0Bacc5D2c2"
-);
-
-const tokenModule = sdk.getTokenModule(
-  "0x540922F4F16cb0d27EDC1569dF7760e50e0eAEe8"
-);
-
-const voteModule = sdk.getVoteModule(
-  "0x9Bc4e207362480B17bc86fD2250f1cC3145F0B8C"
-);
-
-const Home = () => {
-  const { connectWallet, address, error, provider } = useWeb3();
-  console.log("👋 Address:", address);
-
-  // The signer is required to sign transactions on the blockchain.
-  // Without it we can only read data, not write.
-  const signer = provider ? provider.getSigner() : undefined;
-
-  const [hasClaimedNFT, setHasClaimedNFT] = useState(false);
-  // isClaiming lets us easily keep a loading state while the NFT is minting.
-  const [isClaiming, setIsClaiming] = useState(false);
-
-  // Holds the amount of token each member has in state.
-  const [memberTokenAmounts, setMemberTokenAmounts] = useState({});
-  // The array holding all of our members addresses.
-  const [memberAddresses, setMemberAddresses] = useState([]);
-
-  // A fancy function to shorten someones wallet address, no need to show the whole thing.
-  const shortenAddress = (str) => {
-    return str.substring(0, 6) + "..." + str.substring(str.length - 4);
-  };
-
-  // This useEffect grabs all our the addresses of our members holding our NFT.
-  useEffect(() => {
-    if (!hasClaimedNFT) {
-      return;
-    }
-
-    // Just like we did in the 7-airdrop-token.js file! Grab the users who hold our NFT
-    // with tokenId 0.
-    bundleDropModule
-      .getAllClaimerAddresses("0")
-      .then((addresess) => {
-        console.log("🚀 Members addresses", addresess);
-        setMemberAddresses(addresess);
-      })
-      .catch((err) => {
-        console.error("failed to get member list", err);
-      });
-  }, [hasClaimedNFT]);
-
-  // This useEffect grabs the # of token each member holds.
-  useEffect(() => {
-    if (!hasClaimedNFT) {
-      return;
-    }
-
-    // Grab all the balances.
-    tokenModule
-      .getAllHolderBalances()
-      .then((amounts) => {
-        console.log("👜 Amounts", amounts);
-        setMemberTokenAmounts(amounts);
-      })
-      .catch((err) => {
-        console.error("failed to get token amounts", err);
-      });
-  }, [hasClaimedNFT]);
-
-  // Now, we combine the memberAddresses and memberTokenAmounts into a single array
-  const memberList = useMemo(() => {
-    return memberAddresses.map((address) => {
-      return {
-        address,
-        tokenAmount: ethers.utils.formatUnits(
-          // If the address isn't in memberTokenAmounts, it means they don't
-          // hold any of our token.
-          memberTokenAmounts[address] || 0,
-          18
-        ),
-      };
-    });
-  }, [memberAddresses, memberTokenAmounts]);
-
-  // Another useEffect!
-  useEffect(() => {
-    // We pass the signer to the sdk, which enables us to interact with
-    // our deployed contract!
-    sdk.setProviderOrSigner(signer);
-  }, [signer]);
-
-  useEffect(() => {
-    if (!address) {
-      return;
-    }
-    return bundleDropModule
-      .balanceOf(address, "0")
-      .then((balance) => {
-        if (balance.gt(0)) {
-          setHasClaimedNFT(true);
-          console.log("🌟 this user has a membership NFT!");
-        } else {
-          setHasClaimedNFT(false);
-          console.log("😭 this user doesn't have a membership NFT.");
-        }
-      })
-      .catch((error) => {
-        setHasClaimedNFT(false);
-        console.error("failed to nft balance", error);
-      });
-  }, [address]);
-
-  const [proposals, setProposals] = useState([]);
-  const [isVoting, setIsVoting] = useState(false);
-  const [hasVoted, setHasVoted] = useState(false);
-
-  // Retreive all our existing proposals from the contract.
-  useEffect(() => {
-    if (!hasClaimedNFT) {
-      return;
-    }
-    // A simple call to voteModule.getAll() to grab the proposals.
-    voteModule
-      .getAll()
-      .then((proposals) => {
-        // Set state!
-        setProposals(proposals);
-        console.log("🌈 Proposals:", proposals);
-      })
-      .catch((err) => {
-        console.error("failed to get proposals", err);
-      });
-  }, [hasClaimedNFT]);
-
-  // We also need to check if the user already voted.
-  useEffect(() => {
-    if (!hasClaimedNFT) {
-      return;
-    }
-
-    if (error instanceof UnsupportedChainIdError) {
-      return (
-        <section>
-          <div className="unsupported-network">
-            <h2>Please connect to Rinkeby</h2>
-            <p>
-              This dapp only works on the Rinkeby network, please switch
-              networks in your connected wallet.
-            </p>
-          </div>
-        </section>
-      );
-    }
-
-    // If we haven't finished retreieving the proposals from the useEffect above
-    // then we can't check if the user voted yet!
-    if (!proposals.length) {
-      return;
-    }
-
-    // Check if the user has already voted on the first proposal.
-    voteModule
-      .hasVoted(proposals[0].proposalId, address)
-      .then((hasVoted) => {
-        setHasVoted(hasVoted);
-        console.log("🥵 User has already voted");
-      })
-      .catch((err) => {
-        console.error("failed to check if wallet has voted", err);
-      });
-  }, [hasClaimedNFT, proposals, address]);
-
-  if (error && error.name === "UnsupportedChainIdError") {
-    return (
-      <section>
-        <div className="unsupported-network">
-          <h2>Please connect to Rinkeby</h2>
-          <p>
-            This dapp only works on the Rinkeby network, please switch networks
-            in your connected wallet.
-          </p>
-        </div>
-      </section>
-    );
-  }
-
-  if (!address) {
-    return (
-      <section>
-        <div className="home-header">
-          <h1>
-            {" "}
-            <strong className="purple">NowDAO</strong>
-          </h1>
-          <br />
-          <button
-            onClick={() => connectWallet("injected")}
-            className="btn-hero"
-          >
-            Connect your wallet
-          </button>
-        </div>
-        <Home2 />
-      </section>
-    );
-  }
-
-  // If the user has already claimed their NFT we want to display the interal DAO page to them
-  // only DAO members will see this. Render all the members + token amounts.
-  if (hasClaimedNFT) {
-    return (
-      <section>
-        <div className="member-page">
-          <h1>NowDao</h1>
-          <p>Let's change the world</p>
-          <div>
-            {/* <div></div> */}
-            <div>
-              <p></p>
-
-              <h2>Member List</h2>
-              <table className="card">
-                <thead>
-                  <tr>
-                    <th>Address</th>
-                    <th>Token Amount</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {memberList.map((member) => {
-                    return (
-                      <tr key={member.address}>
-                        <td>{shortenAddress(member.address)}</td>
-                        <td>{member.tokenAmount}</td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
-            </div>
-            <div>
-              <p></p>
-
-              <h2>Active Proposals</h2>
-              <form
-                onSubmit={async (e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-
-                  //before we do async things, we want to disable the button to prevent double clicks
-                  setIsVoting(true);
-
-                  // lets get the votes from the form for the values
-                  const votes = proposals.map((proposal) => {
-                    let voteResult = {
-                      proposalId: proposal.proposalId,
-                      //abstain by default
-                      vote: 2,
-                    };
-                    proposal.votes.forEach((vote) => {
-                      const elem = document.getElementById(
-                        proposal.proposalId + "-" + vote.type
-                      );
-
-                      if (elem.checked) {
-                        voteResult.vote = vote.type;
-                        return;
-                      }
-                    });
-                    return voteResult;
-                  });
-
-                  // first we need to make sure the user delegates their token to vote
-                  try {
-                    //we'll check if the wallet still needs to delegate their tokens before they can vote
-                    const delegation = await tokenModule.getDelegationOf(
-                      address
-                    );
-                    // if the delegation is the 0x0 address that means they have not delegated their governance tokens yet
-                    if (delegation === ethers.constants.AddressZero) {
-                      //if they haven't delegated their tokens yet, we'll have them delegate them before voting
-                      await tokenModule.delegateTo(address);
-                    }
-                    // then we need to vote on the proposals
-                    try {
-                      await Promise.all(
-                        votes.map(async (vote) => {
-                          // before voting we first need to check whether the proposal is open for voting
-                          // we first need to get the latest state of the proposal
-                          const proposal = await voteModule.get(
-                            vote.proposalId
-                          );
-                          // then we check if the proposal is open for voting (state === 1 means it is open)
-                          if (proposal.state === 1) {
-                            // if it is open for voting, we'll vote on it
-                            return voteModule.vote(vote.proposalId, vote.vote);
-                          }
-                          // if the proposal is not open for voting we just return nothing, letting us continue
-                          return;
-                        })
-                      );
-                      try {
-                        // if any of the propsals are ready to be executed we'll need to execute them
-                        // a proposal is ready to be executed if it is in state 4
-                        await Promise.all(
-                          votes.map(async (vote) => {
-                            // we'll first get the latest state of the proposal again, since we may have just voted before
-                            const proposal = await voteModule.get(
-                              vote.proposalId
-                            );
-
-                            //if the state is in state 4 (meaning that it is ready to be executed), we'll execute the proposal
-                            if (proposal.state === 4) {
-                              return voteModule.execute(vote.proposalId);
-                            }
-                          })
-                        );
-                        // if we get here that means we successfully voted, so let's set the "hasVoted" state to true
-                        setHasVoted(true);
-                        // and log out a success message
-                        console.log("successfully voted");
-                      } catch (err) {
-                        console.error("failed to execute votes", err);
-                      }
-                    } catch (err) {
-                      console.error("failed to vote", err);
-                    }
-                  } catch (err) {
-                    console.error("failed to delegate tokens");
-                  } finally {
-                    // in *either* case we need to set the isVoting state to false to enable the button again
-                    setIsVoting(false);
-                  }
-                }}
-              >
-                {proposals.map((proposal, index) => (
-                  <div key={proposal.proposalId} className="card">
-                    <h5>{proposal.description}</h5>
-                    <div>
-                      {proposal.votes.map((vote) => (
-                        <div key={vote.type}>
-                          <input
-                            type="radio"
-                            id={proposal.proposalId + "-" + vote.type}
-                            name={proposal.proposalId}
-                            value={vote.type}
-                            //default the "abstain" vote to chedked
-                            defaultChecked={vote.type === 2}
-                          />
-                          <label
-                            htmlFor={proposal.proposalId + "-" + vote.type}
-                          >
-                            {vote.label}
-                          </label>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-                <button disabled={isVoting || hasVoted} type="submit">
-                  {isVoting
-                    ? "Voting..."
-                    : hasVoted
-                    ? "You Already Voted"
-                    : "Submit Votes"}
-                </button>
-                <small>
-                  This will trigger multiple transactions that you will need to
-                  sign.
-                </small>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-    );
-  }
-
-  // Render mint nft screen.
+function Home() {
   return (
-    <div className="mint-nft">
-      <h1>Mint your first PHOTON</h1>
-      <button
-        disabled={isClaiming}
-        onClick={() => {
-          setIsClaiming(true);
-          // Call bundleDropModule.claim("0", 1) to mint nft to user's wallet.
-          bundleDropModule
-            .claim("0", 1)
-            .catch((err) => {
-              console.error("failed to claim", err);
-              setIsClaiming(false);
-            })
-            .finally(() => {
-              // Stop loading state.
-              setIsClaiming(false);
-              // Set claim state.
-              setHasClaimedNFT(true);
-              // Show user their fancy new NFT!
-              console.log(
-                `Successfully Minted! Check it our on OpenSea: https://testnets.opensea.io/assets/${bundleDropModule.address}/0`
-              );
-            });
-        }}
-      >
-        {isClaiming ? "Minting..." : "Mint your nft (FREE)"}
-      </button>
-    </div>
-  );
-};
+    <Container fluid className="home-about-section" id="about">
+      {/* <Particle /> */}
+      <Container>
+        <Row>
+          <Col md={12} className="home-about-description">
+            {/* added now dao header here. old header & connect button are in components/HomeOld.js */}
+            {/* <div className="home-header">
+              <h1 style={{ fontSize: '2.6em' }}>
+                {' '}
+                <strong className="purple">NowDAO</strong>
+              </h1>
+              <br />
+            </div> */}
 
+            <p className="home-about-body">
+              <a href="https://app.nowdao.io/" target="_self">
+                {' '}
+                <b className="purple">NowDao's</b>{' '}
+              </a>
+              mission is nothing short of achieving transcendence through a
+              simple thought experiment focused on the reality that time and
+              space are an antiquated mode of perceiving this world. Just like
+              any game, there are many levels to this and NowDao takes a
+              multi-modal approach to
+              <a href="https://www.effectivealtruism.org/" target="_blank">
+                {' '}
+                <b className="purple">Effective Altruism.</b>{' '}
+              </a>
+              <br />
+              <br />
+              The DAO and it's native token,{' '}
+              <a href="https://app.nowdao.io/" target="_self">
+                {' '}
+                <b className="purple">PHOTON,</b>{' '}
+              </a>
+              will initially be fed through a cross cultural NFT narrative,{' '}
+              <a href="http://localhost:3000/#/thoughts" target="_self">
+                {' '}
+                <b className="purple"> THOUGHTS.</b>{' '}
+              </a>{' '}
+              The 49 piece collection tells the monomyth of timeless existence
+              through Science Fiction <b className="purple"> Satori.</b> It is
+              NFT native poetry with each piece being a
+              <b className="purple"> koan</b> unto itself. The collection is a
+              celebration of existence and transcendance. It is an homage to the
+              infinite possibilities of web3. It is a
+              <a
+                href="https://www.yogapedia.com/definition/7603/metta"
+                target="_blank"
+              >
+                {' '}
+                <b className="purple"> metta-</b>
+              </a>{' '}
+              verse.
+              <br />
+              <br />
+              As thoughts are a conversation through time, the initial launch
+              will be followed by quest authors and artists ultimately building
+              to an interactive exhibit of Thoughts entitled{' '}
+              <b className="purple"> I AM HERE.</b> The exhibit will enable
+              individuals to mint their own Thoughts and indelibly proclaim
+              their existence on the Interplanetary File System.
+              <br />
+              <br />
+              Along with the programmed 10% direct donation of the DAO, it's
+              main purpose is to continue development of{' '}
+              <a href="http://localhost:3000/#/info" target="_self">
+                {' '}
+                <b className="purple"> NOW the Game,</b>{' '}
+              </a>{' '}
+              a neuroscience based micro donation based built on Polygon. It not
+              only utilizes the proven dual mechanisms of gaming and giving to
+              enhance mental wellbeing, but also incorporates time entrainment
+              to slow the player's perception of time. The network will discover
+              the players who are most adept at slowing down time and the DAO
+              will reward the community for the participation in the game. You
+              can find the roadmap, mechanics, references and deep dive into the
+              thought process in{' '}
+              <a href="http://localhost:3000/#/info" target="_self">
+                {' '}
+                <b className="purple"> THE INFORMATION.</b>{' '}
+              </a>{' '}
+              <br />
+              <br />
+              To begin we have rebuilt and simplified the DAO mechanics with an
+              upgradeable contract. This will enable us to evolve along with the
+              latest advances in the open source space and become one cluster of
+              UBI for the globe.
+              <br />
+              <br />
+              <Col md={12} className="myAvtar">
+                <img src={myImg} className="img-fluid" alt="avatar" />
+              </Col>
+              <br />
+              The NFT's, game and DAO all will initially funnel donations direct
+              to
+              <a href="https://Givewell.org" target="_blank">
+                {' '}
+                <b className="purple"> Givewell.org</b>{' '}
+              </a>{' '}
+              then by votes of the community and ultimately to{' '}
+              <b className="purple"> decentralized A.I.'s</b> for real time
+              <b className="purple"> aid relief.</b>
+              <br />
+              <br />
+              Each movement of a
+              <a href="https://app.nowdao.io/" target="_self">
+                {' '}
+                <b className="purple">PHOTON,</b>{' '}
+              </a>{' '}
+              will have a .7% tax to fund the DAO.
+              <br />
+            </p>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={12} className="home-about-social">
+            <h1>BE SOCIAL ON</h1>
+            <p>
+              Feel free to <span className="purple">connect </span>as I've too
+              much history to be anon.
+            </p>
+            <ul className="home-about-social-links">
+              <li className="social-icons">
+                <a
+                  href="https://twitter.com/buddhaloop"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiOutlineTwitter />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.linkedin.com/in/brianfox/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <FaLinkedinIn />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.instagram.com/b_p_fox/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <AiFillInstagram />
+                </a>
+              </li>
+            </ul>
+          </Col>
+        </Row>
+      </Container>
+    </Container>
+  );
+}
 export default Home;

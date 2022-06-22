@@ -20,7 +20,7 @@ function Team() {
               imgPath={brian}
               isBlog={false}
               title="Brian Fox"
-              description="Innovation Lead @Meta - Creator / Developer of Now, Novelist, Filmmaker "
+              description="Innovation Lead @Meta - Creator / Developer of Now, Novelist, Filmmaker, Vedantic Yogi "
               link="https://github.com/bpfox77/indraWhitepaper/blob/917cda0b5742145774ccfa1910661d4b7d9c74f9/Change.pdf"
             />
           </Col>
@@ -30,7 +30,7 @@ function Team() {
               imgPath={chris}
               isBlog={false}
               title="Chris Heddon"
-              description="A doctor, entreprenuer and yogi currently building medical A.I. systems throughout the land."
+              description="A doctor, entreprenuer and yogi currently building medical A.I. systems."
               //link="https://www.amazon.com/Stars-Now-Brian-Fox-ebook/dp/B00HZVJYHM"
             />
           </Col>
@@ -40,7 +40,7 @@ function Team() {
               imgPath={amy}
               isBlog={false}
               title="Amy Karr"
-              description="Director, Human Rights Foundation, a humanitarian, Forbes 30 under 30, Seeker of light."
+              description="Director of Humanitarian Affaris, Human Rights Foundation, Forbes 30 under 30."
               // link="https://github.com/soumyajit4419/Editor.io"
             />
           </Col>

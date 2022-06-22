@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 function Info() {
   return (
-    <Container fluid className="home-about-section2" id="about">
+    <Container fluid className="home-about-section2">
       <Container>
         <Row>
           <Col md={12} className="home-about-description2">
@@ -12,23 +12,26 @@ function Info() {
             </h1>
             <br />
 
-            <p className="home-about-body">
-              I have been working in various forms of emerging technology for
-              over 2 decades and storytelling for even longer. I bought my first
-              eth in July '17, subsequently gaining and losing money and belief
-              a hundred times over. I could have kicked myself for my losses,
-              but instead my experience forced me to really want to understand
-              everything about the technology. So I dove deep into web3 and
-              eventually had the epiphany we all share - the infinite promise. I
-              understood that we are only limited by logic and realized an idea
-              I had been working on for 15 years was made possible by the
-              blockchain. In June 2021 I went to the Colorado mountains to
-              collate my thoughts and pinpoint the feasibility of a global
-              donation based game in a grandiose attempt to save the planet.
-              What I can call a litepaper is a wide ranging write up
+            <p className="home-about-body2">
+              I have been working in various forms of emerging technology, film
+              and 3D for over 2 decades and storytelling for even longer. I
+              bought my first eth in July '17, subsequently gaining and losing
+              money and belief a hundred times over. I could have kicked myself
+              for my losses, but instead my experience forced me to really want
+              to understand everything about the technology. So I dove deep into
+              web3 and eventually had the epiphany we all share - the infinite
+              promise. I understood that we are only limited by logic and
+              realized an idea I had been working on for 15 years was made
+              possible by the blockchain. In June 2021 I went to the Colorado
+              mountains to collate my thoughts and pinpoint the feasibility of a
+              global donation based game in a grandiose attempt to save the
+              planet. What I can call a litepaper is a wide ranging write up
               incorporating my experience in technology, artificial
               intelligence, love of theoretical physics, philosophy and
-              storytelling.
+              storytelling. An inherently good A.I. i've been building for over
+              2.5 years premiered at Cannes in June '22, so although this may
+              sound far fetched, I have always been objectively good at building
+              the future.'
               <br />
               <br />
               <a
@@ -80,30 +83,30 @@ function Info() {
               </a>
               <br />
               <br />
-              You are living it now. What will you decide? I encourage you to
-              read the Thoughts NFT launch and join those of us deconstructing
-              time to see through this plane and onto the next stage of human
-              evolution - all while helping those we can.
+              You are living it now. I encourage you to read the Thoughts NFT
+              launch and join those of us deconstructing time to see through
+              this plane and elevate onto the next stage of human evolution -
+              all while helping those we can.
               <br />
               <br />
               Since the litepaper I've had the good fortune to continue working
               with some amazing minds and humanitarians to continue development
               of the prototype for Now the game. We will utilze the funds from
               the THOUGHTS NFT collection to further Solidity development and
-              audits along with launching the beta front end towards the end of
-              2022. For the DAO We will look to build off the emergent open
-              source ecosystem to captialize on advances like CultDAO's push
-              towards decentralization and - although the main purpose of the
-              Game and DAO will be towards donations - we will also be looking
-              at incorporating the latest innovations to become a small part of
-              the overall UBI ecosystem.
+              audits along with launching the beta front end towards the
+              beginning of 2023. For the DAO We will look to build off the
+              emergent open source ecosystem to captialize on advances like
+              CultDAO's push towards decentralization and - although the main
+              purpose of the Game and DAO will be towards donations - we will
+              also be looking at incorporating the latest innovations to become
+              a small part of the overall UBI ecosystem.
               <br />
               <br />
               Again the NFT's, game and DAO all will initially funnel donations
               direct to
               <a href="https://Givewell.org" target="_blank">
                 {' '}
-                Givewell.org{' '}
+                <b className="purple"> Givewell.org.</b>{' '}
               </a>
               following that by votes of the community and ultimately to{' '}
               <b className="purple"> decentralized A.I.'s</b> for real time
@@ -111,7 +114,7 @@ function Info() {
               <br />
               <br />
               <a
-                href="https://docs.google.com/presentation/d/1WP4XNYRZH8f1XIr7fxcM-ybX4DRX_GntNBAOH88CB8Y/edit#slide=id.g1061335e89a_0_23"
+                href="https://docs.google.com/presentation/d/1WP4XNYRZH8f1XIr7fxcM-ybX4DRX_GntNBAOH88CB8Y/edit?usp=sharing"
                 target="_blank"
               >
                 {' '}
@@ -122,6 +125,8 @@ function Info() {
               <h1 style={{ fontSize: '2.6em' }}>
                 Wanna feel <span className="purple"> good? </span>
               </h1>
+              <br />
+              <br />
             </p>
           </Col>
         </Row>
