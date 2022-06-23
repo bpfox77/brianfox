@@ -6,7 +6,7 @@ import axios from 'axios';
 import KoanGallery from './KoanGallery';
 import KoanHero from './KoanHero';
 import './koanHero.css';
-import ThoughtHeader from './ThoughtHeader';
+//import ThoughtHeader from './ThoughtHeader';
 
 function Thoughts() {
   const [koanListData, setKoanListData] = useState([]);

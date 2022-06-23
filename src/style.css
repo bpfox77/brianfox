@@ -21,15 +21,15 @@ html {
 
 h1 {
   font-size: 5rem;
-  color: rgb(223, 236, 227);
+  color: rgb(215, 230, 220);
 }
 
 h2 {
-  color: rgb(223, 236, 227);
+  color: rgb(215, 230, 220);
 }
 
 p {
-  color: rgb(223, 236, 227);
+  color: rgb(215, 230, 220);
 }
 @media screen and (max-width: 768px) {
   h1 {
@@ -180,7 +180,7 @@ a:active {
 }
 
 .icon-colour {
-  color: #700c86 !important;
+  color: #0c861c !important;
 }
 
 /* --------- */
@@ -516,13 +516,13 @@ button:disabled {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(41, 40, 44, 0.959);
+  background: rgba(40, 44, 41, 0.959);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(130, 211, 235, 0.911);
+  background: rgba(130, 235, 139, 0.911);
   border-radius: 12px;
 }
 
@@ -532,7 +532,7 @@ button:disabled {
 .sticky {
   background-color: #11251bd8 !important;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+  box-shadow: 0px 10px 10px 0px rgba(5, 29, 21, 0.171) !important;
   backdrop-filter: blur(15px) !important;
 }
 
@@ -694,7 +694,7 @@ button:disabled {
 }
 
 .nft-card:hover {
-  background-color: rgb(134, 45, 45);
+  background-color: rgb(45, 134, 58);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
   transform: scale(1.05);
 }
@@ -710,7 +710,7 @@ button:disabled {
 }
 
 .content.item {
-  border-bottom: 2px solid deepskyblue;
+  border-bottom: 2px solid rgb(0, 255, 110);
 }
 
 .address {
