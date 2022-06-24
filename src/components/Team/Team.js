@@ -20,7 +20,7 @@ function Team() {
               imgPath={brian}
               isBlog={false}
               title="Brian Fox"
-              description="Innovation Lead @Meta - Creator / Developer of Now, Novelist, Filmmaker, Vedantic Yogi "
+              description="Innovation Lead @Meta, Creator/Developer of Now, Novelist, Filmmaker, Vedantic Yogi "
               link="https://github.com/bpfox77/indraWhitepaper/blob/917cda0b5742145774ccfa1910661d4b7d9c74f9/Change.pdf"
             />
           </Col>

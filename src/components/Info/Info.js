@@ -13,25 +13,30 @@ function Info() {
             <br />
 
             <p className="home-about-body2">
-              I have been working in various forms of emerging technology, film
-              and 3D for over 2 decades and storytelling for even longer. I
-              bought my first eth in July '17, subsequently gaining and losing
-              money and belief a hundred times over. I could have kicked myself
-              for my losses, but instead my experience forced me to really want
-              to understand everything about the technology. So I dove deep into
-              web3 and eventually had the epiphany we all share - the infinite
-              promise. I understood that we are only limited by logic and
-              realized an idea I had been working on for 15 years was made
-              possible by the blockchain. In June 2021 I went to the Colorado
-              mountains to collate my thoughts and pinpoint the feasibility of a
-              global donation based game in a grandiose attempt to save the
-              planet. What I can call a litepaper is a wide ranging write up
-              incorporating my experience in technology, artificial
-              intelligence, love of theoretical physics, philosophy and
-              storytelling. An inherently good A.I. i've been building for over
-              2.5 years premiered at Cannes in June '22, so although this may
-              sound far fetched, I have always been objectively good at building
-              the future.'
+              <a href="http://localhost:3000/#/info" target="_self">
+                {' '}
+                <b className="purple"> NOW, the Game,</b>{' '}
+              </a>{' '}
+              is currently a functional prototype. It is a neuroscience based,
+              micro donation, single player (for now) game built on Polygon.{' '}
+              <b className="purple"> NOW </b>
+              not only utilizes the FDA verified dual mechanisms of gaming and
+              giving to enhance mental wellbeing, but also incorporates time
+              entrainment to dilate the player's perception of time. The network
+              will discover the players who are most adept at slowing down time
+              and the DAO will reward the community for the participation in the
+              game.
+              <br />
+              <br />
+              The major epiphany of web3 is that we can use computational logic
+              to build anything we can dream. For me, this means an idea I'd
+              been working on for 15 years is made possible by the blockchain.
+              In June 2021 I went to the Colorado mountains to collate my
+              thoughts and pinpoint the feasibility of a global donation based
+              game in a grandiose attempt to save the planet. What I can call a
+              litepaper is a wide ranging write up incorporating my experience
+              in technology, artificial intelligence, love of theoretical
+              physics, philosophy and storytelling.
               <br />
               <br />
               <a
@@ -46,9 +51,9 @@ function Info() {
               </a>
               <br />
               <br />
-              In the year since, an idea that would seem far too grandiose is
-              rapidly becoming even more feasible through converging
-              technologies.
+              In the year since, an idea that would seem dramatically grandiose
+              is rapidly becoming even more feasible through exponetial
+              convergence of technologies.``
               <br />
               <br />
               <a
@@ -83,34 +88,20 @@ function Info() {
               </a>
               <br />
               <br />
-              You are living it now. I encourage you to read the Thoughts NFT
-              launch and join those of us deconstructing time to see through
-              this plane and elevate onto the next stage of human evolution -
-              all while helping those we can.
-              <br />
-              <br />
-              Since the litepaper I've had the good fortune to continue working
-              with some amazing minds and humanitarians to continue development
-              of the prototype for Now the game. We will utilze the funds from
-              the THOUGHTS NFT collection to further Solidity development and
-              audits along with launching the beta front end towards the
-              beginning of 2023. For the DAO We will look to build off the
-              emergent open source ecosystem to captialize on advances like
-              CultDAO's push towards decentralization and - although the main
-              purpose of the Game and DAO will be towards donations - we will
-              also be looking at incorporating the latest innovations to become
-              a small part of the overall UBI ecosystem.
-              <br />
-              <br />
-              Again the NFT's, game and DAO all will initially funnel donations
-              direct to
-              <a href="https://Givewell.org" target="_blank">
-                {' '}
-                <b className="purple"> Givewell.org.</b>{' '}
-              </a>
-              following that by votes of the community and ultimately to{' '}
-              <b className="purple"> decentralized A.I.'s</b> for real time
-              <b className="purple"> aid relief.</b>
+              I have been working in various forms of emerging technology, film
+              and 3D for over 2 decades and storytelling for even longer. Since
+              the litepaper I've had the good fortune to continue working with
+              some amazing minds and humanitarians to continue development of
+              the prototype, learn a few new languages and present not only the
+              theoretical approach but the fundamental mechanics to get us
+              there. Although 'a game to save humanity' may sound idealistic, I
+              have always been objectively good at building the future based
+              upon theoretical approaches. In June '22 an inherently good A.I.
+              that I've been building for over 2 years just premiered at Cannes.
+              We will utilze the funds from the THOUGHTS NFT collection to
+              further Solidity development and develop the visual elements of
+              the game with the aim of launching the beta front end towards the
+              beginning of 2023.
               <br />
               <br />
               <a
@@ -118,7 +109,7 @@ function Info() {
                 target="_blank"
               >
                 {' '}
-                <b className="purple"> Full roadmap here</b>{' '}
+                <b className="purple"> Full roadmap here</b>
               </a>
               <br />
               <br />

@@ -27,10 +27,19 @@ function Home() {
                 {' '}
                 <b className="purple">NowDao's</b>{' '}
               </a>
-              mission is nothing short of achieving transcendence through a
-              simple thought experiment focused on the reality that time and
-              space are an antiquated mode of perceiving this world. Just like
-              any game, there are many levels to this and NowDao takes a
+              mission is nothing short of building{' '}
+              <a
+                href="https://mirror.xyz/subek.eth/Ay-Oy8eAMJjDD-9pBNbaXH9ucXGQ7BqD_lv-o9heHiA"
+                target="_blank"
+              >
+                {' '}
+                <b className="purple">a game to save humanity.</b>{' '}
+              </a>{' '}
+              Along the way we will utilize the latest in cognitive science to
+              shift human perception and move past the antiquated confines of
+              spacetime. This project is the culmination of a 15 year thought
+              experiment made possible by the open source technology of the
+              blockchain. We will work towards transcendence through a
               multi-modal approach to
               <a href="https://www.effectivealtruism.org/" target="_blank">
                 {' '}
@@ -49,20 +58,24 @@ function Home() {
                 <b className="purple"> THOUGHTS.</b>{' '}
               </a>{' '}
               The 49 piece collection tells the monomyth of timeless existence
-              through Science Fiction <b className="purple"> Satori.</b> It is
-              NFT native poetry with each piece being a
-              <b className="purple"> koan</b> unto itself. The collection is a
-              celebration of existence and transcendance. It is an homage to the
-              infinite possibilities of web3. It is a
-              <a
-                href="https://www.yogapedia.com/definition/7603/metta"
-                target="_blank"
-              >
+              through Science Fiction{' '}
+              <a href="http://localhost:3000/#/thoughts" target="_self">
                 {' '}
-                <b className="purple"> metta-</b>
+                <b className="purple"> Satori.</b>{' '}
               </a>{' '}
-              verse.
+              It is NFT native poetry with each piece being a
+              <a href="http://localhost:3000/#/thoughts" target="_self">
+                {' '}
+                <b className="purple"> Koan</b>{' '}
+              </a>{' '}
+              unto itself. The collection is a celebration of existence and
+              transcendance. It is an homage to the infinite possibilities of
+              web3. It is a metta-verse.
               <br />
+              <br />
+              <Col md={12} className="myAvtar">
+                <img src={myImg} className="img-fluid" alt="avatar" />
+              </Col>
               <br />
               As thoughts are a conversation through time, the initial launch
               will be followed by quest authors and artists ultimately building
@@ -72,35 +85,23 @@ function Home() {
               their existence on the Interplanetary File System.
               <br />
               <br />
-              Along with the programmed 10% direct donation of the DAO, it's
-              main purpose is to continue development of{' '}
-              <a href="http://localhost:3000/#/info" target="_self">
-                {' '}
-                <b className="purple"> NOW the Game,</b>{' '}
-              </a>{' '}
-              a neuroscience based micro donation based built on Polygon. It not
-              only utilizes the proven dual mechanisms of gaming and giving to
-              enhance mental wellbeing, but also incorporates time entrainment
-              to slow the player's perception of time. The network will discover
-              the players who are most adept at slowing down time and the DAO
-              will reward the community for the participation in the game. You
-              can find the roadmap, mechanics, references and deep dive into the
-              thought process in{' '}
+              Madness you say? And I reply with a quote from Jack Kerouac, "It
+              was then that I realized I had gone sane in an unsane universe".
+              This may be hard for most to grok but one glance at the broad
+              technological landscapes reveals the inevitable building of the
+              game. You can find the roadmap, mechanics, references and deep
+              dive into the thought process in{' '}
               <a href="http://localhost:3000/#/info" target="_self">
                 {' '}
                 <b className="purple"> THE INFORMATION.</b>{' '}
               </a>{' '}
               <br />
               <br />
-              To begin we have rebuilt and simplified the DAO mechanics with an
+              To begin we have rebuilt the DAO mechanics to a simplified
               upgradeable contract. This will enable us to evolve along with the
               latest advances in the open source space and become one cluster of
               UBI for the globe.
               <br />
-              <br />
-              <Col md={12} className="myAvtar">
-                <img src={myImg} className="img-fluid" alt="avatar" />
-              </Col>
               <br />
               The NFT's, game and DAO all will initially funnel donations direct
               to
@@ -108,9 +109,12 @@ function Home() {
                 {' '}
                 <b className="purple"> Givewell.org</b>{' '}
               </a>{' '}
-              then by votes of the community and ultimately to{' '}
-              <b className="purple"> decentralized A.I.'s</b> for real time
-              <b className="purple"> aid relief.</b>
+              then by votes of the community and ultimately to
+              <a href="https://singularitynet.io/" target="_blank">
+                {' '}
+                <b className="purple">decentralized A.I.'s</b>{' '}
+              </a>{' '}
+              for real time aid relief.
               <br />
               <br />
               Each movement of a

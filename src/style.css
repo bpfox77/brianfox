@@ -264,13 +264,13 @@ a:active {
 .btn-primary {
   color: #fff !important;
   background-color: #32943a !important;
-  border-color: #623686 !important;
+  border-color: #36864b !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  background-color: #32943a !important;
+  border-color: #36864b !important;
 }
 .btn:focus {
   outline: none !important;
