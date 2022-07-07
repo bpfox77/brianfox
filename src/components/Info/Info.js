@@ -53,7 +53,7 @@ function Info() {
               <br />
               In the year since, an idea that would seem dramatically grandiose
               is rapidly becoming even more feasible through exponetial
-              convergence of technologies.``
+              convergence of technologies.
               <br />
               <br />
               <a
@@ -95,13 +95,11 @@ function Info() {
               the prototype, learn a few new languages and present not only the
               theoretical approach but the fundamental mechanics to get us
               there. Although 'a game to save humanity' may sound idealistic, I
-              have always been objectively good at building the future based
-              upon theoretical approaches. In June '22 an inherently good A.I.
-              that I've been building for over 2 years just premiered at Cannes.
-              We will utilze the funds from the THOUGHTS NFT collection to
-              further Solidity development and develop the visual elements of
-              the game with the aim of launching the beta front end towards the
-              beginning of 2023.
+              believe a actually pondering upon these words will ultimately
+              reveal the invevitabilty of this conclustion. We will utilze the
+              funds from the THOUGHTS NFT collection to further Solidity
+              development and develop the visual elements of the game with the
+              aim of launching the beta front end towards the beginning of 2023.
               <br />
               <br />
               <a

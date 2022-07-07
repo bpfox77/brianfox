@@ -35,16 +35,21 @@ function Home() {
                 {' '}
                 <b className="purple">a game to save humanity.</b>{' '}
               </a>{' '}
-              Along the way we will utilize the latest in cognitive science to
-              shift human perception and move past the antiquated confines of
-              spacetime. This project is the culmination of a 15 year thought
-              experiment made possible by the open source technology of the
-              blockchain. We will work towards transcendence through a
-              multi-modal approach to
+              Along the way we will incorporate the latest in cognitive science
+              to shift human perception and move past the antiquated confines of
+              spacetime. Utilizing a multi-modal approach to{' '}
               <a href="https://www.effectivealtruism.org/" target="_blank">
                 {' '}
-                <b className="purple">Effective Altruism.</b>{' '}
+                <b className="purple">Effective Altruism,</b>{' '}
               </a>
+              this project is the culmination of a 15 year thought experiment
+              made possible by the open source technology of the blockchain. You
+              can find the roadmap, mechanics, references and deep dive into the
+              thought process in{' '}
+              <a href="http://localhost:3000/#/info" target="_self">
+                {' '}
+                <b className="purple"> THE INFORMATION.</b>{' '}
+              </a>{' '}
               <br />
               <br />
               The DAO and it's native token,{' '}
@@ -78,23 +83,11 @@ function Home() {
               </Col>
               <br />
               As thoughts are a conversation through time, the initial launch
-              will be followed by quest authors and artists ultimately building
+              will be followed by quest authors and artists, ultimately building
               to an interactive exhibit of Thoughts entitled{' '}
               <b className="purple"> I AM HERE.</b> The exhibit will enable
               individuals to mint their own Thoughts and indelibly proclaim
               their existence on the Interplanetary File System.
-              <br />
-              <br />
-              Madness you say? And I reply with a quote from Jack Kerouac, "It
-              was then that I realized I had gone sane in an unsane universe".
-              This may be hard for most to grok but one glance at the broad
-              technological landscapes reveals the inevitable building of the
-              game. You can find the roadmap, mechanics, references and deep
-              dive into the thought process in{' '}
-              <a href="http://localhost:3000/#/info" target="_self">
-                {' '}
-                <b className="purple"> THE INFORMATION.</b>{' '}
-              </a>{' '}
               <br />
               <br />
               To begin we have rebuilt the DAO mechanics to a simplified
