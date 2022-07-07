@@ -98,9 +98,9 @@ function Home() {
               <br />
               The NFT's, game and DAO all will initially funnel donations direct
               to
-              <a href="https://Givewell.org" target="_blank">
+              <a href="https://www.operationsunflower.com/" target="_blank">
                 {' '}
-                <b className="purple"> Givewell.org</b>{' '}
+                <b className="purple"> Operation Sunflower</b>{' '}
               </a>{' '}
               then by votes of the community and ultimately to
               <a href="https://singularitynet.io/" target="_blank">
