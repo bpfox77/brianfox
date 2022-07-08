@@ -29,7 +29,7 @@ function Team() {
             <ProjectCard
               imgPath={chris}
               isBlog={false}
-              title="Chris Heddon"
+              title="Dr. Chris Heddon"
               description="A doctor, entreprenuer and yogi currently building medical A.I. systems."
               //link="https://www.amazon.com/Stars-Now-Brian-Fox-ebook/dp/B00HZVJYHM"
             />
@@ -40,7 +40,7 @@ function Team() {
               imgPath={amy}
               isBlog={false}
               title="Amy Karr"
-              description="Director of Humanitarian Affaris, Human Rights Foundation, Forbes 30 under 30."
+              description="Director of Humanitarian Affairs, Human Rights Foundation, Forbes 30 under 30."
               // link="https://github.com/soumyajit4419/Editor.io"
             />
           </Col>

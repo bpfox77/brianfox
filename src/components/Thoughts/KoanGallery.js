@@ -4,7 +4,7 @@ import './KoanGallery.css';
 
 const KoanGallery = ({ koanListData, setSelectedKoan }) => {
   return (
-    <div className='koangallery'>
+    <div className="koangallery">
       {[...koanListData].reverse().map((koan) => (
         <div>
           <CollectionCard
