@@ -90,10 +90,10 @@ function Home() {
               their existence on the Interplanetary File System.
               <br />
               <br />
-              To begin we have rebuilt the DAO mechanics to a simplified
-              upgradeable contract. This will enable us to evolve along with the
-              latest advances in the open source space and become one cluster of
-              UBI for the globe.
+              To begin, NOW DAO has launched upgradeable Governance contracts.
+              This will allow us to evolve along with the latest advances in the
+              space and move towards complete decentralization, eventually
+              becoming one cluster of UBI for the globe.
               <br />
               <br />
               The NFT's, game and DAO all will initially funnel donations direct

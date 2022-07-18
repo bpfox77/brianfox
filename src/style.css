@@ -1,6 +1,5 @@
 .App {
   text-align: left;
-  background-image: var(--section-background-color) !important;
 }
 
 html {
@@ -10,7 +9,6 @@ html {
     #242324 50%,
     #111113
   );
-  background: linear-gradient(#e66465, #9198e5);
 
   --imp-text-color: #5dcf79;
 }
