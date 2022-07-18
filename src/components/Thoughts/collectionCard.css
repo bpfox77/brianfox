@@ -3,43 +3,43 @@
   background-color: #1a1c1e;
   border-radius: 20px;
   overflow: hidden;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   margin-right: 30px;
 }
 
-.details {
+/* .details {
   padding: 10px;
-}
+} */
 
 .name {
   font-size: 20px;
   font-weight: 900;
 }
 
-.id {
+/* .id {
   color: #a1a5b0;
   font-size: 18px;
   font-weight: 600;
-}
+} */
 
-.collectionCard > img {
+/* .collectionCard > img {
   width: 100%;
-}
+} */
 
-.wethImage {
+/* .wethImage {
   height: 23px;
   width: 15px;
-}
+} */
 
-.priceContainer {
+/* .priceContainer {
   display: flex;
   align-items: center;
   margin-top: 5px;
   object-fit: contain;
-}
+} */
 
-.price {
+/* .price {
   font-weight: 600;
   margin-left: 5px;
-}
+} */

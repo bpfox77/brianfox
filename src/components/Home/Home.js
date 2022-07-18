@@ -124,8 +124,8 @@ function Home() {
           <Col md={12} className="home-about-social">
             <h1>BE SOCIAL ON</h1>
             <p>
-              Feel free to <span className="purple">connect </span>as I've too
-              much history to be anon.
+              Feel free to <b className="purple">connect </b>as I've too much
+              history to be anon.
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">

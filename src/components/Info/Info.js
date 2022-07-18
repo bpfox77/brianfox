@@ -8,7 +8,7 @@ function Info() {
         <Row>
           <Col md={12} className="home-about-description2">
             <h1 style={{ fontSize: '2.6em' }}>
-              Let's play <span className="purple"> a Game </span>
+              Let's play <strong className="purple"> a Game </strong>
             </h1>
             <br />
 
@@ -29,14 +29,16 @@ function Info() {
               <br />
               <br />
               The major epiphany of web3 is that we can use computational logic
-              to build anything we can dream. For me, this means an idea I'd
+              to build anything we can dream. For me, this means an idea I've
               been working on for 15 years is made possible by the blockchain.
-              In June 2021 I went to the Colorado mountains to collate my
-              thoughts and pinpoint the feasibility of a global donation based
-              game in a grandiose attempt to save the planet. What I can call a
-              litepaper is a wide ranging write up incorporating my experience
-              in technology, artificial intelligence, love of theoretical
-              physics, philosophy and storytelling.
+              What has begun as a 2.5D game will evolve into a complete
+              simulation of the planet, porting the blockchain economics along
+              the way. In June 2021 I went to the Colorado mountains to collate
+              my thoughts and pinpoint the feasibility of a global donation
+              based game in a grandiose attempt to save the planet. What I can
+              call a litepaper is a wide ranging write up incorporating my
+              experience in technology, artificial intelligence, love of
+              theoretical physics, philosophy and storytelling.
               <br />
               <br />
               <a
@@ -112,7 +114,7 @@ function Info() {
               <br />
               <br />
               <h1 style={{ fontSize: '2.6em' }}>
-                Wanna feel <span className="purple"> good? </span>
+                Wanna feel <strong className="purple"> good? </strong>
               </h1>
               <br />
               <br />

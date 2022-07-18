@@ -10,10 +10,10 @@ function TeamCard(props) {
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: 'left' }}>{props.description}</Card.Text>
-        <Button variant="primary" href={props.link} target="_blank">
+        {/* <Button variant="primary" href={props.link} target="_blank">
           <BiLinkExternal /> &nbsp;
           {props.isBlog ? 'View Blog' : 'View Info'}
-        </Button>
+        </Button> */}
       </Card.Body>
     </Card>
   );

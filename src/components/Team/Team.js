@@ -4,7 +4,7 @@ import ProjectCard from './TeamCard';
 // import TeamCard from "./TeamCard";
 import amy from '../../Assets/Projects/Amy.jpg';
 import chris from '../../Assets/Projects/Chris.jpeg';
-import brian from '../../Assets/Projects/me.jpeg';
+import brian from '../../Assets/Projects/Brian.jpg';
 
 function Team() {
   return (
@@ -21,7 +21,7 @@ function Team() {
               isBlog={false}
               title="Brian Fox"
               description="Innovation Lead @Meta, Creator/Developer of Now, Novelist, Filmmaker, Vedantic Yogi "
-              link="https://github.com/bpfox77/indraWhitepaper/blob/917cda0b5742145774ccfa1910661d4b7d9c74f9/Change.pdf"
+              link="https://subek.eth.limo"
             />
           </Col>
 

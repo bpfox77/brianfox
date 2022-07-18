@@ -1,58 +1,110 @@
 .main {
-  max-height: 55vh;
+  max-height: 75vh;
+  padding-top: 5px;
 }
 
 .mainContent {
   display: flex;
+  /* flex-direction: row; */
   padding-bottom: 20px;
   padding-top: 80px;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgb(91, 209, 115);
+  /* align-items: flex-start; */
+}
+
+@media (max-width: 767px) {
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .KoanHighlight {
   flex: 0.25;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
+}
+
+@media (max-width: 767px) {
+  .KoanHighlight {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .KoanContainer {
   border-radius: 20px;
   overflow: hidden;
   display: flex;
-  max-height: 40vh;
-  margin-right: 15px;
+  max-height: 100vh;
+  margin-right: 20px;
 }
 
 .selectedKoan {
-  display: flex;
+  /* display: flex; */
   object-fit: contain;
-  max-width: min(30vw 40vh);
-  max-height: 40vh;
+  max-width: min(70vw 70vh);
+  max-height: 70vh;
+}
+
+@media (max-width: 767px) {
+  .selectedKoan {
+    /* display: flex; */
+    object-fit: contain;
+    max-width: min(70vw 70vh);
+    max-height: 45vh;
+    align-items: center;
+    justify-content: left;
+  }
 }
 
 .KoanDetails {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-right: auto;
+  /* display: flex; */
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  /* margin-right: auto; */
+  flex: 0.75;
 }
 
 .collectionDescription {
+  display: flex;
   flex-direction: column;
-  /* align-content: space-between; */
-  /* margin-right: auto; */
-
-  align-self: flex-end;
+  color: rgb(203, 207, 204);
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: left;
   text-align: left;
-  margin-top: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+span {
+  background: rgb(91, 209, 115);
+  margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+  .collectionDescription {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
 }
 
 .title {
-  font-size: 48px;
-  font-weight: 700;
-  align-self: flex-start;
-  margin-right: auto;
+  font-size: 80px;
+  font-weight: 800;
+  /* align-self: flex-start; */
+  margin-left: 20px;
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 30px;
+    font-weight: 400;
+  }
 }
 
 .itemNumber {
@@ -71,28 +123,28 @@
   margin: 0 5px;
 }
 
-.ownerImageContainer {
+/* .ownerImageContainer {
   height: 50px;
   width: 50px;
   border-radius: 50%;
   border-radius: 50px;
   overflow: hidden;
   object-fit: contain;
-}
+} */
 
-.ownerImageContainer > img {
+/* .ownerImageContainer > img {
   height: 100%;
   width: 100%;
-}
+} */
 
-.ownerDetails {
+/* .ownerDetails {
   display: flex;
   align-items: center;
   flex: 1;
-}
+} */
 
 /* Make sure overflow is not fucking up the menu on mobile */
-.ownerNameAndHandle {
+/* .ownerNameAndHandle {
   flex: 1;
   color: #bac2c2;
   overflow: hidden;
@@ -100,11 +152,17 @@
 
 .ownerHandle {
   color: #00ebfe;
+} */
+
+@media (max-width: 767px) {
+  .openSea {
+    text-align: left !important;
+  }
 }
 
 .openSea {
-  align-self: flex-start;
-  margin-right: auto;
+  /* align-self: flex-start;
+  margin-right: auto; */
   color: #f16bcb;
   cursor: pointer;
 }
@@ -116,18 +174,18 @@
   border-bottom: 1px solid #fff;
 } */
 
-.nft-header {
+/* .nft-header {
   padding-top: 80px;
-}
+} */
 
 h5 {
   font-size: 2rem;
   color: rgb(213, 213, 223);
 }
 
-.purple1 {
+/* .purple1 {
   color: var(--imp-text-color) !important;
-}
+} */
 
 /* .ownerLink {
   padding: 12px;
@@ -142,3 +200,21 @@ h5 {
   height: 100%;
   width: 100%;
 } */
+
+.green {
+  color: rgb(53, 137, 70);
+  white-space: nowrap;
+}
+
+.descText {
+  /* color: rgb(161, 11, 41); */
+  color: rgb(14, 11, 206);
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .descText {
+    color: rgb(14, 11, 206);
+    font-weight: 400;
+  }
+}

@@ -1,5 +1,5 @@
-import React from "react";
-import "./koanHero.css";
+import React from 'react';
+import './koanHero.css';
 
 const KoanHero = ({ selectedKoan, koanListData }) => {
   const koanHero = koanListData.filter((obj) => {
@@ -14,25 +14,30 @@ const KoanHero = ({ selectedKoan, koanListData }) => {
             <img className="selectedKoan" src={koanHero[0].image_url} alt="" />
           </div>
         </div>
-
-        <div className="KoanDetails" style={{ color: "#fff" }}>
+        <div className="KoanDetails" style={{ color: '#fff' }}>
           <div className="title">
             {koanHero[0].name}
-            <span className="itemNumber">....#{koanHero[0].token_id}</span>
+            {/* <span className="itemNumber">....#{koanHero[0].token_id}</span> */}
           </div>
+
           <div className="collectionDescription">
-            {" "}
-            <b className="purple"> THOUGHTS</b> tell the monomyth of timeless
-            existence. <br /> In it's totality, it is{" "}
-            <b className="purple"> science fiction satori</b> <br />
-            with each of the 49 pieces being a <b className="purple"> Koan.</b>
-            <div
-              className="openSea"
-              onClick={() => window.open("https://opensea.io/", "_blank")}
-            >
-              {" "}
-              View the collection on OpenSea
-            </div>
+            <span className="green">
+              <span className="descText">
+                {' '}
+                THOUGHTS tell the monomyth of timeless existence.
+              </span>{' '}
+            </span>{' '}
+            In it's totality, the collection is a transcendent hero's journey
+            beyond spacetime. It is Science Fiction Satori with each of the 49
+            pieces being a Koan unto itself.
+          </div>
+
+          <div
+            className="openSea"
+            onClick={() => window.open('https://opensea.io/', '_blank')}
+          >
+            {' '}
+            <u>View the collection on OpenSea</u>
           </div>
         </div>
       </div>

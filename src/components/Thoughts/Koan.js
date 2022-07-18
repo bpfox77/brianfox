@@ -23,7 +23,7 @@ function Thoughts() {
   }, []);
 
   return (
-    <div className='app'>
+    <div className="app">
       {koanListData.length > 0 && (
         <>
           {/* <ThoughtHeader /> */}
