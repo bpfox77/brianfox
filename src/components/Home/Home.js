@@ -62,20 +62,11 @@ function Home() {
                 {' '}
                 <b className="purple"> THOUGHTS.</b>{' '}
               </a>{' '}
-              The 49 piece collection tells the monomyth of timeless existence
-              through Science Fiction{' '}
-              <a href="http://localhost:3000/#/thoughts" target="_self">
-                {' '}
-                <b className="purple"> Satori.</b>{' '}
-              </a>{' '}
-              It is NFT native poetry with each piece being a
-              <a href="http://localhost:3000/#/thoughts" target="_self">
-                {' '}
-                <b className="purple"> Koan</b>{' '}
-              </a>{' '}
-              unto itself. The collection is a celebration of existence and
-              transcendance. It is an homage to the infinite possibilities of
-              web3. It is a metta-verse.
+              The 49 piece collection is NFT native poetry. As language
+              stimulates the visual cortex, it is inherently visual. The
+              collection is a celebration of existence and transcendance. It is
+              an homage to the infinite possibilities of web3. It is a
+              metta-verse.
               <br />
               <br />
               <Col md={12} className="myAvtar">

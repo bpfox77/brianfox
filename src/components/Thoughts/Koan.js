@@ -1,12 +1,10 @@
 import React from 'react';
 import './KoanGallery.css';
-//import Header from './components/Header';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import KoanGallery from './KoanGallery';
 import KoanHero from './KoanHero';
 import './koanHero.css';
-//import ThoughtHeader from './ThoughtHeader';
 
 function Thoughts() {
   const [koanListData, setKoanListData] = useState([]);
