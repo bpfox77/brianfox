@@ -13,12 +13,9 @@ function Info() {
             <br />
 
             <p className="home-about-body2">
-              <a href="http://localhost:3000/#/info" target="_self">
-                {' '}
-                <b className="purple"> NOW, the Game,</b>{' '}
-              </a>{' '}
-              is currently a functional prototype. It is a neuroscience based,
-              micro donation, single player (for now) game built on Polygon.{' '}
+              <b className="purple"> NOW, the Game,</b> is currently a
+              functional prototype. It is a neuroscience based, micro donation,
+              single player (for now) game built on Polygon.{' '}
               <b className="purple"> NOW </b>
               not only utilizes the FDA verified dual mechanisms of gaming and
               giving to enhance mental wellbeing, but also incorporates time

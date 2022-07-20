@@ -46,19 +46,19 @@ function Home() {
               made possible by the open source technology of the blockchain. You
               can find the roadmap, mechanics, references and deep dive into the
               thought process in{' '}
-              <a href="http://localhost:3000/#/info" target="_self">
+              <a href="http://now-dao.io/#/info" target="_self">
                 {' '}
                 <b className="purple"> THE INFORMATION.</b>{' '}
               </a>{' '}
               <br />
               <br />
               The DAO and it's native token,{' '}
-              <a href="https://app.nowdao.io/" target="_self">
+              <a href="https://app.now-dao.io/" target="_self">
                 {' '}
                 <b className="purple">PHOTON,</b>{' '}
               </a>
               will initially be fed through a cross cultural NFT narrative,{' '}
-              <a href="http://localhost:3000/#/thoughts" target="_self">
+              <a href="http://now-dao.io/#/thoughts" target="_self">
                 {' '}
                 <b className="purple"> THOUGHTS.</b>{' '}
               </a>{' '}
@@ -102,7 +102,7 @@ function Home() {
               <br />
               <br />
               Each movement of a
-              <a href="https://app.nowdao.io/" target="_self">
+              <a href="https://app.now-dao.io/" target="_self">
                 {' '}
                 <b className="purple">PHOTON,</b>{' '}
               </a>{' '}
