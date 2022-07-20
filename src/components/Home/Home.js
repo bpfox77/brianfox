@@ -23,7 +23,7 @@ function Home() {
             </div> */}
 
             <p className="home-about-body">
-              <a href="https://app.nowdao.io/" target="_self">
+              <a href="https://app.now-dao.io/" target="_self">
                 {' '}
                 <b className="purple">NowDao's</b>{' '}
               </a>
