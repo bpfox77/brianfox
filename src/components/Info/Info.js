@@ -15,7 +15,7 @@ function Info() {
             <p className="home-about-body2">
               <b className="purple"> NOW, the Game,</b> is currently a
               functional prototype. It is a neuroscience based, micro donation,
-              single player (for now) game built on Polygon.{' '}
+              single player (for now) built on Polygon.{' '}
               <b className="purple"> NOW </b>
               not only utilizes the FDA verified dual mechanisms of gaming and
               giving to enhance mental wellbeing, but also incorporates time
@@ -26,16 +26,15 @@ function Info() {
               <br />
               <br />
               The major epiphany of web3 is that we can use computational logic
-              to build anything we can dream. For me, this means an idea I've
-              been working on for 15 years is made possible by the blockchain.
-              What has begun as a 2.5D game will evolve into a complete
-              simulation of the planet, porting the blockchain economics along
-              the way. In June 2021 I went to the Colorado mountains to collate
-              my thoughts and pinpoint the feasibility of a global donation
-              based game in a grandiose attempt to save the planet. What I can
-              call a litepaper is a wide ranging write up incorporating my
-              experience in technology, artificial intelligence, love of
-              theoretical physics, philosophy and storytelling.
+              to build anything we can dream. What has begun as a 2.5D game will
+              evolve into a complete simulation of the planet, porting the
+              blockchain economics along the way. In June 2021 I went to the
+              Colorado mountains to collate my thoughts and pinpoint the
+              feasibility of a global micro donation based game in a grandiose
+              attempt to save the planet. What I can call a litepaper is a wide
+              ranging write up incorporating my experience in technology,
+              artificial intelligence, love of theoretical physics, philosophy
+              and storytelling.
               <br />
               <br />
               <a
@@ -95,10 +94,10 @@ function Info() {
               theoretical approach but the fundamental mechanics to get us
               there. Although 'a game to save humanity' may sound idealistic, I
               believe a actually pondering upon these words will ultimately
-              reveal the invevitabilty of this conclusion. We will utilze the
+              reveal the invevitabilty of the conclusion. We will utilze the
               funds from the THOUGHTS NFT collection to further Solidity
               development and develop the visual elements of the game with the
-              aim of launching the beta front end towards the beginning of 2023.
+              aim of launching the beta front end in 2023.
               <br />
               <br />
               <a

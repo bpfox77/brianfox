@@ -20,6 +20,7 @@ function Team() {
               imgPath={brian}
               isBlog={false}
               title="Brian Fox"
+              role="Founder"
               description="Innovation Lead @Meta, Creator/Developer of Now, Novelist, Filmmaker, Vedantic Yogi "
               link="https://subek.eth.limo"
             />
@@ -30,6 +31,7 @@ function Team() {
               imgPath={chris}
               isBlog={false}
               title="Dr. Chris Heddon"
+              role="Advisor, Multi-sig"
               description="A doctor, entreprenuer and yogi currently building medical A.I. systems."
               //link="https://www.amazon.com/Stars-Now-Brian-Fox-ebook/dp/B00HZVJYHM"
             />
@@ -40,6 +42,7 @@ function Team() {
               imgPath={amy}
               isBlog={false}
               title="Amy Karr"
+              role="Advisor, Multi-sig"
               description="Director of Humanitarian Affairs, Human Rights Foundation, Forbes 30 under 30."
               // link="https://github.com/soumyajit4419/Editor.io"
             />

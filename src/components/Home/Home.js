@@ -46,7 +46,7 @@ function Home() {
               made possible by the open source technology of the blockchain. You
               can find the roadmap, mechanics, references and deep dive into the
               thought process in{' '}
-              <a href="http://now-dao.io/#/info" target="_self">
+              <a href="https://now-dao.io/#/info" target="_self">
                 {' '}
                 <b className="purple"> THE INFORMATION.</b>{' '}
               </a>{' '}
@@ -84,7 +84,7 @@ function Home() {
               To begin, NOW DAO has launched upgradeable Governance contracts.
               This will allow us to evolve along with the latest advances in the
               space and move towards complete decentralization, eventually
-              becoming one cluster of UBI for the globe.
+              becoming one cluster of UBI for the globe's network state.
               <br />
               <br />
               The NFT's, game and DAO all will initially funnel donations direct
