@@ -63,7 +63,7 @@ function Home() {
                 <b className="purple"> THOUGHTS.</b>{' '}
               </a>{' '}
               The 49 piece collection is NFT native poetry. As language
-              stimulates the visual cortex, it is inherently visual. The
+              stimulates the visual cortex, words paint the pictures. The
               collection is a celebration of existence and transcendance. It is
               an homage to the infinite possibilities of web3. It is a
               metta-verse.

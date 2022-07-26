@@ -7,12 +7,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(0.1turn, #131111, #242324 50%, #111113);
-  --section-background-color: linear-gradient(
+  /* --section-background-color: linear-gradient(
     0.1turn,
     #131111,
-    #242324 50%,
+    #232423 50%,
     #111113
-  );
+  ); */
 }
 
 /* .font-link {
