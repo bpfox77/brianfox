@@ -1,15 +1,15 @@
-.main {
+/* .main {
   max-height: 75vh;
   padding-top: 5px;
 }
 
 .mainContent {
   display: flex;
-  /* flex-direction: row; */
+ 
   padding-bottom: 20px;
   padding-top: 80px;
   border-bottom: 1px solid rgb(91, 209, 115);
-  /* align-items: flex-start; */
+ 
 }
 
 @media (max-width: 767px) {
@@ -42,7 +42,7 @@
 }
 
 .selectedKoan {
-  /* display: flex; */
+
   object-fit: contain;
   max-width: min(70vw 70vh);
   max-height: 70vh;
@@ -50,7 +50,7 @@
 
 @media (max-width: 767px) {
   .selectedKoan {
-    /* display: flex; */
+    
     object-fit: contain;
     max-width: min(70vw 70vh);
     max-height: 45vh;
@@ -60,11 +60,10 @@
 }
 
 .KoanDetails {
-  /* display: flex; */
+
   flex-direction: row;
   justify-content: space-between;
-  /* align-items: flex-start; */
-  /* margin-right: auto; */
+ 
   flex: 0.75;
 }
 
@@ -96,7 +95,7 @@ span {
 .title {
   font-size: 80px;
   font-weight: 800;
-  /* align-self: flex-start; */
+ 
   margin-left: 20px;
 }
 
@@ -122,6 +121,72 @@ span {
 .owner > div {
   margin: 0 5px;
 }
+
+
+
+@media (max-width: 767px) {
+  .openSea {
+    text-align: left !important;
+  }
+}
+
+.openSea {
+
+  color: #f16bcb;
+  cursor: pointer;
+}
+
+h5 {
+  font-size: 2rem;
+  color: rgb(213, 213, 223);
+}
+
+.green {
+  color: rgb(53, 137, 70);
+  white-space: nowrap;
+}
+
+.descText {
+  
+  color: rgb(14, 11, 206);
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .descText {
+    color: rgb(14, 11, 206);
+    font-weight: 400;
+  }
+} */
+
+/* .thoughtHeader {
+  display: flex;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid #fff;
+} */
+
+/* .nft-header {
+  padding-top: 80px;
+} */
+
+/* .purple1 {
+  color: var(--imp-text-color) !important;
+} */
+
+/* .ownerLink {
+  padding: 12px;
+  border-radius: 40px;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #fff;
+  margin: 0 0 0 10px;
+}
+
+.ownerLink > img {
+  height: 100%;
+  width: 100%;
+} */
 
 /* .ownerImageContainer {
   height: 50px;
@@ -153,68 +218,3 @@ span {
 .ownerHandle {
   color: #00ebfe;
 } */
-
-@media (max-width: 767px) {
-  .openSea {
-    text-align: left !important;
-  }
-}
-
-.openSea {
-  /* align-self: flex-start;
-  margin-right: auto; */
-  color: #f16bcb;
-  cursor: pointer;
-}
-
-/* .thoughtHeader {
-  display: flex;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  border-bottom: 1px solid #fff;
-} */
-
-/* .nft-header {
-  padding-top: 80px;
-} */
-
-h5 {
-  font-size: 2rem;
-  color: rgb(213, 213, 223);
-}
-
-/* .purple1 {
-  color: var(--imp-text-color) !important;
-} */
-
-/* .ownerLink {
-  padding: 12px;
-  border-radius: 40px;
-  height: 50px;
-  width: 50px;
-  border: 1px solid #fff;
-  margin: 0 0 0 10px;
-}
-
-.ownerLink > img {
-  height: 100%;
-  width: 100%;
-} */
-
-.green {
-  color: rgb(53, 137, 70);
-  white-space: nowrap;
-}
-
-.descText {
-  /* color: rgb(161, 11, 41); */
-  color: rgb(14, 11, 206);
-  font-weight: 600;
-}
-
-@media (max-width: 767px) {
-  .descText {
-    color: rgb(14, 11, 206);
-    font-weight: 400;
-  }
-}

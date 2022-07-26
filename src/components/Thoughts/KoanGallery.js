@@ -1,6 +1,6 @@
 import React from 'react';
 import CollectionCard from './CollectionCard';
-import './KoanGallery.css';
+// import './KoanGallery.css';
 
 const KoanGallery = ({ koanListData, setSelectedKoan }) => {
   return (

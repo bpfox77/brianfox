@@ -1,6 +1,6 @@
 import React from 'react';
-import weth from '../../Assets/weth.png';
-import './collectionCard.css';
+// import weth from '../../Assets/weth.png';
+// import './collectionCard.css';
 
 const CollectionCard = ({ koan, id, name, traits, image, setSelectedKoan }) => {
   return (

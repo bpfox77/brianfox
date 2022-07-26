@@ -1,5 +1,5 @@
 import React from 'react';
-import './koanHero.css';
+// import './koanHero.css';
 
 const KoanHero = ({ selectedKoan, koanListData }) => {
   const koanHero = koanListData.filter((obj) => {

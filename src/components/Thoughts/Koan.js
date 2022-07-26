@@ -1,10 +1,10 @@
 import React from 'react';
-import './KoanGallery.css';
+// import './KoanGallery.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import KoanGallery from './KoanGallery';
 import KoanHero from './KoanHero';
-import './koanHero.css';
+// import './koanHero.css';
 
 function Thoughts() {
   const [koanListData, setKoanListData] = useState([]);
@@ -21,7 +21,7 @@ function Thoughts() {
   }, []);
 
   return (
-    <div className="app">
+    <div className="appNFT">
       {koanListData.length > 0 && (
         <>
           {/* <ThoughtHeader /> */}
