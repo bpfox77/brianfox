@@ -674,6 +674,8 @@ button:disabled {
   flex: 0.75;
 }
 
+/* THOUGHTS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
 /* collectionCard */
 
 .collectionDescription {
@@ -693,7 +695,7 @@ span {
   margin-top: 10px;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 575px) {
   .collectionDescription {
     font-weight: 600;
     font-size: 14px;
@@ -708,7 +710,7 @@ span {
   margin-left: 20px;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 575px) {
   .title {
     font-size: 30px;
     font-weight: 400;
@@ -762,7 +764,7 @@ span {
   color: #00ebfe;
 } */
 
-@media (max-width: 767px) {
+@media screen and (max-width: 575px) {
   .openSea {
     text-align: left !important;
   }
@@ -820,7 +822,7 @@ h5 {
   font-weight: 600;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 575px) {
   .descText {
     color: rgb(14, 11, 206);
     font-weight: 400;
@@ -845,7 +847,7 @@ h5 {
   border-bottom: 1px solid rgb(255, 255, 255);
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 575px) {
   .koangallery {
     margin-top: 100px;
   }
