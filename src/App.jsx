@@ -11,7 +11,6 @@ import Info from './components/Info/Info';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import './style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {

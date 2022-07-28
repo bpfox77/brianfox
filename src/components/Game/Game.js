@@ -5,7 +5,7 @@ function Game() {
   const [nfts, setNfts] = useState([]);
 
   const getNftData = async () => {
-    const options = { method: 'GET' };
+    const options = { method: 'GET', headers: { Accept: 'application/json' } };
 
     fetch(
       'https://testnets-api.opensea.io/assets?asset_contract_address=0x93F93B8E9293147D7C7C1795b4E72B665ea1FA6a&order_direction=asc',

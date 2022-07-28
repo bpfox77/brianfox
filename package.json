@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=16.0.0",
+    "proxy": "https://testnets-api.opensea.io/assets?asset_contract_address=0x93F93B8E9293147D7C7C1795b4E72B665ea1FA6a&order_direction=asc"
   },
   "dependencies": {
     "@3rdweb/hooks": "^1.6.0",
