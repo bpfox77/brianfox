@@ -26,6 +26,7 @@ function Game() {
   return (
     <div className="App">
       <NFTContainer2 nfts={nfts} />
+      HELLLLLLLLLLLLLLLLLLL
     </div>
   );
 }
