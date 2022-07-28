@@ -22,16 +22,16 @@ function Thoughts() {
 
   return (
     <div className="app">
-      {/* {koanListData.length > 0 && (
-        <> */}
-      {/* <ThoughtHeader /> */}
-      <KoanHero koanListData={koanListData} selectedKoan={selectedKoan} />
-      <KoanGallery
-        koanListData={koanListData}
-        setSelectedKoan={setSelectedKoan}
-      />
-      {/* </> */}
-      {/* )} */}
+      {koanListData.length > 0 && (
+        <>
+          {/* <ThoughtHeader /> */}
+          <KoanHero koanListData={koanListData} selectedKoan={selectedKoan} />
+          <KoanGallery
+            koanListData={koanListData}
+            setSelectedKoan={setSelectedKoan}
+          />
+        </>
+      )}
     </div>
   );
 }

@@ -72,7 +72,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            {/* <Nav.Item>
+            <Nav.Item>
               <Nav.Link
                 // href="https://github.com/bpfox77/indraWhitepaper/blob/917cda0b5742145774ccfa1910661d4b7d9c74f9/Change.pdf"
                 // target="_blank"
@@ -82,9 +82,9 @@ function NavBar() {
                 to="/game"
                 onClick={() => updateExpanded(false)}
               >
-                <GiDreamCatcher style={{ marginBottom: "2px" }} /> Now the Game
+                <GiDreamCatcher style={{ marginBottom: '2px' }} /> Now the Game
               </Nav.Link>
-            </Nav.Item> */}
+            </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
