@@ -82,7 +82,7 @@ function NavBar() {
                 to="/game"
                 onClick={() => updateExpanded(false)}
               >
-                <GiDreamCatcher style={{ marginBottom: '2px' }} /> Now the Game
+                <GiDreamCatcher style={{ marginBottom: '2px' }} /> Test
               </Nav.Link>
             </Nav.Item>
 
