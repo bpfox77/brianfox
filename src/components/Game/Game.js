@@ -1,32 +1,42 @@
 import { useEffect, useState } from 'react';
+import { ethers } from 'ethers';
 import NFTContainer2 from './NFTContainer2';
 
 function Game() {
-  const [nfts, setNfts] = useState([]);
+  const [account, setAccount] = useState('');
+  const [data, setData] = useState([]);
 
-  const getNftData = async () => {
+  const connect = async () => {
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    let res = await provider.send('eth_requestAccounts', []);
+    setAccount(res[0]);
+    getData(res[0]);
+  };
+
+  const getData = async (_account) => {
     const options = { method: 'GET', headers: { Accept: 'application/json' } };
 
     fetch(
-      'https://testnets-api.opensea.io/assets?asset_contract_address=0x93F93B8E9293147D7C7C1795b4E72B665ea1FA6a&order_direction=asc',
+      `https://api.opensea.io/api/v1/assets?owner=${_account}&order_direction=asc&limit=20&include_orders=false`,
       options
     )
       .then((response) => response.json())
       .then((response) => {
-        setNfts(response.assets);
+        setData(response.assets);
         console.log(response);
       })
       .catch((err) => console.error(err));
   };
 
-  useEffect(() => {
-    getNftData();
-  }, []);
+  // useEffect(() => {
+  //   getNftData();
+  // }, []);
 
   return (
-    <div className="App">
-      {/* <NFTContainer2 nfts={nfts} /> */}
-      {nfts.map((nft) => {
+    <div className="App3">
+      {account}
+      <button onClick={connect}>Connect</button>
+      {data.map((nft) => {
         return (
           <div>
             <img src={nft.image_preview_url} width="200" height="200" />

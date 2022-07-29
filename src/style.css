@@ -2,6 +2,11 @@
   text-align: left;
 }
 
+.App3 {
+  text-align: left;
+  margin-top: 100px;
+}
+
 html {
   --section-background-color: linear-gradient(
     0.1turn,
