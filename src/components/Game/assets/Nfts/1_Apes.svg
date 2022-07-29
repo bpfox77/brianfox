@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 3500 3500">
+  <style>
+    .base { fill: white; font-family: serif; font-size: 140px; }
+  </style>
+  <rect width="100%" height="100%" fill="black"/>
+  <text x="1110px" y="1200px" class="base" dominant-baseline="middle" text-anchor="middle">None of it was real.
+  </text>
+  <text x="1900px" y="1400px" class="base" dominant-baseline="middle" text-anchor="middle">thumbed apes foraging </text>
+  <text x="1800px" y="1600px" class="base" dominant-baseline="middle" text-anchor="middle">mesmerized by screens</text>
+  <text x="1800px" y="1800px" class="base" dominant-baseline="middle" text-anchor="middle">only glimpsing the teased surface </text>
+  <text x="2150px" y="2200px" class="base" dominant-baseline="middle" text-anchor="middle"> of the network beyond . . . </text>
+
+</svg>
+

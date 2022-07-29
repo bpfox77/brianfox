@@ -1,91 +1,342 @@
-import { useEffect, useState } from 'react';
-import { ethers } from 'ethers';
-import NFTContainer2 from './NFTContainer2';
+// import React, { lazy, Suspense } from 'react';
+// import styled, { ThemeProvider } from 'styled-components';
+// // import Carousel from '../Carousel'
+// import Button from './Button';
+// import { dark } from './styles/Themes';
+// import Loading from './Loading';
 
-function Game() {
-  const [account, setAccount] = useState('');
-  const [data, setData] = useState([]);
+// const Carousel = lazy(() => import('./Carousel'));
 
-  const connect = async () => {
-    const provider = new ethers.providers.Web3Provider(window.ethereum);
-    let res = await provider.send('eth_requestAccounts', []);
-    setAccount(res[0]);
-    getData(res[0]);
-  };
+// const Section = styled.section`
+//   min-height: 100vh;
+//   width: 100%;
+//   background-color: ${(props) => props.theme.text};
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   position: relative;
+//   overflow: hidden;
+// `;
+// const Container = styled.div`
+//   width: 75%;
+//   margin: 0 auto;
+//   /* background-color: lightblue; */
 
-  const getData = async (_account) => {
-    const options = { method: 'GET', headers: { Accept: 'application/json' } };
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   @media (max-width: 70em) {
+//     width: 85%;
+//   }
 
-    fetch(
-      `https://api.opensea.io/api/v1/assets?owner=${_account}&order_direction=asc&limit=20&include_orders=false`,
-      options
-    )
-      .then((response) => response.json())
-      .then((response) => {
-        setData(response.assets);
-        console.log(response);
-      })
-      .catch((err) => console.error(err));
-  };
+//   @media (max-width: 64em) {
+//     width: 100%;
+//     flex-direction: column;
 
-  // useEffect(() => {
-  //   getNftData();
-  // }, []);
+//     & > *:last-child {
+//       width: 80%;
+//     }
+//   }
+//   @media (max-width: 40em) {
+//     & > *:last-child {
+//       width: 90%;
+//     }
+//   }
+// `;
+// const Box = styled.div`
+//   width: 50%;
+//   height: 100%;
+//   min-height: 60vh;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
 
-  return (
-    <div className="App3">
-      {account}
-      <button onClick={connect}>Connect</button>
-      {data.map((nft) => {
-        return (
-          <div>
-            <img src={nft.image_preview_url} width="200" height="200" />
-            <p>{nft.name}</p>
-            what up
-          </div>
-        );
-      })}
-    </div>
-  );
-}
+//   @media (max-width: 40em) {
+//     min-height: 50vh;
+//   }
+// `;
 
+// const Title = styled.h2`
+//   font-size: ${(props) => props.theme.fontxxl};
+//   text-transform: capitalize;
+//   color: ${(props) => props.theme.body};
+//   align-self: flex-start;
+//   width: 80%;
+//   margin: 0 auto;
+
+//   @media (max-width: 64em) {
+//     width: 100%;
+//     text-align: center;
+//   }
+//   @media (max-width: 40em) {
+//     font-size: ${(props) => props.theme.fontxl};
+//   }
+//   @media (max-width: 30em) {
+//     font-size: ${(props) => props.theme.fontlg};
+//   }
+// `;
+// const SubText = styled.p`
+//   font-size: ${(props) => props.theme.fontlg};
+//   color: ${(props) => props.theme.body};
+//   align-self: flex-start;
+//   width: 80%;
+//   margin: 1rem auto;
+//   font-weight: 400;
+//   @media (max-width: 64em) {
+//     width: 100%;
+//     text-align: center;
+//     font-size: ${(props) => props.theme.fontmd};
+//   }
+//   @media (max-width: 40em) {
+//     font-size: ${(props) => props.theme.fontmd};
+//   }
+//   @media (max-width: 30em) {
+//     font-size: ${(props) => props.theme.fontsm};
+//   }
+// `;
+// const SubTextLight = styled.p`
+//   font-size: ${(props) => props.theme.fontmd};
+//   color: ${(props) => `rgba(${props.theme.bodyRgba},0.6)`};
+//   align-self: flex-start;
+//   width: 80%;
+//   margin: 1rem auto;
+//   font-weight: 400;
+
+//   @media (max-width: 64em) {
+//     width: 100%;
+//     text-align: center;
+//     font-size: ${(props) => props.theme.fontsm};
+//   }
+//   @media (max-width: 40em) {
+//     font-size: ${(props) => props.theme.fontsm};
+//   }
+//   @media (max-width: 30em) {
+//     font-size: ${(props) => props.theme.fontxs};
+//   }
+// `;
+// const ButtonContainer = styled.div`
+//   width: 80%;
+//   margin: 1rem auto;
+//   display: flex;
+//   align-self: flex-start;
+
+//   @media (max-width: 64em) {
+//     width: 100%;
+
+//     button {
+//       margin: 0 auto;
+//     }
+//   }
+// `;
+
+// const Game = () => {
 //   return (
-//     <div className="App">
-//       <NFTContainer2 nfts={nfts} />
-//     </div>
-//   );
-// }
-
-export default Game;
-
-// import React from "react";
-// import { Container, Row, Col } from "react-bootstrap";
-// import ProjectCard from "./PersonalCards";
-// import now from "../../Assets/Projects/now.png";
-
-// function Game() {
-//   return (
-//     <Container fluid className="project-section">
+//     <Section id="about">
 //       <Container>
-//         <h1 className="project-heading">
-//           <strong className="purple">Let's play a game.</strong>
-//         </h1>
-
-//         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-//           <Col md={12} className="project-card">
-//             <ProjectCard
-//               imgPath={now}
-//               isBlog={false}
-//               title="Now"
-//               description="Currently in development, NOW is a multi modality wellness game utilizing research from
-//               the fields ot time entrainment, story science, gaming and the benefits of philanthropy. "
-//               link="https://github.com/bpfox77/indraWhitepaper/blob/917cda0b5742145774ccfa1910661d4b7d9c74f9/Change.pdf"
-//             />
-//           </Col>
-//         </Row>
+//         <Box>
+//           <Suspense fallback={<Loading />}>
+//             <Carousel />{' '}
+//           </Suspense>{' '}
+//         </Box>
+//         <Box>
+//           <Title>
+//             Do You Like
+//             <br /> Passive Income?
+//           </Title>
+//           <SubText>
+//             The Scotch Noblemen collection offers an industry refining staking
+//             game, securitized tokenomics, and a metaverse-land owning DAO!{' '}
+//           </SubText>
+//           <SubTextLight>
+//             Earn ERC-20 tokens from yield farm name, then win big, or loose it
+//             all by predicting the victor of the highland game!
+//           </SubTextLight>
+//           <ButtonContainer>
+//             <ThemeProvider theme={dark}>
+//               <button class="sc-bdvvtL hhmjnQ">
+//                 <a
+//                   href="https://discord.gg/uvU3Fs3vMM"
+//                   aria-label="JOIN OUR DISCORD"
+//                   target="_blank"
+//                   rel="noreferrer"
+//                 >
+//                   JOIN OUR DISCORD
+//                 </a>
+//               </button>
+//             </ThemeProvider>
+//           </ButtonContainer>
+//         </Box>
 //       </Container>
-//     </Container>
+//     </Section>
 //   );
-// }
+// };
 
 // export default Game;
+
+import React, { useRef } from 'react';
+import styled, { keyframes } from 'styled-components';
+
+import img1 from './assets/Nfts/1_Apes.svg';
+import img2 from './assets/Nfts/2_Photons.svg';
+import img3 from './assets/Nfts/3_Antennae.svg';
+import img4 from './assets/Nfts/4_Clues.svg';
+import img5 from './assets/Nfts/5_Atoms.svg';
+import img6 from './assets/Nfts/6_ECCO.svg';
+import img7 from './assets/Nfts/7_Laboratories.svg';
+import img8 from './assets/Nfts/8_Downloads.svg';
+import img9 from './assets/Nfts/9_Dreams.svg';
+
+import ETH from './assets/icons8-ethereum-48.png';
+
+const Section = styled.section`
+  min-height: 100vh;
+  width: 100vw;
+  background-color: ${(props) => props.theme.text};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  & > *:first-child {
+    animation-duration: 20s;
+
+    @media (max-width: 30em) {
+      animation-duration: 15s;
+    }
+  }
+  & > *:last-child {
+    animation-duration: 15s;
+    @media (max-width: 30em) {
+      animation-duration: 10s;
+    }
+  }
+`;
+const move = keyframes`
+0%{ transform: translateX(100%)   };
+100%{ transform: translateX(-100%)   }
+
+`;
+
+const Row = styled.div`
+  /* background-color: lightblue; */
+  white-space: nowrap;
+  box-sizing: content-box;
+  margin: 2rem 0;
+  display: flex;
+
+  animation: ${move} linear infinite ${(props) => props.direction};
+`;
+const ImgContainer = styled.div`
+  width: 30rem;
+  margin: 0 1rem;
+  background-color: ${(props) => props.theme.body};
+
+  border-radius: 20px;
+  cursor: pointer;
+
+  @media (max-width: 48em) {
+    width: 12rem;
+  }
+  @media (max-width: 30em) {
+    width: 10rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+`;
+
+const Details = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 1rem;
+  background-color: ${(props) => props.theme.text};
+  border: 2px solid ${(props) => `rgba(${props.theme.bodyRgba},0.5)`};
+
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  span {
+    font-size: ${(props) => props.theme.fontsm};
+    color: ${(props) => `rgba(${props.theme.bodyRgba},0.5)`};
+    font-weight: 600;
+    line-height: 1.5rem;
+  }
+
+  h1 {
+    font-size: ${(props) => props.theme.fontmd};
+    color: ${(props) => props.theme.body};
+    font-weight: 600;
+
+    @media (max-width: 30em) {
+      font-size: ${(props) => props.theme.fontsm};
+    }
+  }
+`;
+
+const Price = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  img {
+    width: 1rem;
+    height: auto;
+  }
+`;
+
+const NftItem = ({ img, number = 0, price = 0, passRef }) => {
+  let play = (e) => {
+    passRef.current.style.animationPlayState = 'running';
+  };
+  let pause = (e) => {
+    passRef.current.style.animationPlayState = 'paused';
+  };
+
+  return (
+    <ImgContainer onMouseOver={(e) => pause(e)} onMouseOut={(e) => play(e)}>
+      <img width={800} height={800} src={img} alt="The Scotch Noblemen" />
+      <Details>
+        <div>
+          <span>Scotch Noblemen</span> <br />
+          <h1>#{number}</h1>
+        </div>
+
+        <div>
+          <span>Price</span>
+          <Price>
+            <img width={200} height={200} src={ETH} alt="ETH" />
+            <h1>{Number(price).toFixed(1)}</h1>
+          </Price>
+        </div>
+      </Details>
+    </ImgContainer>
+  );
+};
+
+const Game = () => {
+  const Row1Ref = useRef(null);
+
+  return (
+    <Section id="showcase">
+      <Row direction="none" ref={Row1Ref}>
+        <NftItem img={img1} number={852} price={0.05} passRef={Row1Ref} />
+        <NftItem img={img2} number={123} price={0.05} passRef={Row1Ref} />
+        <NftItem img={img3} number={456} price={0.05} passRef={Row1Ref} />
+        <NftItem img={img4} number={666} price={0.05} passRef={Row1Ref} />
+        <NftItem img={img5} number={452} price={0.05} passRef={Row1Ref} />
+
+        <NftItem img={img6} number={888} price={0.05} passRef={Row1Ref} />
+        <NftItem img={img7} number={211} price={0.05} passRef={Row1Ref} />
+        <NftItem img={img8} number={455} price={0.05} passRef={Row1Ref} />
+        <NftItem img={img9} number={456} price={0.05} passRef={Row1Ref} />
+      </Row>
+    </Section>
+  );
+};
+
+export default Game;
