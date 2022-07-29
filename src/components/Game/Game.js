@@ -25,11 +25,26 @@ function Game() {
 
   return (
     <div className="App">
-      <NFTContainer2 nfts={nfts} />
-      HELLLLLLLLLLLLLLLLLLL
+      {/* <NFTContainer2 nfts={nfts} /> */}
+      {nfts.map((nft) => {
+        return (
+          <div>
+            <img src={nft.image_preview_url} width="200" height="200" />
+            <p>{nft.name}</p>
+            what up
+          </div>
+        );
+      })}
     </div>
   );
 }
+
+//   return (
+//     <div className="App">
+//       <NFTContainer2 nfts={nfts} />
+//     </div>
+//   );
+// }
 
 export default Game;
 
