@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 3500 3500">
+  <style>
+    .base { fill: white; font-family: serif; font-size: 140px; }
+  </style>
+  <rect width="100%" height="100%" fill="black"/>
+  <text x="1700px" y="1200px" class="base" dominant-baseline="middle" text-anchor="middle">Images slide across
+  </text>
+  <text x="1300px" y="1400px" class="base" dominant-baseline="middle" text-anchor="middle">Brilliant camera eyes </text>
+  <text x="1500px" y="1600px" class="base" dominant-baseline="middle" text-anchor="middle">shifting paneled pixels </text>
+  <text x="1800px" y="1800px" class="base" dominant-baseline="middle" text-anchor="middle">assembling the salvation game	</text>
+  <text x="1800px" y="2000px" class="base" dominant-baseline="middle" text-anchor="middle">moment by moment  </text>
+   <text x="2100px" y="2200px" class="base" dominant-baseline="middle" text-anchor="middle">non-decisions  </text>
+    <text x="1800px" y="2400px" class="base" dominant-baseline="middle" text-anchor="middle">Savior self   </text>
+   
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 3500 3500">
+  <style>
+    .base { fill: white; font-family: serif; font-size: 140px; }
+  </style>
+  <rect width="100%" height="100%" fill="black"/>
+  <text x="1800px" y="1200px" class="base" dominant-baseline="middle" text-anchor="middle">Alchemic epiphanies of a thousand years
+  </text>
+  <text x="1200px" y="1400px" class="base" dominant-baseline="middle" text-anchor="middle">Ancient bio technology</text>
+  <text x="800px" y="1600px" class="base" dominant-baseline="middle" text-anchor="middle">silicon lattice   </text>
+  <text x="1500px" y="1800px" class="base" dominant-baseline="middle" text-anchor="middle">of circuit board universes </text>
+  <text x="1900px" y="2000px" class="base" dominant-baseline="middle" text-anchor="middle"> rendering rate of revelation </text>
+   
+   
+</svg>
