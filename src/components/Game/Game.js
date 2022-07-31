@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
-import Type from './Type';
+import './game.css';
 
 import img1 from './assets/Nfts/1_Apes.svg';
 import img2 from './assets/Nfts/2_Photons.svg';
@@ -54,95 +55,70 @@ import img49 from './assets/Nfts/49_Perception.svg';
 
 import ETH from './assets/icons8-ethereum-48.png';
 
-const Section = styled.section`
-  min-height: 100vh;
-  width: 100vw;
-  background-color: ${(props) => props.theme.text};
+const NFTRow = styled.div`
+  /* &::-webkit-slider-thumb {
+    -webkit-appearance: none; */
+  margin: 0.5rem 0;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  margin-top: 100px;
+  flex-direction: row;
+  /* flex: 1; */
+  align-items: left;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  /* border-bottom: 1px solid rgb(255, 255, 255); */
+  //}
 `;
 
-const Row = styled.div`
-  &::-webkit-slider-thumb {
-    -webkit-appearance: none;
+// const ImgContainer = styled.div`
+//   width: 30rem;
+//   margin: 0 1rem;
 
-    border: 1px solid black;
-    /* background-color: lightblue; */
-    /* white-space: nowrap; */
-    /* box-sizing: content-box; */
-    margin: 2rem 0;
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    align-items: left;
-    justify-content: flex-start;
-    overflow-x: scroll;
-    /* border-bottom: 1px solid rgb(255, 255, 255); */
-  }
-`;
-const ImgContainer = styled.div`
-  width: 30rem;
-  margin: 0 1rem;
-  background-color: ${(props) => props.theme.body};
-
-  border-radius: 50px;
-  cursor: pointer;
-
-  @media (max-width: 48em) {
-    width: 20rem;
-  }
-  @media (max-width: 30em) {
-    width: 20rem;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-`;
+//   border-radius: 50px;
+//   cursor: pointer;
+//   @media (max-width: 48em) {
+//     width: 20rem;
+//   }
+//   @media (max-width: 30em) {
+//     width: 20rem;
+//   }
+//   img {
+//     width: 100%;
+//     height: auto;
+//   }
+// `;
 
 const Details = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 0.8rem 1rem;
+  /* padding: 0.8rem 1rem; */
   background-color: ${(props) => props.theme.text};
   border: 2px solid ${(props) => `rgba(${props.theme.bodyRgba},0.5)`};
-
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-
   span {
     font-size: ${(props) => props.theme.fontlg};
     color: ${(props) => `rgba(${props.theme.bodyRgba},0.5)`};
     font-weight: 800;
     line-height: 1.5rem;
   }
-
   h1 {
     font-weight: 200;
     font-size: 24px;
-
     @media (max-width: 30em) {
       font-size: ${(props) => props.theme.fontsm};
     }
   }
 `;
 
-const Price = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-
-  img {
-    width: 1rem;
-    height: auto;
-  }
-`;
+// const Price = styled.div`
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: center;
+//   img {
+//     width: 1rem;
+//     height: auto;
+//   }
+// `;
 
 const NftItem = ({ img, number = 0, price = 0, passRef, name = '' }) => {
   let play = (e) => {
@@ -153,7 +129,11 @@ const NftItem = ({ img, number = 0, price = 0, passRef, name = '' }) => {
   };
 
   return (
-    <ImgContainer onMouseOver={(e) => pause(e)} onMouseOut={(e) => play(e)}>
+    <div
+      className="imgContainer"
+      onMouseOver={(e) => pause(e)}
+      onMouseOut={(e) => play(e)}
+    >
       <img width={800} height={800} src={img} alt={name} />
       <Details>
         <div>
@@ -162,14 +142,14 @@ const NftItem = ({ img, number = 0, price = 0, passRef, name = '' }) => {
         </div>
 
         <div>
-          <span>Price </span>
-          <Price>
-            <img width={200} height={200} src={ETH} alt="ETH" />
+          <h1>Price </h1>
+          <div className="price">
+            <img width={100} height={100} src={ETH} alt="ETH" />
             <h1>{Number(price).toFixed(1)}</h1>
-          </Price>
+          </div>
         </div>
       </Details>
-    </ImgContainer>
+    </div>
   );
 };
 
@@ -177,369 +157,374 @@ const Game = () => {
   const Row1Ref = useRef(null);
 
   return (
-    <Section id="showcase">
-      <div className="collectionDescription">
-        THOUGHTS tell the monomyth of timeless existence. In it's totality, the
-        collection is a transcendent hero's journey beyond spacetime. It is
-        Science Fiction Satori with each of the 49 pieces being a Koan unto
-        itself.
-      </div>
-
-      <div
-        className="openSea"
-        onClick={() => window.open('https://opensea.io/', '_blank')}
-      >
-        {' '}
-        <u>View the collection on OpenSea</u>
-      </div>
-      <br />
-      <br />
-      <Row ref={Row1Ref}>
-        <NftItem
-          img={img1}
-          number={1}
-          price={1.0}
-          name={'Apes'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img2}
-          number={2}
-          price={1.0}
-          name={'Photons'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img3}
-          number={3}
-          price={1.0}
-          name={'Antennae'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img4}
-          number={4}
-          price={1.0}
-          name={'Clues'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img5}
-          number={1.0}
-          price={0.05}
-          name={'Atoms'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img6}
-          number={6}
-          price={1.0}
-          name={'ECCO'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img7}
-          number={7}
-          price={1.0}
-          name={'Laboratories'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img8}
-          number={8}
-          price={1.0}
-          name={'Downloads'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img9}
-          number={9}
-          price={1.0}
-          name={'Dreams'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img10}
-          number={10}
-          price={1.0}
-          name={'Radar'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img11}
-          number={11}
-          price={1.0}
-          name={'Beacons'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img12}
-          number={12}
-          price={1.0}
-          name={'Reality'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img13}
-          number={13}
-          price={1.0}
-          name={'Riddles'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img14}
-          number={14}
-          price={1.0}
-          name={'Fractals'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img15}
-          number={15}
-          price={1.0}
-          name={'Linearity'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img16}
-          number={16}
-          price={1.0}
-          name={'Bits'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img17}
-          number={17}
-          price={1.0}
-          name={'Stargate'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img18}
-          number={18}
-          price={1.0}
-          name={'Entangled'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img19}
-          number={19}
-          price={1.0}
-          name={'Threshold'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img20}
-          number={20}
-          price={1.0}
-          name={'Vessels'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img21}
-          number={21}
-          price={1.0}
-          name={'Magic'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img22}
-          number={22}
-          price={1.0}
-          name={'Simulations'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img23}
-          number={23}
-          price={1.0}
-          name={'Entities'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img24}
-          number={24}
-          price={1.0}
-          name={'Upgrades'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img25}
-          number={25}
-          price={1.0}
-          name={'Alchemy'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img26}
-          number={26}
-          price={1.0}
-          name={'Indra'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img27}
-          number={27}
-          price={1.0}
-          name={'Synthesis'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img28}
-          number={28}
-          price={1.0}
-          name={'Engine'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img29}
-          number={29}
-          price={1.0}
-          name={'Traceroute'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img30}
-          number={30}
-          price={1.0}
-          name={'Flowing'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img31}
-          number={31}
-          price={1.0}
-          name={'Cathedral'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img32}
-          number={32}
-          price={1.0}
-          name={'Gateless'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img33}
-          number={33}
-          price={1.0}
-          name={'Avatars'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img34}
-          number={34}
-          price={1.0}
-          name={'Surrender'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img35}
-          number={35}
-          price={1.0}
-          name={'Nectar'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img36}
-          number={36}
-          price={1.0}
-          name={'Now'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img37}
-          number={37}
-          price={1.0}
-          name={'Self'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img38}
-          number={38}
-          price={1.0}
-          name={'Symbols'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img39}
-          number={39}
-          price={1.0}
-          name={'Ceremony'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img40}
-          number={40}
-          price={1.0}
-          name={'Metamorphis'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img41}
-          number={41}
-          price={1.0}
-          name={'Resurrection'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img42}
-          number={42}
-          price={1.0}
-          name={'Atman'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img43}
-          number={43}
-          price={1.0}
-          name={'Divergence'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img44}
-          number={44}
-          price={1.0}
-          name={'Cipher'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img45}
-          number={45}
-          price={1.0}
-          name={'Gnosis'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img46}
-          number={46}
-          price={1.0}
-          name={'Transcribe'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img47}
-          number={47}
-          price={1.0}
-          name={'Readouts'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img48}
-          number={48}
-          price={1.0}
-          name={'Equanimity'}
-          passRef={Row1Ref}
-        />
-        <NftItem
-          img={img49}
-          number={49}
-          price={1.0}
-          name={'Perception'}
-          passRef={Row1Ref}
-        />
-      </Row>
-    </Section>
+    <Container fluid className="home-about-section2">
+      <Container>
+        <Row>
+          <Col md={12} className="home-about-description2">
+            <p className="home-about-body2">
+              <b className="purple">THOUGHTS </b> tell the monomyth of timeless
+              existence. In it's totality, the collection is a transcendent
+              hero's journey beyond spacetime. It is Science Fiction Satori with
+              each of the 49 pieces being a Koan unto itself.
+              <div
+                className="openSea"
+                onClick={() => window.open('https://opensea.io/', '_blank')}
+              >
+                {' '}
+                <u>View the Collection on OpenSea</u>
+              </div>
+              <br></br>
+              {/* <div className="section" id="showcase"></div> */}
+              <NFTRow ref={Row1Ref}>
+                <NftItem
+                  img={img1}
+                  number={1}
+                  price={1.0}
+                  name={'Apes'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img2}
+                  number={2}
+                  price={1.0}
+                  name={'Photons'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img3}
+                  number={3}
+                  price={1.0}
+                  name={'Antennae'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img4}
+                  number={4}
+                  price={1.0}
+                  name={'Clues'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img5}
+                  number={1.0}
+                  price={0.05}
+                  name={'Atoms'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img6}
+                  number={6}
+                  price={1.0}
+                  name={'ECCO'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img7}
+                  number={7}
+                  price={1.0}
+                  name={'Laboratories'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img8}
+                  number={8}
+                  price={1.0}
+                  name={'Downloads'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img9}
+                  number={9}
+                  price={1.0}
+                  name={'Dreams'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img10}
+                  number={10}
+                  price={1.0}
+                  name={'Radar'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img11}
+                  number={11}
+                  price={1.0}
+                  name={'Beacons'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img12}
+                  number={12}
+                  price={1.0}
+                  name={'Reality'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img13}
+                  number={13}
+                  price={1.0}
+                  name={'Riddles'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img14}
+                  number={14}
+                  price={1.0}
+                  name={'Fractals'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img15}
+                  number={15}
+                  price={1.0}
+                  name={'Linearity'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img16}
+                  number={16}
+                  price={1.0}
+                  name={'Bits'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img17}
+                  number={17}
+                  price={1.0}
+                  name={'Stargate'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img18}
+                  number={18}
+                  price={1.0}
+                  name={'Entangled'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img19}
+                  number={19}
+                  price={1.0}
+                  name={'Threshold'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img20}
+                  number={20}
+                  price={1.0}
+                  name={'Vessels'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img21}
+                  number={21}
+                  price={1.0}
+                  name={'Magic'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img22}
+                  number={22}
+                  price={1.0}
+                  name={'Simulations'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img23}
+                  number={23}
+                  price={1.0}
+                  name={'Entities'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img24}
+                  number={24}
+                  price={1.0}
+                  name={'Upgrades'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img25}
+                  number={25}
+                  price={1.0}
+                  name={'Alchemy'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img26}
+                  number={26}
+                  price={1.0}
+                  name={'Indra'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img27}
+                  number={27}
+                  price={1.0}
+                  name={'Synthesis'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img28}
+                  number={28}
+                  price={1.0}
+                  name={'Engine'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img29}
+                  number={29}
+                  price={1.0}
+                  name={'Traceroute'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img30}
+                  number={30}
+                  price={1.0}
+                  name={'Flowing'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img31}
+                  number={31}
+                  price={1.0}
+                  name={'Cathedral'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img32}
+                  number={32}
+                  price={1.0}
+                  name={'Gateless'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img33}
+                  number={33}
+                  price={1.0}
+                  name={'Avatars'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img34}
+                  number={34}
+                  price={1.0}
+                  name={'Surrender'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img35}
+                  number={35}
+                  price={1.0}
+                  name={'Nectar'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img36}
+                  number={36}
+                  price={1.0}
+                  name={'Now'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img37}
+                  number={37}
+                  price={1.0}
+                  name={'Self'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img38}
+                  number={38}
+                  price={1.0}
+                  name={'Symbols'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img39}
+                  number={39}
+                  price={1.0}
+                  name={'Ceremony'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img40}
+                  number={40}
+                  price={1.0}
+                  name={'Metamorphis'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img41}
+                  number={41}
+                  price={1.0}
+                  name={'Resurrection'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img42}
+                  number={42}
+                  price={1.0}
+                  name={'Atman'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img43}
+                  number={43}
+                  price={1.0}
+                  name={'Divergence'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img44}
+                  number={44}
+                  price={1.0}
+                  name={'Cipher'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img45}
+                  number={45}
+                  price={1.0}
+                  name={'Gnosis'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img46}
+                  number={46}
+                  price={1.0}
+                  name={'Transcribe'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img47}
+                  number={47}
+                  price={1.0}
+                  name={'Readouts'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img48}
+                  number={48}
+                  price={1.0}
+                  name={'Equanimity'}
+                  passRef={Row1Ref}
+                />
+                <NftItem
+                  img={img49}
+                  number={49}
+                  price={1.0}
+                  name={'Perception'}
+                  passRef={Row1Ref}
+                />
+              </NFTRow>
+            </p>
+          </Col>
+        </Row>
+      </Container>
+    </Container>
   );
 };
 

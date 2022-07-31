@@ -81,7 +81,7 @@ a:active {
   justify-content: start;
   width: 100%;
   z-index: 1;
-  background-color: rgb(27 20 41), rgb(20 15 35);
+  background-color: rgb(20, 41, 29), rgb(15, 35, 26);
 }
 
 .home-about-section {
@@ -648,8 +648,8 @@ button:disabled {
 /* cards in the gallery */
 
 .collectionDescription {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   color: rgb(203, 207, 204);
   font-size: 18px;
   font-weight: 600;
@@ -693,7 +693,7 @@ span {
 .openSea {
   /* align-self: flex-start;
   margin-right: auto; */
-  color: #f16bcb;
+  color: rgb(91, 209, 115);
   cursor: pointer;
 }
 
