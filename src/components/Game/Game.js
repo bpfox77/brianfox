@@ -87,28 +87,28 @@ const NFTRow = styled.div`
 //   }
 // `;
 
-const Details = styled.div`
-  display: flex;
-  justify-content: space-between;
-  /* padding: 0.8rem 1rem; */
-  background-color: ${(props) => props.theme.text};
-  border: 2px solid ${(props) => `rgba(${props.theme.bodyRgba},0.5)`};
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  span {
-    font-size: ${(props) => props.theme.fontlg};
-    color: ${(props) => `rgba(${props.theme.bodyRgba},0.5)`};
-    font-weight: 800;
-    line-height: 1.5rem;
-  }
-  h1 {
-    font-weight: 200;
-    font-size: 24px;
-    @media (max-width: 30em) {
-      font-size: ${(props) => props.theme.fontsm};
-    }
-  }
-`;
+// const Details = styled.div`
+//   display: flex;
+//   justify-content: space-between;
+//   /* padding: 0.8rem 1rem; */
+//   background-color: ${(props) => props.theme.text};
+//   border: 2px solid ${(props) => `rgba(${props.theme.bodyRgba},0.5)`};
+//   border-bottom-left-radius: 20px;
+//   border-bottom-right-radius: 20px;
+//   span {
+//     font-size: ${(props) => props.theme.fontlg};
+//     color: ${(props) => `rgba(${props.theme.bodyRgba},0.5)`};
+//     font-weight: 800;
+//     line-height: 1.5rem;
+//   }
+//   h1 {
+//     font-weight: 200;
+//     font-size: 24px;
+//     @media (max-width: 30em) {
+//       font-size: ${(props) => props.theme.fontsm};
+//     }
+//   }
+// `;
 
 // const Price = styled.div`
 //   display: flex;
@@ -131,24 +131,26 @@ const NftItem = ({ img, number = 0, price = 0, passRef, name = '' }) => {
   return (
     <div
       className="imgContainer"
-      onMouseOver={(e) => pause(e)}
+      onClick={(e) => pause(e)}
       onMouseOut={(e) => play(e)}
     >
       <img width={800} height={800} src={img} alt={name} />
-      <Details>
+      <div className="details">
         <div>
           <span>{name}</span> <br />
-          <h1>#{number}</h1>
+          <h7>#{number}</h7>
         </div>
 
         <div>
-          <h1>Price </h1>
+          <span>Price </span>
           <div className="price">
-            <img width={100} height={100} src={ETH} alt="ETH" />
-            <h1>{Number(price).toFixed(1)}</h1>
+            <div>
+              <img width={100} height={100} src={ETH} alt="ETH" />
+            </div>
+            <h7>{Number(price).toFixed(1)}</h7>
           </div>
         </div>
-      </Details>
+      </div>
     </div>
   );
 };

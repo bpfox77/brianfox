@@ -10,9 +10,11 @@ function Team() {
   return (
     <Container fluid className="project-section">
       <Container>
-        <h1 className="project-heading">
-          How we <strong className="purple">spend time</strong>
-        </h1>
+        <Col md={12} className="home-about-description2">
+          <h1 style={{ fontSize: '2.6em' }}>
+            How we <strong className="purple"> SPEND TIME </strong>
+          </h1>
+        </Col>
 
         <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
           <Col md={4} className="project-card">

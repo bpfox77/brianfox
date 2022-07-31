@@ -66,7 +66,7 @@ function Home() {
               stimulates the visual cortex, words paint the pictures. The
               collection is a celebration of existence and transcendance. It is
               an homage to the infinite possibilities of web3. It is a
-              metta-verse.
+              mettá-verse.
               <br />
               <br />
               <Col md={12} className="myAvtar">
