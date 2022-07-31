@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import Type from './Type';
 
 import img1 from './assets/Nfts/1_Apes.svg';
@@ -64,37 +64,7 @@ const Section = styled.section`
   align-items: center;
   position: relative;
   overflow: hidden;
-  margin-top: 80px;
-
-  /* p {
-    animation-duration: 1s;
-    animation-name: slidein;
-  }
-
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
-  & > *:first-child {
-    animation-duration: 0s;
-
-    @media (max-width: 30em) {
-      animation-duration: 115s;
-    }
-  }
-  & > *:last-child {
-    animation-duration: 15s;
-    @media (max-width: 30em) {
-      animation-duration: 10s;
-    }
-  } */
+  margin-top: 100px;
 `;
 
 const Row = styled.div`
@@ -103,13 +73,16 @@ const Row = styled.div`
 
     border: 1px solid black;
     /* background-color: lightblue; */
-    white-space: nowrap;
-    box-sizing: content-box;
+    /* white-space: nowrap; */
+    /* box-sizing: content-box; */
     margin: 2rem 0;
     display: flex;
+    flex-direction: row;
+    flex: 1;
     align-items: left;
-    justify-content: left;
-    overflow: scroll;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    /* border-bottom: 1px solid rgb(255, 255, 255); */
   }
 `;
 const ImgContainer = styled.div`
@@ -117,7 +90,7 @@ const ImgContainer = styled.div`
   margin: 0 1rem;
   background-color: ${(props) => props.theme.body};
 
-  border-radius: 20px;
+  border-radius: 50px;
   cursor: pointer;
 
   @media (max-width: 48em) {
@@ -205,20 +178,11 @@ const Game = () => {
 
   return (
     <Section id="showcase">
-      <div style={{ paddingLeft: 50, paddingTop: 1, textAlign: 'left' }}>
-        <Type />
-      </div>
-
-      {/* <div className="collectionDescription">
-        <span className="green">
-          <span className="descText">
-            {' '}
-            THOUGHTS tell the monomyth of timeless existence.
-          </span>{' '}
-        </span>{' '}
-        In it's totality, the collection is a transcendent hero's journey beyond
-        spacetime. It is Science Fiction Satori with each of the 49 pieces being
-        a Koan unto itself.
+      <div className="collectionDescription">
+        THOUGHTS tell the monomyth of timeless existence. In it's totality, the
+        collection is a transcendent hero's journey beyond spacetime. It is
+        Science Fiction Satori with each of the 49 pieces being a Koan unto
+        itself.
       </div>
 
       <div
@@ -227,9 +191,10 @@ const Game = () => {
       >
         {' '}
         <u>View the collection on OpenSea</u>
-      </div> */}
-
-      <Row direction="flex-start" ref={Row1Ref}>
+      </div>
+      <br />
+      <br />
+      <Row ref={Row1Ref}>
         <NftItem
           img={img1}
           number={1}

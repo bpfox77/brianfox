@@ -32,10 +32,11 @@ function App() {
         <ScrollToTop />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/thoughts" component={Thoughts} />
-          <Route path="/team" component={Team} />
-          <Route path="/game" component={Game} />
+          {/* <Route path="/thoughts" component={Thoughts} /> */}
+
+          <Route path="/thoughts" component={Game} />
           <Route path="/info" component={Info} />
+          <Route path="/team" component={Team} />
         </Switch>
         <Footer />
       </div>

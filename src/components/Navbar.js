@@ -32,7 +32,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="https://app.now-dao.io">
-          <img src={logo} className="img-fluid logo" alt="brand" />
+          <img src={logo} className="img-fluid logo" alt="now dao" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -52,15 +52,15 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/team"
+                to="/thoughts"
                 onClick={() => updateExpanded(false)}
               >
-                <GiGooeyEyedSun style={{ marginBottom: '2px' }} /> Team
+                <GiDreamCatcher style={{ marginBottom: '2px' }} /> Thoughts NFT
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
             <Nav.Item>
               <Nav.Link
@@ -74,25 +74,21 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                // href="https://github.com/bpfox77/indraWhitepaper/blob/917cda0b5742145774ccfa1910661d4b7d9c74f9/Change.pdf"
-                // target="_blank"
-                // rel="noreferrer"
-
                 as={Link}
-                to="/game"
+                to="/info"
                 onClick={() => updateExpanded(false)}
               >
-                <GiDreamCatcher style={{ marginBottom: '2px' }} /> Test
+                <GoBeaker style={{ marginBottom: '2px' }} /> The Information
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/info"
+                to="/team"
                 onClick={() => updateExpanded(false)}
               >
-                <GoBeaker style={{ marginBottom: '2px' }} /> The Information
+                <GiGooeyEyedSun style={{ marginBottom: '2px' }} /> Team
               </Nav.Link>
             </Nav.Item>
           </Nav>
