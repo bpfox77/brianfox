@@ -12,11 +12,17 @@ function Team() {
       <Container>
         <Col md={12} className="home-about-description2">
           <h1 style={{ fontSize: '2.6em' }}>
-            How we <strong className="purple"> SPEND TIME </strong>
+            How we <strong className="purple"> SPEND TIME 11111 </strong>
           </h1>
         </Col>
 
-        <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
+        <Row
+          style={{
+            justifyContent: 'center',
+            paddingBottom: '10px',
+            height: 'auto',
+          }}
+        >
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={brian}
