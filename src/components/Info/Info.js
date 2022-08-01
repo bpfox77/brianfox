@@ -86,18 +86,14 @@ function Info() {
               </a>
               <br />
               <br />
-              I have been working in various forms of emerging technology, film
-              and 3D for over 2 decades and storytelling for even longer. Since
-              the litepaper I've had the good fortune to continue working with
-              some amazing minds and humanitarians to continue development of
-              the prototype, learn a few new languages and present not only the
-              theoretical approach but the fundamental mechanics to get us
-              there. Although 'a game to save humanity' may sound idealistic, I
-              believe actually pondering upon these words will ultimately reveal
-              the invevitabilty of the conclusion. We will utilze the funds from
-              the THOUGHTS NFT collection to further Solidity development and
-              develop the visual elements of the game with the aim of launching
-              the beta front end in 2023.
+              Although 'a game to save humanity' may sound idealistic, the
+              collation of science fiction and technology is happening all
+              around us. Words and thoughts ultimately reveal the inevitability
+              of this conclusion. Only by steering technology towards grandiose
+              macro ends can humans optimistically face the coming challenges of
+              the planet. We will utilize the funds from the THOUGHTS NFT
+              collection to further Solidity development and the visual elements
+              of the game with the aim of launching the beta front end in 2023.
               <br />
               <br />
               <h1 style={{ fontSize: '2.6em' }}>

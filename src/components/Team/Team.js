@@ -12,7 +12,7 @@ function Team() {
       <Container>
         <Col md={12} className="home-about-description2">
           <h1 style={{ fontSize: '2.6em' }}>
-            How we <strong className="purple"> SPEND TIME 11111 </strong>
+            How we <strong className="purple"> SPEND TIME </strong>
           </h1>
         </Col>
 
@@ -20,7 +20,6 @@ function Team() {
           style={{
             justifyContent: 'center',
             paddingBottom: '10px',
-            height: 'auto',
           }}
         >
           <Col md={4} className="project-card">
@@ -30,7 +29,7 @@ function Team() {
               title="Brian Fox"
               role="Founder"
               description="Innovation Lead @Meta, Creator/Developer of Now, Novelist, Filmmaker, Vedantic Yogi "
-              link="https://subek.eth.limo"
+              // link="https://subek.eth.limo"
             />
           </Col>
 
