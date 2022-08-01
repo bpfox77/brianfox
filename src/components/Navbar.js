@@ -31,7 +31,7 @@ function NavBar() {
       className={navColour ? 'sticky' : 'navbar'}
     >
       <Container>
-        <Navbar.Brand href="https://app.now-dao.io">
+        <Navbar.Brand href="https://young-violet-6800.on.fleek.co">
           <img src={logo} className="img-fluid logo" alt="now dao" />
         </Navbar.Brand>
         <Navbar.Toggle

@@ -2,6 +2,14 @@
   text-align: left;
 }
 
+@media screen and (max-width: 575px) {
+  .container .mx-w-100 {
+    margin-left: 3px;
+    margin-right: 3px;
+    max-width: 100% !important;
+  }
+}
+
 .App3 {
   text-align: left;
   margin-top: 100px;
