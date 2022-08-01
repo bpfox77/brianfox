@@ -100,6 +100,9 @@ function Info() {
               aim of launching the beta front end in 2023.
               <br />
               <br />
+              <h1 style={{ fontSize: '2.6em' }}>
+                Wanna feel <strong className="purple"> good? </strong>
+              </h1>
               <a
                 href="https://docs.google.com/presentation/d/1WP4XNYRZH8f1XIr7fxcM-ybX4DRX_GntNBAOH88CB8Y/edit?usp=sharing"
                 target="_blank"
@@ -107,21 +110,14 @@ function Info() {
                 {' '}
                 <b className="purple"> Full roadmap here</b>
               </a>
-              <br />
-              <br />
-              <h1 style={{ fontSize: '2.6em' }}>
-                Wanna feel <strong className="purple"> good? </strong>
-              </h1>
-              <br />
-              <br />
             </p>
-            <p>
-              "The probability is zero that spacetime is the fundamental nature
-              of reality" -Donald Hoffman
-            </p>
-            <p>"The diamond light was in my eyes" - Jack Kerouac</p>
           </Col>
         </Row>
+        <p>
+          "The probability is zero that spacetime is the fundamental nature of
+          reality" -Donald Hoffman
+        </p>
+        <p>"The diamond light was in my eyes" - Jack Kerouac</p>
       </Container>
     </Container>
   );
