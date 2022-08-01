@@ -1,3 +1,73 @@
+.thoughtWrapper {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: left;
+  text-align: left;
+  margin-top: 120px;
+  margin-left: 77px;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 0px) {
+  .thoughtWrapper {
+    margin-left: 5px;
+
+    /* max-width: 100% !important; */
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .thoughtWrapper {
+    margin-left: 5px;
+
+    /* max-width: 100% !important; */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .thoughtWrapper {
+    margin-left: 5px;
+    margin-right: 20px;
+    /* max-width: 100% !important; */
+  }
+}
+
+.thoughts-about-description {
+  color: white !important;
+  /* margin-top: 120px; */
+
+  /* padding-top: 5px !important; */
+  /* padding-bottom: 5px !important; */
+  text-align: left;
+  padding-top: 40px !important;
+}
+
+@media screen and (max-width: 575px) {
+  .thoughts-about-description {
+    margin-left: 5px;
+    margin-right: 20px;
+    /* max-width: 100% !important; */
+  }
+}
+
+.thoughts-about-body {
+  /* padding-top: 100px; */
+  font-size: 1.2em !important;
+  text-align: left;
+  justify-content: flex-start;
+  margin-left: 77px;
+  /* margin-right: 150px; */
+}
+
+@media screen and (max-width: 575px) {
+  .thoughts-about-body {
+    margin-left: 20px;
+    margin-right: 20px;
+    /* max-width: 100% !important; */
+  }
+}
+
 .thoughtHeader {
   display: flex;
   flex-direction: column;
@@ -104,3 +174,5 @@ img {
     font-size: 12px;
   }
 }
+
+/* definitely controlling the margin top and marign left */
