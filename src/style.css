@@ -65,10 +65,18 @@ a:active {
   color: #b6a8f5;
 }
 
-.myAvtar {
+.avatar {
+  padding-top: 25px !important;
+  padding-bottom: 20px !important;
+  width: 100%;
+  height: auto;
+}
+
+.avatar1 {
   padding-top: 50px !important;
   padding-bottom: 20px !important;
-  /* padding-bottom: 40px !important; */
+  /* width: 100%;
+  height: auto; */
 }
 
 /* --------- */
@@ -534,6 +542,19 @@ button:disabled {
   width: 100%;
 }
 
+.openSea {
+  /* align-self: flex-start;
+  margin-right: auto; */
+  color: rgb(91, 209, 115);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 575px) {
+  .openSea {
+    text-align: left !important;
+  }
+}
+
 /* --------- */
 /*THOUGHTS!!!!!! */
 /* --------- */
@@ -689,18 +710,6 @@ span {
 .itemNumber {
   color: #a1a5b0;
   font-size: 48px;
-}
-.openSea {
-  /* align-self: flex-start;
-  margin-right: auto; */
-  color: rgb(91, 209, 115);
-  cursor: pointer;
-}
-
-@media screen and (max-width: 575px) {
-  .openSea {
-    text-align: left !important;
-  }
 }
 
 h5 {

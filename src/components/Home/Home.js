@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import myImg from '../../Assets/Tokenomics.svg';
-// import Particle from '../Particle';
 
 import { AiOutlineTwitter, AiFillInstagram } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
@@ -9,19 +8,9 @@ import { FaLinkedinIn } from 'react-icons/fa';
 function Home() {
   return (
     <Container fluid className="home-about-section" id="about">
-      {/* <Particle /> */}
       <Container>
         <Row>
           <Col md={12} className="home-about-description">
-            {/* added now dao header here. old header & connect button are in components/HomeOld.js */}
-            {/* <div className="home-header">
-              <h1 style={{ fontSize: '2.6em' }}>
-                {' '}
-                <strong className="purple">NowDAO</strong>
-              </h1>
-              <br />
-            </div> */}
-
             <p className="home-about-body">
               <a href="https://app.now-dao.io/" target="_self">
                 {' '}
@@ -69,8 +58,8 @@ function Home() {
               mettá-verse.
               <br />
               <br />
-              <Col md={12} className="myAvtar">
-                <img src={myImg} className="img-fluid" alt="avatar" />
+              <Col md={12} className="avatar">
+                <img src={myImg} className="avatar" alt="avatar" />
               </Col>
               <br />
               As thoughts are a conversation through time, the initial launch

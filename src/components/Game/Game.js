@@ -69,71 +69,13 @@ const NFTRow = styled.div`
   //}
 `;
 
-// const ImgContainer = styled.div`
-//   width: 30rem;
-//   margin: 0 1rem;
-
-//   border-radius: 50px;
-//   cursor: pointer;
-//   @media (max-width: 48em) {
-//     width: 20rem;
-//   }
-//   @media (max-width: 30em) {
-//     width: 20rem;
-//   }
-//   img {
-//     width: 100%;
-//     height: auto;
-//   }
-// `;
-
-// const Details = styled.div`
-//   display: flex;
-//   justify-content: space-between;
-//   /* padding: 0.8rem 1rem; */
-//   background-color: ${(props) => props.theme.text};
-//   border: 2px solid ${(props) => `rgba(${props.theme.bodyRgba},0.5)`};
-//   border-bottom-left-radius: 20px;
-//   border-bottom-right-radius: 20px;
-//   span {
-//     font-size: ${(props) => props.theme.fontlg};
-//     color: ${(props) => `rgba(${props.theme.bodyRgba},0.5)`};
-//     font-weight: 800;
-//     line-height: 1.5rem;
-//   }
-//   h1 {
-//     font-weight: 200;
-//     font-size: 24px;
-//     @media (max-width: 30em) {
-//       font-size: ${(props) => props.theme.fontsm};
-//     }
-//   }
-// `;
-
-// const Price = styled.div`
-//   display: flex;
-//   justify-content: flex-start;
-//   align-items: center;
-//   img {
-//     width: 1rem;
-//     height: auto;
-//   }
-// `;
-
 const NftItem = ({ img, number = 0, price = 0, passRef, name = '' }) => {
   let play = (e) => {
     passRef.current.style.animationPlayState = 'running';
   };
-  let pause = (e) => {
-    passRef.current.style.animationPlayState = 'paused';
-  };
 
   return (
-    <div
-      className="imgContainer"
-      onClick={(e) => pause(e)}
-      onMouseOut={(e) => play(e)}
-    >
+    <div className="imgContainer" onClick={(e) => play(e)}>
       <img width={800} height={800} src={img} alt={name} />
       <div className="details">
         <div>
