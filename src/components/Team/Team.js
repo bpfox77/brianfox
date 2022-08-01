@@ -8,49 +8,54 @@ import brian from '../../Assets/Projects/Brian.jpg';
 
 function Team() {
   return (
-    <Container fluid className="project-section">
-      <Container>
-        <Col md={12} className="home-about-description2">
-          <h1 style={{ fontSize: '2.6em' }}>
-            How we <strong className="purple"> SPEND TIME </strong>
-          </h1>
-        </Col>
+    // <Container fluid className="project-section">
+    //   <Container>
+    //     <Col md={12} className="home-about-description2">
+    //       <h1 style={{ fontSize: '2.6em' }}>
+    //         How we <strong className="purple"> SPEND TIME </strong>
+    //       </h1>
+    //     </Col>
 
-        <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={brian}
-              isBlog={false}
-              title="Brian Fox"
-              role="Founder"
-              description="Innovation Lead @Meta, Creator/Developer of Now, Novelist, Filmmaker, Vedantic Yogi "
-              link="https://subek.eth.limo"
-            />
-          </Col>
+    <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
+      <Col md={12} className="home-about-description2">
+        <h1 style={{ fontSize: '2.6em' }}>
+          How we <strong className="purple"> SPEND TIME </strong>
+        </h1>
+      </Col>
+      <Col md={4} className="project-card">
+        <ProjectCard
+          imgPath={brian}
+          isBlog={false}
+          title="Brian Fox"
+          role="Founder"
+          description="Innovation Lead @Meta, Creator/Developer of Now, Novelist, Filmmaker, Vedantic Yogi "
+          link="https://subek.eth.limo"
+        />
+      </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={chris}
-              isBlog={false}
-              title="Dr. Chris Heddon"
-              role="Advisor, Multi-sig"
-              description="A doctor, entreprenuer and yogi currently building medical A.I. systems."
-              //link="https://www.amazon.com/Stars-Now-Brian-Fox-ebook/dp/B00HZVJYHM"
-            />
-          </Col>
+      <Col md={4} className="project-card">
+        <ProjectCard
+          imgPath={chris}
+          isBlog={false}
+          title="Dr. Chris Heddon"
+          role="Advisor, Multi-sig"
+          description="A doctor, entreprenuer and yogi currently building medical A.I. systems."
+          //link="https://www.amazon.com/Stars-Now-Brian-Fox-ebook/dp/B00HZVJYHM"
+        />
+      </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={amy}
-              isBlog={false}
-              title="Amy Karr"
-              role="Advisor, Multi-sig"
-              description="Director of Humanitarian Affairs, Human Rights Foundation, Forbes 30 under 30."
-              // link="https://github.com/soumyajit4419/Editor.io"
-            />
-          </Col>
+      <Col md={4} className="project-card">
+        <ProjectCard
+          imgPath={amy}
+          isBlog={false}
+          title="Amy Karr"
+          role="Advisor, Multi-sig"
+          description="Director of Humanitarian Affairs, Human Rights Foundation, Forbes 30 under 30."
+          // link="https://github.com/soumyajit4419/Editor.io"
+        />
+      </Col>
 
-          {/* <Col md={12} className="project-card">
+      {/* <Col md={12} className="project-card">
             <ProjectCard
               imgPath={dodger}
               isBlog={false}
@@ -59,9 +64,9 @@ function Team() {
               link="https://vimeo.com/22359658"
             />
           </Col> */}
-        </Row>
-      </Container>
-    </Container>
+    </Row>
+    //   </Container>
+    // </Container>
   );
 }
 

@@ -93,11 +93,11 @@ function Info() {
               the prototype, learn a few new languages and present not only the
               theoretical approach but the fundamental mechanics to get us
               there. Although 'a game to save humanity' may sound idealistic, I
-              believe a actually pondering upon these words will ultimately
-              reveal the invevitabilty of the conclusion. We will utilze the
-              funds from the THOUGHTS NFT collection to further Solidity
-              development and develop the visual elements of the game with the
-              aim of launching the beta front end in 2023.
+              believe actually pondering upon these words will ultimately reveal
+              the invevitabilty of the conclusion. We will utilze the funds from
+              the THOUGHTS NFT collection to further Solidity development and
+              develop the visual elements of the game with the aim of launching
+              the beta front end in 2023.
               <br />
               <br />
               <h1 style={{ fontSize: '2.6em' }}>
