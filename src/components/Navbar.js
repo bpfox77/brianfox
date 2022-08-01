@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import logo from '../Assets/logoApp.png';
 //import Button from "react-bootstrap/Button";
 import { Link } from 'react-router-dom';
-import { GiFoxHead, GiGooeyEyedSun, GiDreamCatcher } from 'react-icons/gi';
+import { GiFoxHead, GiGooeyEyedSun } from 'react-icons/gi';
 import { ImRocket } from 'react-icons/im';
 import { GoBeaker } from 'react-icons/go';
 

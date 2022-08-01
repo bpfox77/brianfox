@@ -3,7 +3,7 @@ import Preloader from '../src/components/Pre';
 import Navbar from './components/Navbar';
 import Home from './components/Home/Home';
 import Team from './components/Team/Team';
-import Thoughts from './components/Thoughts/Koan';
+// import Thoughts from './components/Thoughts/Koan';
 import Game from './components/Game/Game';
 import Footer from './components/Footer';
 import Info from './components/Info/Info';
