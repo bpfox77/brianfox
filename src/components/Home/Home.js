@@ -12,7 +12,7 @@ function Home() {
         <Row>
           <Col md={12} className="home-about-description">
             <p className="home-about-body">
-              <a href="https://app.now-dao.io/" target="_self">
+              <a href="https:/young-violet-6800.on.fleek.co" target="_self">
                 {' '}
                 <b className="purple">NowDao's</b>{' '}
               </a>
@@ -97,7 +97,24 @@ function Home() {
               </a>{' '}
               will have a .7% tax to fund the DAO.
               <br />
+              <br />
             </p>
+            Contracts <br />
+            <a
+              href="https://rinkeby.etherscan.io/address/0x01Ce6dE293148b6C1785a2caD15a5A1062027443#code"
+              target="_blank"
+            >
+              {' '}
+              <b className="purple">Governance</b>{' '}
+            </a>{' '}
+            <br />
+            <a
+              href="https://rinkeby.etherscan.io/address/0x2A4DC52d84Fcf16CDf81aE1BbA2be755945B48e4#code"
+              target="_blank"
+            >
+              {' '}
+              <b className="purple">Photon</b>{' '}
+            </a>{' '}
           </Col>
         </Row>
         <Row>
