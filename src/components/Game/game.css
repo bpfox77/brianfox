@@ -9,14 +9,6 @@
   margin-right: 20px;
 }
 
-@media only screen and (max-width: 0px) {
-  .thoughtWrapper {
-    margin-left: 5px;
-
-    /* max-width: 100% !important; */
-  }
-}
-
 @media only screen and (max-width: 575px) {
   .thoughtWrapper {
     margin-left: 5px;
@@ -29,6 +21,15 @@
   .thoughtWrapper {
     margin-left: 5px;
     margin-right: 20px;
+    max-width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 992x) {
+  .thoughtWrapper {
+    margin-left: 5px;
+    margin-right: 20px;
+
     /* max-width: 100% !important; */
   }
 }
