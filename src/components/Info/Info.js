@@ -115,6 +115,11 @@ function Info() {
               <br />
               <br />
             </p>
+            <p>
+              "The probability is zero that spacetime is the fundamental nature
+              of reality" -Donald Hoffman
+            </p>
+            <p>"The diamond light was in my eyes" - Jack Kerouac</p>
           </Col>
         </Row>
       </Container>
