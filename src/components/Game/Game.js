@@ -10,7 +10,6 @@
 // a clean build with a ground up carousel would be better that what this is
 
 import React, { useRef } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
 import './game.css';
 

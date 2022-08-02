@@ -42,6 +42,7 @@ function Info() {
               <a
                 href="https://mirror.xyz/subek.eth/Ay-Oy8eAMJjDD-9pBNbaXH9ucXGQ7BqD_lv-o9heHiA"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 {' '}
                 <b className="purple">
@@ -59,13 +60,18 @@ function Info() {
               <a
                 href="https://blogs.nvidia.com/blog/2021/11/12/earth-2-supercomputer/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 {' '}
                 <b className="purple"> Complete Simulation of the Earth</b>{' '}
               </a>
               <br />
               <br />
-              <a href="https://www.inworld.ai/. " target="_blank">
+              <a
+                href="https://www.inworld.ai/. "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {' '}
                 <b className="purple">
                   {' '}
@@ -79,7 +85,11 @@ function Info() {
               american culture to modern day quantification of myths.
               <br />
               <br />
-              <a href="https://www.angusfletcher.co/" target="_blank">
+              <a
+                href="https://www.angusfletcher.co/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {' '}
                 <b className="purple">
                   {' '}
@@ -104,6 +114,7 @@ function Info() {
               <a
                 href="https://docs.google.com/presentation/d/1WP4XNYRZH8f1XIr7fxcM-ybX4DRX_GntNBAOH88CB8Y/edit?usp=sharing"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 {' '}
                 <b className="purple"> Full roadmap here</b>

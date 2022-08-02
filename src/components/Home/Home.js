@@ -16,7 +16,11 @@ function Home() {
         <Row>
           <Col md={12} className="home-about-description">
             <p className="home-about-body">
-              <a href="https:/young-violet-6800.on.fleek.co" target="_self">
+              <a
+                href="https:/young-violet-6800.on.fleek.co"
+                target="_self"
+                // rel="noopener noreferrer"
+              >
                 {' '}
                 <b className="purple">NowDao's</b>{' '}
               </a>
@@ -24,6 +28,7 @@ function Home() {
               <a
                 href="https://mirror.xyz/subek.eth/Ay-Oy8eAMJjDD-9pBNbaXH9ucXGQ7BqD_lv-o9heHiA"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 {' '}
                 <b className="purple">a game to save humanity.</b>{' '}
@@ -31,7 +36,11 @@ function Home() {
               Along the way we will incorporate the latest in cognitive science
               to shift human perception and move past the antiquated confines of
               spacetime. Utilizing a multi-modal approach to{' '}
-              <a href="https://www.effectivealtruism.org/" target="_blank">
+              <a
+                href="https://www.effectivealtruism.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {' '}
                 <b className="purple">Effective Altruism,</b>{' '}
               </a>
@@ -83,12 +92,20 @@ function Home() {
               <br />
               The NFT's, game and DAO all will initially funnel donations direct
               to
-              <a href="https://www.operationsunflower.com/" target="_blank">
+              <a
+                href="https://www.operationsunflower.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {' '}
                 <b className="purple"> Operation Sunflower</b>{' '}
               </a>{' '}
               then by votes of the community and ultimately to
-              <a href="https://singularitynet.io/" target="_blank">
+              <a
+                href="https://singularitynet.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {' '}
                 <b className="purple">decentralized A.I.'s</b>{' '}
               </a>{' '}
@@ -108,6 +125,7 @@ function Home() {
             <a
               href="https://rinkeby.etherscan.io/address/0x01Ce6dE293148b6C1785a2caD15a5A1062027443#code"
               target="_blank"
+              rel="noopener noreferrer"
             >
               {' '}
               <b className="purple">Governance</b>{' '}
@@ -116,6 +134,7 @@ function Home() {
             <a
               href="https://rinkeby.etherscan.io/address/0x2A4DC52d84Fcf16CDf81aE1BbA2be755945B48e4#code"
               target="_blank"
+              rel="noopener noreferrer"
             >
               {' '}
               <b className="purple">Photon</b>{' '}

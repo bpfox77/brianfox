@@ -1,21 +1,17 @@
-// one adjustment in style.css to see if the pictures will stop distoring
-// there's a comment in styles
-
-import { Container, Row, Col } from 'react-bootstrap';
 import ProjectCard from './TeamCard';
+import { Container, Row, Col } from 'react-bootstrap';
+import './team.css';
 import amy from '../../Assets/Projects/Amy.jpg';
 import chris from '../../Assets/Projects/Chris.jpeg';
 import brian from '../../Assets/Projects/Brian.jpg';
 
-function Team() {
+function Team2() {
   return (
-    <Container fluid className="project-section">
-      <Container>
-        <Col md={12} className="home-about-description2">
-          <h1 style={{ fontSize: '2.6em' }}>
-            How we <strong className="purple"> SPEND TIME </strong>
-          </h1>
-        </Col>
+    <div className="teamWrapper">
+      <Col md={12} className="team-about-body">
+        <h1 style={{ fontSize: '2.6rem' }}>
+          How we <strong className="purple"> spend time </strong>
+        </h1>
 
         <Row
           style={{
@@ -55,20 +51,10 @@ function Team() {
               // link="https://github.com/soumyajit4419/Editor.io"
             />
           </Col>
-
-          {/* <Col md={12} className="project-card">
-            <ProjectCard
-              imgPath={dodger}
-              isBlog={false}
-              title="Writer, Producer, Director"
-              description="A feature film where a secret government experiment disseminates a drug to mind control the population"
-              link="https://vimeo.com/22359658"
-            />
-          </Col> */}
         </Row>
-      </Container>
-    </Container>
+      </Col>
+    </div>
   );
 }
 
-export default Team;
+export default Team2;

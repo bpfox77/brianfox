@@ -1,7 +1,7 @@
 /* need to research something else besides @media 
 or simply rebuild this whole thing at some point */
 
-.thoughtWrapper {
+.teamWrapper {
   display: flex;
   flex-direction: column;
   display: flex;
@@ -14,42 +14,66 @@ or simply rebuild this whole thing at some point */
 }
 
 @media only screen and (max-width: 575px) {
-  .thoughtWrapper {
+  .teamWrapper {
     margin-left: 0px;
-    margin-right: 20px;
+    margin-right: 40px;
     max-width: 100% !important;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .thoughtWrapper {
+  .teamWrapper {
     margin-left: 0px;
-    margin-right: 20px;
+    margin-right: 40px;
     max-width: 100% !important;
   }
 }
 
 @media only screen and (max-width: 992x) {
-  .thoughtWrapper {
+  .teamWrapper {
     margin-left: 5px;
     margin-right: 20px;
   }
 }
 
-.thoughts-about-description {
+/* description needs matching */
+
+.team-about-description {
   color: white !important;
   text-align: left;
-  padding-top: 40px !important;
+  padding-top: 80px !important;
+  justify-content: flex-start;
 }
 
 @media screen and (max-width: 575px) {
-  .thoughts-about-description {
+  .team-about-description {
     margin-left: 0px;
     margin-right: 20px;
   }
 }
 
-.thoughts-about-body {
+.team-about-body {
+  padding-top: 40px !important;
+  text-align: left;
+  justify-content: flex-start;
+  margin-left: 77px;
+}
+
+@media screen and (max-width: 575px) {
+  .team-about-body {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+/* .team-about-section {
+  justify-content: flex-start;
+
+  padding-top: 180px !important;
+  text-align: left;
+} */
+
+.team-about-body {
   font-size: 1.2em !important;
   text-align: left;
   justify-content: flex-start;
@@ -57,26 +81,13 @@ or simply rebuild this whole thing at some point */
 }
 
 @media screen and (max-width: 575px) {
-  .thoughts-about-body {
+  .team-about-body {
     margin-left: 20px;
     margin-right: 20px;
   }
 }
 
-/* .thoughtHeader {
-  display: flex;
-  flex-direction: column;
-  color: rgb(203, 207, 204);
-  font-size: 18px;
-  font-weight: 600;
-  display: flex;
-  align-items: left;
-  text-align: left;
-  margin-top: 120px;
-  margin-bottom: 30px;
-} */
-
-.section {
+/* .section {
   min-height: 100vh;
   width: 100vw;
   background-color: #242324;
@@ -87,13 +98,13 @@ or simply rebuild this whole thing at some point */
   position: relative;
   overflow: hidden;
   margin-top: 100px;
-}
+} */
 /* 
 .row {
    can't adust anything with this as a div 
 } */
 
-.imgContainer {
+/* .imgContainer {
   width: 30rem;
   margin: 0 1rem;
   background-color: none;
@@ -125,30 +136,9 @@ or simply rebuild this whole thing at some point */
   .imgContainer {
     width: 20rem;
   }
-}
-
+} */
+/* 
 img {
   width: 1rem;
   height: auto;
-}
-
-.price {
-  display: flex;
-  justify-content: flex-end;
-  align-items: right;
-}
-
-.details {
-  display: flex;
-  justify-content: space-between;
-  background-color: none;
-}
-
-.details > h7 {
-  font-size: 12px;
-}
-@media (max-width: 30em) {
-  .h7 {
-    font-size: 12px;
-  }
-}
+} */
