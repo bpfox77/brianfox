@@ -25,7 +25,7 @@ function Team2() {
                 class="card-img-top"
                 src={brian}
                 alt="Brian Fox"
-                style={{ height: 'auto', width: '100%' }}
+                style={{ height: 'auto', width: 'auto' }}
               />
               <Card.Body>
                 <Card.Title>Brian Fox</Card.Title>
@@ -48,7 +48,7 @@ function Team2() {
                 class="card-img-top"
                 src={chris}
                 alt="Dr. Chris Heddon"
-                style={{ height: 'auto', width: '100%' }}
+                style={{ height: 'auto', width: 'auto' }}
               />
               <Card.Body>
                 <Card.Title>Chris Heddon</Card.Title>
