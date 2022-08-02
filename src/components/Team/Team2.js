@@ -1,4 +1,3 @@
-import ProjectCard from './TeamCard';
 import { Card, Row, Col } from 'react-bootstrap';
 import './team.css';
 import amy from '../../Assets/Projects/Amy.jpg';
@@ -25,11 +24,13 @@ function Team2() {
                 class="card-img-top"
                 src={brian}
                 alt="Brian Fox"
-                style={{ height: 'auto', width: 'auto' }}
+                style={{ height: 'auto', width: '100%' }}
               />
               <Card.Body>
                 <Card.Title>Brian Fox</Card.Title>
-                <Card.Title>Founder</Card.Title>
+                <Card.Title>
+                  <b className="purple"> Founder</b>{' '}
+                </Card.Title>
                 <Card.Text style={{ textAlign: 'left' }}>
                   Innovation Lead @Meta, Creator/Developer of Now, Novelist,
                   Filmmaker, Vedantic Yogi
@@ -48,11 +49,13 @@ function Team2() {
                 class="card-img-top"
                 src={chris}
                 alt="Dr. Chris Heddon"
-                style={{ height: 'auto', width: 'auto' }}
+                style={{ height: 'auto', width: '100%' }}
               />
               <Card.Body>
-                <Card.Title>Chris Heddon</Card.Title>
-                <Card.Title>Advisor/Multi-sig</Card.Title>
+                <Card.Title>Dr. Chris Heddon</Card.Title>
+                <Card.Title>
+                  <b className="purple"> Advisor/Multi-sig</b>{' '}
+                </Card.Title>
                 <Card.Text style={{ textAlign: 'left' }}>
                   A doctor, entreprenuer and yogi currently building medical
                   A.I. systems.
@@ -71,7 +74,9 @@ function Team2() {
               />
               <Card.Body>
                 <Card.Title>Amy Karr</Card.Title>
-                <Card.Title>Advisor/Multi-sig</Card.Title>
+                <Card.Title>
+                  <b className="purple"> Advisor/Multi-sig</b>
+                </Card.Title>
                 <Card.Text style={{ textAlign: 'left' }}>
                   Director of Humanitarian Affairs, Human Rights Foundation,
                   Forbes 30 under 30.
