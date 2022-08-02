@@ -87,58 +87,78 @@ or simply rebuild this whole thing at some point */
   }
 }
 
-/* .section {
-  min-height: 100vh;
-  width: 100vw;
-  background-color: #242324;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  margin-top: 100px;
-} */
-/* 
-.row {
-   can't adust anything with this as a div 
-} */
+/* --------- */
+/* Projects  used for team section*/
+/* --------- */
 
-/* .imgContainer {
-  width: 30rem;
-  margin: 0 1rem;
-  background-color: none;
-  border-radius: 50px;
-  cursor: pointer;
+/* changed all of these margins from paddings on project sections */
+
+.project-section {
+  margin-top: 150px !important;
+  margin-bottom: 30px !important;
 }
 
-@media (max-width: 48em) {
-  .imgContainer {
-    width: 20rem;
-  }
-  @media (max-width: 30em) {
-    .imgContainer {
-      width: 20rem;
-    }
+.project-card {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+}
+
+@media screen and (max-width: 575px) {
+  .project-card {
+    margin-top: 10 !important;
+    margin-bottom: 20px !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+    height: auto !important;
   }
 }
 
-.imgContainer > img {
-  width: 20rem;
+.project-card-view {
+  box-shadow: 0 4px 5px 3px rgba(51, 151, 86, 0.459) !important;
+  color: white !important;
+  background-color: transparent !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+}
+.project-card-view:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px rgba(154, 226, 155, 0.561) !important;
+}
+.card-img-top {
+  padding: 20px !important;
+  opacity: 0.8 !important;
+  border-radius: 10px !important;
 }
 
-@media (max-width: 48em) {
-  .imgContainer {
-    width: 20rem;
-  }
+.btn-primary {
+  color: #fff !important;
+  background-color: #32943a !important;
+  border-color: #36864b !important;
 }
-@media (max-width: 30em) {
-  .imgContainer {
-    width: 20rem;
-  }
-} */
-/* 
-img {
-  width: 1rem;
-  height: auto;
-} */
+
+.btn-primary:hover {
+  color: #fff !important;
+  background-color: #32943a !important;
+  border-color: #36864b !important;
+}
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn-hero {
+  width: 220px;
+  border-radius: 14px;
+  background-color: #008cba;
+}
+
+.project-heading {
+  color: white !important;
+  font-size: 2.3em !important;
+  font-weight: 400 !important;
+}

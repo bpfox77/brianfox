@@ -1,5 +1,5 @@
 import ProjectCard from './TeamCard';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Card, Row, Col } from 'react-bootstrap';
 import './team.css';
 import amy from '../../Assets/Projects/Amy.jpg';
 import chris from '../../Assets/Projects/Chris.jpeg';
@@ -51,6 +51,24 @@ function Team2() {
               // link="https://github.com/soumyajit4419/Editor.io"
             />
           </Col>
+          <Card className="project-card-view">
+            <img
+              src={brian}
+              alt="card-img"
+              style={{ height: '100%', width: '100%' }}
+            />
+            <Card.Body>
+              <Card.Title>spaceman</Card.Title>
+              <Card.Title>dreamer</Card.Title>
+              <Card.Text style={{ textAlign: 'left' }}>
+                done a few things in my time
+              </Card.Text>
+              {/* <Button variant="primary" href={props.link} target="_blank">
+          <BiLinkExternal /> &nbsp;
+          {props.isBlog ? 'View Blog' : 'View Info'}
+        </Button> */}
+            </Card.Body>
+          </Card>
         </Row>
       </Col>
     </div>
