@@ -1,3 +1,14 @@
+// left the thoughts components alone for future api attempts and just cleaned out the
+// existing game component as i was trying solutions, just kept it and changed the navbar
+// and router to match
+
+// after various fetch and axios attempts with containers and without
+// i stopped pulling from the api's as the images never rendered.
+// examples in unused files / thoughts single page and components
+// if i revisit with another collection . . . perhaps look at a loading function to prevent
+// a react render timeout  - pure supposition at this point.
+// a clean build with a ground up carousel would be better that what this is
+
 import React, { useRef } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
@@ -56,26 +67,26 @@ import img49 from './assets/Nfts/49_Perception.svg';
 import ETH from './assets/icons8-ethereum-48.png';
 
 const NFTRow = styled.div`
-  /* &::-webkit-slider-thumb {
-    -webkit-appearance: none; */
   margin-top: 0.1rem 0;
   display: flex;
   flex-direction: row;
-  /* flex: 1; */
   align-items: left;
   justify-content: flex-start;
   overflow-x: scroll;
-  /* border-bottom: 1px solid rgb(255, 255, 255); */
-  //}
 `;
 
+// left a placeholder for an onclick to look at animating carousel or fullscreen on images
+
 const NftItem = ({ img, number = 0, price = 0, passRef, name = '' }) => {
-  let play = (e) => {
-    passRef.current.style.animationPlayState = 'running';
+  let expand = (e) => {
+    // research a solution here
+    passRef.current.zoom = 'running';
   };
 
+  // nft's are barely legible at this size on mobile so didn't want to go any smaller
+
   return (
-    <div className="imgContainer" onClick={(e) => play(e)}>
+    <div className="imgContainer" onClick={(e) => expand(e)}>
       <img width={800} height={800} src={img} alt={name} />
       <div className="details">
         <div>
@@ -100,26 +111,31 @@ const NftItem = ({ img, number = 0, price = 0, passRef, name = '' }) => {
 const Game = () => {
   const Row1Ref = useRef(null);
 
+  //removed bootsrap containers from this page and replaced with divs
+  // to maximize space on mobile. breakpoints aren't as smooth as bootstrap
+  // and hard to perfectly match margins, but good enough for now.
+  // ideal would be to match the description margins to copy on other pages - 5px
+  // and then have the row full screen so a NFT can be fully visible on mobile.
+  // i tried to add negative values to row class to escape the parent but it did not work.
+
   return (
-    // <Container fluid className="home-about-section2">
-    //   <Container>
     <div className="thoughtWrapper">
-      <Row>
-        <Col md={12} className="thoughts-about-description">
-          <p className="thoughts-about-body">
-            <b className="purple">THOUGHTS </b> tell the monomyth of timeless
-            existence. In it's totality, the collection is a transcendent hero's
-            journey beyond spacetime. It is Science Fiction Satori with each of
-            the 49 pieces being a Koan unto itself.
-            <div
-              className="openSea"
-              onClick={() => window.open('https://opensea.io/', '_blank')}
-            >
-              {' '}
-              <u>View the Collection on OpenSea</u>
-            </div>
-            <br></br>
-            {/* <div className="section" id="showcase"></div> */}
+      {/* <Row> */}
+      <div className="thoughts-about-description">
+        <p className="thoughts-about-body">
+          <b className="purple">THOUGHTS </b> tell the monomyth of timeless
+          existence. In it's totality, the collection is a transcendent hero's
+          journey beyond spacetime. It is Science Fiction Satori with each of
+          the 49 pieces being a Koan unto itself.
+          <div
+            className="openSea"
+            onClick={() => window.open('https://opensea.io/', '_blank')}
+          >
+            {' '}
+            <u>View the Collection on OpenSea</u>
+          </div>
+          <br></br>
+          <div className="row">
             <NFTRow ref={Row1Ref}>
               <NftItem
                 img={img1}
@@ -465,12 +481,11 @@ const Game = () => {
                 passRef={Row1Ref}
               />
             </NFTRow>
-          </p>
-        </Col>
-      </Row>
+          </div>
+        </p>
+      </div>
+      {/* </Row> */}
     </div>
-    //   </Container>
-    // </Container>
   );
 };
 

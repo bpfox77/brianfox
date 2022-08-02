@@ -5,6 +5,10 @@ import myImg from '../../Assets/Tokenomics.svg';
 import { AiOutlineTwitter, AiFillInstagram } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
 
+// unfortunately i started with bootstrap and can't control the container margins.
+// this has made the nft page difficult to match the other pages margin wise
+// mostly straightforward paragraphs and links on this page
+
 function Home() {
   return (
     <Container fluid className="home-about-section" id="about">
@@ -58,6 +62,7 @@ function Home() {
               mettá-verse.
               <br />
               <br />
+              {/* would like to make this svg clickable */}
               <Col md={12} className="avatar">
                 <img src={myImg} className="avatar" alt="avatar" />
               </Col>

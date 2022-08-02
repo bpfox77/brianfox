@@ -1,3 +1,6 @@
+// one adjustment in style.css to see if the pictures will stop distoring
+// there's a comment in styles
+
 import { Container, Row, Col } from 'react-bootstrap';
 import ProjectCard from './TeamCard';
 
