@@ -26,7 +26,7 @@ const leftArrowStyles = {
 };
 
 const sliderStyles = {
-  position: 'relative',
+  position: 'absolute',
   height: '100%',
 };
 
@@ -42,9 +42,7 @@ const ImageSlider = ({ slides, name, number, price }) => {
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
-  // const goToSlide = (slideIndex) => {
-  //   setCurrentIndex(slideIndex);
-  // };
+
   const slideStylesWidthBackground = {
     ...slideStyles,
     backgroundImage: `url(${slides[currentIndex].url})`,

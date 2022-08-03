@@ -18,6 +18,7 @@ const rightArrowStyles = {
   color: '#0c861c',
   cursor: 'pointer',
   fontSize: '45px',
+  width: '30%',
 };
 
 const leftArrowStyles = {
@@ -25,6 +26,7 @@ const leftArrowStyles = {
   color: '#0c861c',
   cursor: 'pointer',
   fontSize: '45px',
+  width: '30%',
 };
 
 const sliderStyles = {

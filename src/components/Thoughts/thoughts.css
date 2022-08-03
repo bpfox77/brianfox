@@ -142,6 +142,7 @@ img {
   display: flex;
   justify-content: space-between;
   background-color: none;
+  font-size: larger;
 }
 
 .details > h7 {
@@ -164,7 +165,7 @@ img {
 
 .thoughtNavigation {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 20px;
 }
 

@@ -4,8 +4,8 @@ import { ThoughtsData } from './ThoughtsData';
 import './thoughts.css';
 
 const containerStyles = {
-  width: '400px',
-  height: '400px',
+  width: '375px',
+  height: '375px',
   margin: '0 auto',
 };
 
