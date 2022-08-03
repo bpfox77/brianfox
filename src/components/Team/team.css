@@ -1,5 +1,6 @@
 /* need to research something else besides @media 
-or simply rebuild this whole thing at some point */
+or simply rebuild this whole thing at some point 
+// ipad or tablets could be wonky on team page*/
 
 .teamWrapper {
   display: flex;
@@ -8,7 +9,7 @@ or simply rebuild this whole thing at some point */
   align-items: left;
   text-align: left;
   margin-top: 102px;
-  margin-left: 72px;
+  margin-left: 146px;
   margin-right: 120px;
   padding-bottom: 10px;
 }
@@ -29,13 +30,6 @@ or simply rebuild this whole thing at some point */
   }
 }
 
-@media only screen and (max-width: 992x) {
-  .teamWrapper {
-    margin-left: 5px;
-    margin-right: 20px;
-  }
-}
-
 /* description needs matching */
 
 .team-about-description {
@@ -53,16 +47,30 @@ or simply rebuild this whole thing at some point */
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .team-about-description {
+    margin-left: 0px;
+    margin-right: 20px;
+  }
+}
+
 .team-about-body {
   padding-top: 40px !important;
   text-align: left;
   justify-content: flex-start;
-  margin-left: 77px;
+  /* margin-left: 77px; */
 }
 
 @media screen and (max-width: 575px) {
   .team-about-body {
-    margin-left: 20px;
+    margin-left: 0px;
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .team-about-body {
+    margin-left: 0px;
     margin-right: 20px;
   }
 }
@@ -74,12 +82,12 @@ or simply rebuild this whole thing at some point */
   text-align: left;
 } */
 
-.team-about-body {
+/* .team-about-body {
   font-size: 1.2em !important;
   text-align: left;
   justify-content: flex-start;
   margin-left: 77px;
-}
+} */
 
 @media screen and (max-width: 575px) {
   .team-about-body {

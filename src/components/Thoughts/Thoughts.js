@@ -11,7 +11,7 @@
 
 import React, { useRef } from 'react';
 import styled from 'styled-components';
-import './game.css';
+import './thoughts.css';
 
 import img1 from './assets/Nfts/1_Apes.svg';
 import img2 from './assets/Nfts/2_Photons.svg';

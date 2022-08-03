@@ -100,12 +100,14 @@ function Info() {
               <br />
               Although 'a game to save humanity' may sound idealistic, the
               collation of science fiction and technology is happening all
-              around us. Words and thoughts ultimately reveal the inevitability
-              of this conclusion. Only by steering technology towards grandiose
-              macro ends can humans optimistically face the coming challenges of
-              the planet. We will utilize the funds from the THOUGHTS NFT
-              collection to further Solidity development and the visual elements
-              of the game with the aim of launching the beta front end in 2023.
+              around us. While those with the greatest resources are building
+              rockets to leave the planet, we are left to solve our own
+              situation through system thinking. Only by steering technology
+              towards grandiose macro ends can humans optimistically face the
+              coming challenges of the planet. We will utilize the funds from
+              the THOUGHTS NFT collection to further Solidity development and
+              the visual elements of the game with the aim of launching the beta
+              front end in 2023.
               <br />
               <br />
               <h1 style={{ fontSize: '2.6em' }}>
@@ -128,6 +130,7 @@ function Info() {
           reality" -Donald Hoffman
         </p>
         <p>"The diamond light was in my eyes" - Jack Kerouac</p>
+        <p>"Ram Dass, can't you see that it's all perfect" - Maharaji</p>
       </Container>
     </Container>
   );

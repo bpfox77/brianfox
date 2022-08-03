@@ -10,7 +10,7 @@ function Team() {
       <div className="team-about-description">
         <Col md={12} className="team-about-body">
           <h1 style={{ fontSize: '2.6rem' }}>
-            How we <strong className="purple"> $pend time </strong>
+            How we <strong className="purple"> $pend Time </strong>
           </h1>
 
           <Row

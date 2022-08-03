@@ -121,7 +121,8 @@ function Home() {
               <br />
               <br />
             </p>
-            Contracts <br />
+            Contracts - migrating to Mumbai/Polygon
+            <br />
             <a
               href="https://rinkeby.etherscan.io/address/0x01Ce6dE293148b6C1785a2caD15a5A1062027443#code"
               target="_blank"

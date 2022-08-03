@@ -3,9 +3,10 @@ import Preloader from '../src/components/Pre';
 import Navbar from './components/Navbar';
 import Home from './components/Home/Home';
 import Team from './components/Team/Team';
-
-// import Thoughts from './components/Thoughts/Koan';
-import Game from './components/Game/Game';
+// import Thoughts from './components/Thoughts/Thoughts';
+//import Thoughts2 from './components/Thoughts/Thoughts2';
+import Thoughts3 from './components/Thoughts/Thoughts3';
+// import Game from './components/Game/Game';
 import Footer from './components/Footer';
 import Info from './components/Info/Info';
 // change to hashrouteer for fleek
@@ -35,7 +36,7 @@ function App() {
           <Route path="/" exact component={Home} />
           {/* <Route path="/thoughts" component={Thoughts} /> */}
 
-          <Route path="/thoughts" component={Game} />
+          <Route path="/thoughts" component={Thoughts3} />
           <Route path="/info" component={Info} />
           <Route path="/team" component={Team} />
         </Switch>
