@@ -93,7 +93,7 @@ or simply rebuild this whole thing at some point */
 
 /* changed all of these margins from paddings on project sections */
 
-.project-section {
+/* .project-section {
   margin-top: 150px !important;
   margin-bottom: 30px !important;
 }
@@ -114,7 +114,7 @@ or simply rebuild this whole thing at some point */
     margin-right: 5px !important;
     height: auto !important;
   }
-}
+} */
 
 .project-card-view {
   box-shadow: 0 4px 5px 3px rgba(51, 151, 86, 0.459) !important;
@@ -133,6 +133,7 @@ or simply rebuild this whole thing at some point */
   padding: 20px !important;
   opacity: 0.8 !important;
   border-radius: 10px !important;
+  object-fit: contain;
 }
 
 .btn-primary {

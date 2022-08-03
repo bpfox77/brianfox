@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Preloader from '../src/components/Pre';
 import Navbar from './components/Navbar';
 import Home from './components/Home/Home';
-// import Team from './components/Team/Team';
-import Team2 from './components/Team/Team2';
+import Team from './components/Team/Team';
+
 // import Thoughts from './components/Thoughts/Koan';
 import Game from './components/Game/Game';
 import Footer from './components/Footer';
@@ -37,7 +37,7 @@ function App() {
 
           <Route path="/thoughts" component={Game} />
           <Route path="/info" component={Info} />
-          <Route path="/team" component={Team2} />
+          <Route path="/team" component={Team} />
         </Switch>
         <Footer />
       </div>
