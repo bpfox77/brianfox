@@ -15,7 +15,7 @@ or simply rebuild this whole thing at some point */
 
 @media only screen and (max-width: 575px) {
   .thoughtWrapper {
-    margin-left: 0px;
+    margin-left: 5px;
     margin-right: 20px;
     max-width: 100% !important;
   }
@@ -23,7 +23,7 @@ or simply rebuild this whole thing at some point */
 
 @media only screen and (max-width: 768px) {
   .thoughtWrapper {
-    margin-left: 0px;
+    margin-left: 5px;
     margin-right: 20px;
     max-width: 100% !important;
   }
