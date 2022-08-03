@@ -7,10 +7,10 @@ or simply rebuild this whole thing at some point */
   display: flex;
   align-items: left;
   text-align: left;
-  margin-top: 120px;
+  margin-top: 102px;
   margin-left: 72px;
   margin-right: 120px;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 575px) {
@@ -40,8 +40,9 @@ or simply rebuild this whole thing at some point */
 
 .team-about-description {
   color: white !important;
+
   text-align: left;
-  padding-top: 80px !important;
+  /* padding-top: 80px !important; */
   justify-content: flex-start;
 }
 
