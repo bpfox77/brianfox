@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useSwipeable } from 'react-swipeable';
 import { ThoughtsData } from './ThoughtsData';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 import alienImg from '../../Assets/alien.png';
@@ -38,6 +39,13 @@ const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
+  const handlers = useSwipeable({
+    onSwipedLeft: () => nextSlide(current + 1),
+    onSwipedRight: () => prevSlide(current - 1),
+    //preventDefaultTouchmoveEvent: true,
+    // ...config,
+  });
+
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
@@ -54,10 +62,11 @@ const ImageSlider = ({ slides }) => {
     ...slideStyles,
     // this is going to need to be figured out for sizing
     backgroundImage: `url(${ThoughtsData[current].url})`,
+    // transform: `translateX(-${current * 100}%)`,
   };
 
   return (
-    <div style={sliderStyles}>
+    <div style={sliderStyles} {...handlers}>
       <div style={slideStylesWidthBackground}> </div>
 
       {ThoughtsData.map((slide, index) => {
@@ -65,6 +74,7 @@ const ImageSlider = ({ slides }) => {
           <div
             className={index === current ? 'slide active' : 'slide'}
             key={index}
+            // style={{ transform: `translateX(-${current * 100}%)` }}
           >
             {index === current && (
               <div>
@@ -86,22 +96,24 @@ const ImageSlider = ({ slides }) => {
                       </div>
                     </div>
                   </div>
-                  <div id="row" className="thoughtNavigation">
-                    <FaArrowAltCircleLeft
-                      onClick={prevSlide}
-                      style={leftArrowStyles}
-                    />
-                    <div>
-                      <img
-                        src={alienImg}
-                        className="alien"
-                        alt="jacque valle"
+                  <div>
+                    <div id="row" className="thoughtNavigation">
+                      <FaArrowAltCircleLeft
+                        onClick={prevSlide}
+                        style={leftArrowStyles}
+                      />
+                      <div>
+                        <img
+                          src={alienImg}
+                          className="alien"
+                          alt="jacque valle"
+                        />
+                      </div>
+                      <FaArrowAltCircleRight
+                        onClick={nextSlide}
+                        style={rightArrowStyles}
                       />
                     </div>
-                    <FaArrowAltCircleRight
-                      onClick={nextSlide}
-                      style={rightArrowStyles}
-                    />
                   </div>
                 </>
               </div>

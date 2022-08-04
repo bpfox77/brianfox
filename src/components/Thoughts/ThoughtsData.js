@@ -306,35 +306,35 @@ export const ThoughtsData = [
 
   {
     url: 'Nfts/45_Gnosis.svg',
-    name: 'city',
+    name: 'Gnosis',
     price: '1',
     number: '45',
   },
 
   {
     url: 'Nfts/46_Transcribe.svg',
-    name: 'city',
+    name: 'Transcribe',
     price: '1',
     number: '46',
   },
 
   {
     url: 'Nfts/47_Readouts.svg',
-    name: 'city',
+    name: 'Readouts',
     price: '1',
     number: '47',
   },
 
   {
     url: 'Nfts/48_Equanimity.svg',
-    name: 'city',
+    name: 'Equanimity',
     price: '1',
     number: '48',
   },
 
   {
     url: 'Nfts/49_Perception.svg',
-    name: 'city',
+    name: 'Perception',
     price: '1',
     number: '49',
   },
