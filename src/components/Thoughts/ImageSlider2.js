@@ -42,7 +42,7 @@ const ImageSlider = ({ slides }) => {
   const handlers = useSwipeable({
     onSwipedLeft: () => nextSlide(current + 1),
     onSwipedRight: () => prevSlide(current - 1),
-    //preventDefaultTouchmoveEvent: true,
+    preventDefaultTouchmoveEvent: true,
     // ...config,
   });
 
@@ -60,9 +60,8 @@ const ImageSlider = ({ slides }) => {
 
   const slideStylesWidthBackground = {
     ...slideStyles,
-    // this is going to need to be figured out for sizing
+
     backgroundImage: `url(${ThoughtsData[current].url})`,
-    // transform: `translateX(-${current * 100}%)`,
   };
 
   return (
@@ -74,11 +73,9 @@ const ImageSlider = ({ slides }) => {
           <div
             className={index === current ? 'slide active' : 'slide'}
             key={index}
-            // style={{ transform: `translateX(-${current * 100}%)` }}
           >
             {index === current && (
               <div>
-                {/* <img src={slide.url} alt="whaa" className="image" /> */}
                 <>
                   <div className="details">
                     <div>

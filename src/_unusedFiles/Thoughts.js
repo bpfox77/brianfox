@@ -1,13 +1,6 @@
-// left the thoughts components alone for future api attempts and just cleaned out the
-// existing game component as i was trying solutions, just kept it and changed the navbar
-// and router to match
-
-// after various fetch and axios attempts with containers and without
-// i stopped pulling from the api's as the images never rendered.
-// examples in unused files / thoughts single page and components
+// left the thoughts components alone for future api attempts in unused files
 // if i revisit with another collection . . . perhaps look at a loading function to prevent
 // a react render timeout  - pure supposition at this point.
-// a clean build with a ground up carousel would be better that what this is
 
 import React, { useRef } from 'react';
 import styled from 'styled-components';
@@ -74,15 +67,11 @@ const NFTRow = styled.div`
   overflow-x: scroll;
 `;
 
-// left a placeholder for an onclick to look at animating carousel or fullscreen on images
-
 const NftItem = ({ img, number = 0, price = 0, passRef, name = '' }) => {
   let expand = (e) => {
     // research a solution here
     passRef.current.zoom = 'running';
   };
-
-  // nft's are barely legible at this size on mobile so didn't want to go any smaller
 
   return (
     <div className="imgContainer" onClick={(e) => expand(e)}>

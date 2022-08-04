@@ -46,8 +46,9 @@ function Team() {
 
             <Col md={4} className="project-card">
               <Card className="project-card-view">
+                {/* if mobile is messed up . . . i changed card-img-top to className from class */}
                 <img
-                  class="card-img-top"
+                  className="card-img-top"
                   src={chris}
                   alt="Dr. Chris Heddon"
                   style={{ height: 'auto', width: '100%' }}

@@ -2,12 +2,8 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import myImg from '../../Assets/Tokenomics.svg';
 
-import { AiOutlineTwitter, AiFillInstagram } from 'react-icons/ai';
-import { FaLinkedinIn } from 'react-icons/fa';
-
-// unfortunately i started with bootstrap and can't control the container margins.
-// this has made the nft page difficult to match the other pages margin wise
-// mostly straightforward paragraphs and links on this page
+//import { AiOutlineTwitter, AiFillInstagram } from 'react-icons/ai';
+//import { FaLinkedinIn } from 'react-icons/fa';
 
 function Home() {
   return (
@@ -142,7 +138,7 @@ function Home() {
             </a>{' '}
           </Col>
         </Row>
-        <Row>
+        {/* <Row>
           <Col md={12} className="home-about-social">
             <h1>BE SOCIAL ON</h1>
             <p>
@@ -182,7 +178,7 @@ function Home() {
               </li>
             </ul>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </Container>
   );
