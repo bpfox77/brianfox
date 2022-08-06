@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
-import logo from '../Assets/logoApp.png';
-//import Button from "react-bootstrap/Button";
+import logo from '../Assets/homelogo.png';
+import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import { GiFoxHead, GiGooeyEyedSun } from 'react-icons/gi';
 import { ImRocket } from 'react-icons/im';
@@ -32,7 +32,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="https://young-violet-6800.on.fleek.co">
-          <img src={logo} className="img-fluid logo" alt="now dao" />
+          <img src={logo} className="homelogo" alt="now dao" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -90,6 +90,16 @@ function NavBar() {
               >
                 <GiGooeyEyedSun style={{ marginBottom: '2px' }} /> Team
               </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item className="fork-btn">
+              <Button
+                href="https://young-violet-6800.on.fleek.co"
+                target="_self"
+                className="fork-btn-inner"
+              >
+                PHOTONS
+              </Button>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

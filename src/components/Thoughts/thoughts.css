@@ -63,20 +63,7 @@ or simply rebuild this whole thing at some point */
   }
 }
 
-/* .thoughtHeader {
-  display: flex;
-  flex-direction: column;
-  color: rgb(203, 207, 204);
-  font-size: 18px;
-  font-weight: 600;
-  display: flex;
-  align-items: left;
-  text-align: left;
-  margin-top: 120px;
-  margin-bottom: 30px;
-} */
-
-.section {
+/* .section {
   min-height: 100vh;
   width: 100vw;
   background-color: #242324;
@@ -87,10 +74,6 @@ or simply rebuild this whole thing at some point */
   position: relative;
   overflow: hidden;
   margin-top: 100px;
-}
-/* 
-.row {
-   can't adust anything with this as a div 
 } */
 
 .imgContainer {
@@ -155,8 +138,6 @@ img {
 }
 
 .alien {
-  /* padding-top: 25px !important;
-  padding-bottom: 20px !important;*/
   width: 2.7rem;
   height: 2.7rem;
   position: 'absolute';
@@ -168,11 +149,6 @@ img {
   justify-content: center;
   margin-top: 20px;
 }
-
-/* .box {
-  width: 50px;
-  height: 50px;
-} */
 
 #row {
   flex-direction: row;

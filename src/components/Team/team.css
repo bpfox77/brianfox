@@ -14,13 +14,13 @@ or simply rebuild this whole thing at some point
   padding-bottom: 10px;
 }
 
-@media only screen and (max-width: 575px) {
+/* @media only screen and (max-width: 575px) {
   .teamWrapper {
     margin-left: 0px;
     margin-right: 40px;
     max-width: 100% !important;
   }
-}
+} */
 
 @media only screen and (max-width: 768px) {
   .teamWrapper {
@@ -40,12 +40,12 @@ or simply rebuild this whole thing at some point
   justify-content: flex-start;
 }
 
-@media screen and (max-width: 575px) {
+/* @media screen and (max-width: 575px) {
   .team-about-description {
     margin-left: 0px;
     margin-right: 20px;
   }
-}
+} */
 
 @media only screen and (max-width: 768px) {
   .team-about-description {
@@ -61,12 +61,12 @@ or simply rebuild this whole thing at some point
   /* margin-left: 77px; */
 }
 
-@media screen and (max-width: 575px) {
+/* @media screen and (max-width: 575px) {
   .team-about-body {
     margin-left: 0px;
     margin-right: 20px;
   }
-}
+} */
 
 @media only screen and (max-width: 768px) {
   .team-about-body {

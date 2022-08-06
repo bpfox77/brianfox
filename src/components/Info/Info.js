@@ -14,7 +14,7 @@ function Info() {
             </h1>
             <br />
 
-            <p className="home-about-body2">
+            <div className="home-about-body2">
               <b className="purple"> NOW, the Game,</b> is currently a
               functional prototype. It is a neuroscience based, micro donation,
               single player (for now) built on Polygon.{' '}
@@ -121,7 +121,7 @@ function Info() {
                 {' '}
                 <b className="purple"> Full roadmap here</b>
               </a>
-            </p>
+            </div>
           </Col>
         </Row>
         <br />

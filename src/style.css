@@ -21,13 +21,24 @@ html {
   --imp-text-color: #5dcf79;
 }
 
+.homelogo {
+  height: 4rem;
+  width: 3rem;
+  object-fit: contain;
+}
+
 .purple {
   color: var(--imp-text-color) !important;
 }
 
 .greenInfo {
   color: rgb(53, 137, 70);
-  white-space: nowrap;
+}
+
+.greenInfoSmall {
+  color: #5dcf79;
+
+  font-size: 0.8rem;
 }
 
 h1 {
@@ -249,7 +260,7 @@ a:active {
   color: white !important;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   .about-img {
     padding-top: 0 !important;
   }
@@ -266,7 +277,7 @@ a:active {
 button {
   cursor: pointer;
   background-color: #000;
-  color: #fff;
+  color: rgb(255, 255, 255);
   border: none;
   font-weight: bold;
   font-family: inherit;
@@ -407,7 +418,7 @@ button:disabled {
   opacity: 0.9 !important;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
@@ -423,7 +434,7 @@ button:disabled {
 
 .logo {
   height: 1.4em !important;
-  width: 4.5em !important;
+  width: 2.5em !important;
 }
 
 .navbar-nav .nav-link {
@@ -491,4 +502,26 @@ span {
 h5 {
   font-size: 2rem;
   color: rgb(213, 213, 223);
+}
+
+.fork-btn {
+  font-size: 1.1em !important;
+  padding-top: 10px !important;
+}
+
+.fork-btn-inner {
+  line-height: 1.4em !important;
+  background-color: #934cce5e !important;
+  padding: 0.25rem 1.1rem !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+}
+
+.fork-btn-inner:hover {
+  transform: translateY(-2px) !important;
+  background-color: #a24dd386 !important;
+  border-color: #a24dd386 !important;
+}
+.fork-btn-inner::after {
+  display: none !important;
 }
