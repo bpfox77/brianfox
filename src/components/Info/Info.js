@@ -20,11 +20,11 @@ function Info() {
               single player (for now) built on Polygon.{' '}
               <b className="purple"> NOW </b>
               not only utilizes the FDA verified dual mechanisms of gaming and
-              giving to enhance mental wellbeing, but also incorporates time
-              entrainment to dilate the player's perception of time. The network
-              will discover the players who are most adept at slowing down time
-              and the DAO will reward the community for the participation in the
-              game.
+              giving to enhance mental wellbeing, but also incorporates
+              attentional entrainment to dilate the player's perception of time.
+              The network will discover the players who are most adept at
+              slowing down time and the DAO will reward the community for the
+              participation in the game.
               <br />
               <br />
               The major epiphany of web3 is that we can use computational logic

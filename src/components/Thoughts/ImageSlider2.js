@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import { ThoughtsData } from './ThoughtsData';
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+// import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+import { MdArrowBackIosNew, MdArrowForwardIos } from 'react-icons/md';
 import alienImg from '../../Assets/alien.png';
 import ETH from './assets/icons8-ethereum-48.png';
 
 const slideStyles = {
   width: '100%',
   height: '100%',
-  borderRadius: '10px',
+  borderRadius: '30px',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   marginBottom: '10px',
@@ -16,18 +17,18 @@ const slideStyles = {
 
 const rightArrowStyles = {
   right: '32px',
-  color: '#0c861c',
+  color: '#5dcf79',
   cursor: 'pointer',
-  fontSize: '45px',
-  width: '30%',
+  fontSize: '75px',
+  // width: '30%',
 };
 
 const leftArrowStyles = {
   left: '32px',
-  color: '#0c861c',
+  color: '#5dcf79',
   cursor: 'pointer',
-  fontSize: '45px',
-  width: '30%',
+  fontSize: '75px',
+  // width: '30%',
 };
 
 const sliderStyles = {
@@ -81,37 +82,37 @@ const ImageSlider = ({ slides }) => {
                     <div>
                       <span>{slide.name}</span> <br />
                       <h7>#{slide.number}</h7>
-                    </div>
-
-                    <div>
-                      <span>Price </span>
-                      <div className="price">
-                        <div>
-                          <img width={100} height={100} src={ETH} alt="ETH" />
+                      <div>
+                        <div className="price">
+                          <h7>Price: </h7>
+                          <div>
+                            <img width={100} height={100} src={ETH} alt="ETH" />
+                          </div>
+                          <h7>{Number(slide.price).toFixed(1)}</h7>
                         </div>
-                        <h7>{Number(slide.price).toFixed(1)}</h7>
                       </div>
                     </div>
-                  </div>
-                  <div>
                     <div id="row" className="thoughtNavigation">
-                      <FaArrowAltCircleLeft
+                      {/* <FaArrowAltCircleLeft */}
+                      <MdArrowBackIosNew
                         onClick={prevSlide}
                         style={leftArrowStyles}
                       />
-                      <div>
+                      {/* <div>
                         <img
                           src={alienImg}
                           className="alien"
                           alt="jacque valle"
                         />
-                      </div>
-                      <FaArrowAltCircleRight
+                      </div> 
+                      <FaArrowAltCircleRight*/}
+                      <MdArrowForwardIos
                         onClick={nextSlide}
                         style={rightArrowStyles}
                       />
                     </div>
                   </div>
+                  <div></div>
                 </>
               </div>
             )}

@@ -119,7 +119,7 @@ a:active {
 }
 
 .home-about-description {
-  color: rgb(133, 191, 128) !important;
+  color: white !important;
   text-align: left;
   padding-top: 10px !important;
 }
@@ -495,8 +495,11 @@ button:disabled {
 }
 
 span {
-  background: rgb(59, 144, 76);
+  /* background: rgb(59, 144, 76); */
   margin-top: 8px;
+  font-weight: 800;
+  font-size: larger;
+  color: #5dcf79;
 }
 
 h5 {

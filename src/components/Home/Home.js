@@ -11,7 +11,7 @@ function Home() {
       <Container>
         <Row>
           <Col md={12} className="home-about-description">
-            <p className="home-about-body">
+            <div className="home-about-body">
               <a
                 href="https:/young-violet-6800.on.fleek.co"
                 target="_self"
@@ -38,7 +38,7 @@ function Home() {
                 rel="noopener noreferrer"
               >
                 {' '}
-                <b className="greenInfoSmall">[Hoffman]</b>{' '}
+                <b className="greenInfoSmall">[1]</b>{' '}
               </a>{' '}
               <a
                 href="https://writings.stephenwolfram.com/2020/04/finally-we-may-have-a-path-to-the-fundamental-theory-of-physics-and-its-beautiful/"
@@ -46,7 +46,7 @@ function Home() {
                 rel="noopener noreferrer"
               >
                 {' '}
-                <b className="greenInfoSmall">[Wolfram]</b>.{' '}
+                <b className="greenInfoSmall">[2]</b>.{' '}
               </a>{' '}
               Utilizing a multi-modal approach to{' '}
               <a
@@ -90,9 +90,8 @@ function Home() {
                 rel="noopener noreferrer"
               >
                 {' '}
-                <b className="purple">Governance</b>{' '}
+                <b className="purple">Governance /</b>{' '}
               </a>{' '}
-              ,
               <a
                 href="https://rinkeby.etherscan.io/address/0x2A4DC52d84Fcf16CDf81aE1BbA2be755945B48e4#code"
                 target="_blank"
@@ -101,18 +100,14 @@ function Home() {
                 {' '}
                 <b className="purple">Photon</b>{' '}
               </a>{' '}
-              <a href="https://app.now-dao.io/" target="_self">
-                {' '}
-                <div className="greenInfoSmall">
-                  {' '}
-                  Each movement of a PHOTON will have a .7% tax to fund the DAO
-                  --migrating to Mumbai/Polygon.
-                </div>{' '}
-              </a>{' '}
               {/* would like to make this svg clickable */}
               <Col md={12} className="avatar">
                 <img src={myImg} className="avatar" alt="avatar" />
               </Col>
+              <div className="greenInfoSmall">
+                Each movement of a PHOTON will have a .7% tax to fund the DAO
+                --migrating to Mumbai/Polygon.
+              </div>
               <br />
               As thoughts are a conversation through time, the initial launch
               will be followed by quest authors and artists, ultimately building
@@ -150,7 +145,7 @@ function Home() {
               for real time aid relief.
               <br />
               <br />
-            </p>
+            </div>
           </Col>
         </Row>
         {/* <Row>

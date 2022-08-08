@@ -11,10 +11,10 @@ const containerStyles = {
 
 function Thoughts3() {
   return (
-    <div className="thoughtWrapper">
-      {/* <Row> */}
-      <div className="thoughts-about-description">
-        <p className="thoughts-about-body">
+    <section className="thoughtWrapper">
+      {/* <div className="thoughts-about-description"> */}
+      <div className="thoughts-about-body">
+        <div>
           <b className="purple">THOUGHTS </b> tell the monomyth of
           transcendence. The collection is a short story of Science Fiction
           Satori. It is a hero's journey beyond spacetime, with each of the 49
@@ -26,8 +26,10 @@ function Thoughts3() {
             {' '}
             <u>View the Collection on OpenSea</u>
           </div>
-        </p>
-        <br></br>
+        </div>
+      </div>
+      <br></br>
+      <div className="sliderWrapper">
         <div style={containerStyles}>
           <ImageSlider2 slides={ThoughtsData} />
         </div>
@@ -37,7 +39,8 @@ function Thoughts3() {
         <br />
         <br />
       </div>
-    </div>
+      {/* </div> */}
+    </section>
   );
 }
 
