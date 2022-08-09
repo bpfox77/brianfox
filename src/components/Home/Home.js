@@ -60,19 +60,25 @@ function Home() {
               this project is the culmination of a 15 year thought experiment
               made possible by the open source technology of the blockchain. You
               can find the roadmap, mechanics and references in{' '}
-              <a href="https://now-dao.io/#/info" target="_self">
+              <a
+                href="https://hidden-forest-8380.on.fleek.co/#/info"
+                target="_self"
+              >
                 {' '}
                 <b className="purple"> THE INFORMATION.</b>{' '}
               </a>{' '}
               <br />
               <br />
               The DAO and it's native token,{' '}
-              <a href="https://app.now-dao.io/" target="_self">
+              <a href="https://young-violet-6800.on.fleek.co" target="_self">
                 {' '}
                 <b className="purple">PHOTON,</b>{' '}
               </a>
               will initially be fed through a cross cultural NFT narrative,{' '}
-              <a href="http://now-dao.io/#/thoughts" target="_self">
+              <a
+                href="https://hidden-forest-8380.on.fleek.co/#/thoughts"
+                target="_self"
+              >
                 {' '}
                 <b className="purple"> THOUGHTS.</b>{' '}
               </a>{' '}
