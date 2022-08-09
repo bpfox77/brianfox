@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 3500 3500">
   <style>
-    .base { fill: white; font-family: serif; font-size: 140px; }
+    .base { fill: white; font-family: serif; font-size: 180px; }
   </style>
   <rect width="100%" height="100%" fill="black"/>
-  <text x="1800px" y="1200px" class="base" dominant-baseline="middle" text-anchor="middle">Beatific emptiness
+  <text x="1800px" y="1300px" class="base" dominant-baseline="middle" text-anchor="middle">Beatific emptiness
   </text>
-  <text x="1600px" y="1400px" class="base" dominant-baseline="middle" text-anchor="middle">Transcribing soft petaled torrents</text>
-  <text x="1900px" y="1600px" class="base" dominant-baseline="middle" text-anchor="middle">into a whirlpool of material appearing</text>
-  <text x="1500px" y="1800px" class="base" dominant-baseline="middle" text-anchor="middle">Funneled through</text>
-  <text x="1900px" y="2000px" class="base" dominant-baseline="middle" text-anchor="middle">The flotsam of vanishing fears</text>
+  <text x="1600px" y="1550px" class="base" dominant-baseline="middle" text-anchor="middle">transcribing soft petaled torrents</text>
+  <text x="1900px" y="1800px" class="base" dominant-baseline="middle" text-anchor="middle">into a whirlpool of material appearing</text>
+  <text x="1500px" y="2050px" class="base" dominant-baseline="middle" text-anchor="middle">Funneling through</text>
+  <text x="1900px" y="2300px" class="base" dominant-baseline="middle" text-anchor="middle">a flotsam of vanishing fears</text>
   
 </svg>

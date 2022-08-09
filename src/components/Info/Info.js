@@ -125,6 +125,7 @@ function Info() {
           </Col>
         </Row>
         <br />
+        <br />
         <p>
           "The probability is zero that spacetime is the fundamental nature of
           reality" -Donald Hoffman

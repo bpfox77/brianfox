@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 3500 3500">
   <style>
-    .base { fill: white; font-family: serif; font-size: 140px; }
+    .base { fill: white; font-family: serif; font-size: 180px; }
   </style>
   <rect width="100%" height="100%" fill="black"/>
-  <text x="1400px" y="1200px" class="base" dominant-baseline="middle" text-anchor="middle">INT. SPACE - Continuous
+  <text x="1350px" y="1300px" class="base" dominant-baseline="middle" text-anchor="middle">INT. SPACE - Continuous
   </text>
-  <text x="1600px" y="1400px" class="base" dominant-baseline="middle" text-anchor="middle">Earth Coincidence Control Office </text>
-  <text x="1450px" y="1600px" class="base" dominant-baseline="middle" text-anchor="middle">The observer smiles </text>
-  <text x="1620px" y="1800px" class="base" dominant-baseline="middle" text-anchor="middle">Skinner musings </text>
-  <text x="2050px" y="2000px" class="base" dominant-baseline="middle" text-anchor="middle"> Breathe, you are alive  </text>
+  <text x="1600px" y="1550px" class="base" dominant-baseline="middle" text-anchor="middle">Earth Coincidence Control Office </text>
+  <text x="1450px" y="1800px" class="base" dominant-baseline="middle" text-anchor="middle">The observer smiles </text>
+  <text x="1620px" y="2050px" class="base" dominant-baseline="middle" text-anchor="middle">Skinner musings </text>
+  <text x="2050px" y="2300px" class="base" dominant-baseline="middle" text-anchor="middle"> Breathe, you are alive  </text>
 
    
 </svg>

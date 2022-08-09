@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 3500 3500">
   <style>
-    .base { fill: white; font-family: serif; font-size: 140px; }
+    .base { fill: white; font-family: serif; font-size: 180px; }
   </style>
   <rect width="100%" height="100%" fill="black"/>
   <text x="800px" y="1200px" class="base" dominant-baseline="middle" text-anchor="middle">THEY are
   </text>
-  <text x="1000px" y="1400px" class="base" dominant-baseline="middle" text-anchor="middle">vibratory atoms  </text>
-  <text x="1400px" y="1600px" class="base" dominant-baseline="middle" text-anchor="middle">laced with suspended stillness </text>
-  <text x="1620px" y="1800px" class="base" dominant-baseline="middle" text-anchor="middle">emanating what is heard </text>
-  <text x="1250px" y="2000px" class="base" dominant-baseline="middle" text-anchor="middle"> wormholed whispers  </text>
-   <text x="2050px" y="2200px" class="base" dominant-baseline="middle" text-anchor="middle"> Nothing disappears from the universe  </text>
+  <text x="1000px" y="1450px" class="base" dominant-baseline="middle" text-anchor="middle">vibratory atoms  </text>
+  <text x="1530px" y="1700px" class="base" dominant-baseline="middle" text-anchor="middle">laced with suspended stillness </text>
+  <text x="1620px" y="1950px" class="base" dominant-baseline="middle" text-anchor="middle">emanating what is heard </text>
+  <text x="1220px" y="2200px" class="base" dominant-baseline="middle" text-anchor="middle"> wormholed whispers  </text>
+   <text x="1950px" y="2450px" class="base" dominant-baseline="middle" text-anchor="middle"> Nothing disappears from the universe  </text>
    
 </svg>

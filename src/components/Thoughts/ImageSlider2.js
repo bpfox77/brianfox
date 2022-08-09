@@ -3,7 +3,7 @@ import { useSwipeable } from 'react-swipeable';
 import { ThoughtsData } from './ThoughtsData';
 // import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 import { MdArrowBackIosNew, MdArrowForwardIos } from 'react-icons/md';
-import alienImg from '../../Assets/alien.png';
+
 import ETH from './assets/icons8-ethereum-48.png';
 
 const slideStyles = {
@@ -12,7 +12,8 @@ const slideStyles = {
   borderRadius: '30px',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
-  marginBottom: '10px',
+  marginBottom: '15px',
+  boxShadow: '0 0 2px 8px rgba(51, 151, 86, 0.459)',
 };
 
 const rightArrowStyles = {

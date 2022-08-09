@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 3500 3500">
   <style>
-    .base { fill: white; font-family: serif; font-size: 140px; }
+    .base { fill: white; font-family: serif; font-size: 180px; }
   </style>
   <rect width="100%" height="100%" fill="black"/>
   <text x="1650px" y="1200px" class="base" dominant-baseline="middle" text-anchor="middle">Formulaic frequencied instructions
   </text>
-  <text x="1700px" y="1400px" class="base" dominant-baseline="middle" text-anchor="middle">reveal secret equations </text>
-  <text x="1600px" y="1600px" class="base" dominant-baseline="middle" text-anchor="middle">Spiraling concentrated corridors  </text>
-  <text x="1750px" y="1800px" class="base" dominant-baseline="middle" text-anchor="middle">ever new </text>
-  <text x="2200px" y="2000px" class="base" dominant-baseline="middle" text-anchor="middle"> molecular fractals   </text>
-   <text x="1700px" y="2200px" class="base" dominant-baseline="middle" text-anchor="middle"> The great perfection   </text>
+  <text x="1700px" y="1450px" class="base" dominant-baseline="middle" text-anchor="middle">reveal secret equations </text>
+  <text x="1600px" y="1700px" class="base" dominant-baseline="middle" text-anchor="middle">Spiraling concentrated corridors  </text>
+  <text x="1750px" y="1950px" class="base" dominant-baseline="middle" text-anchor="middle">ever new </text>
+  <text x="2200px" y="2200px" class="base" dominant-baseline="middle" text-anchor="middle"> molecular fractals   </text>
+   <text x="1700px" y="2450px" class="base" dominant-baseline="middle" text-anchor="middle"> The great perfection   </text>
   
  
 

@@ -12,7 +12,6 @@ const containerStyles = {
 function Thoughts3() {
   return (
     <section className="thoughtWrapper">
-      {/* <div className="thoughts-about-description"> */}
       <div className="thoughts-about-body">
         <div>
           <b className="purple">THOUGHTS </b> tell the monomyth of
@@ -39,7 +38,6 @@ function Thoughts3() {
         <br />
         <br />
       </div>
-      {/* </div> */}
     </section>
   );
 }

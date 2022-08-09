@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 3500 3500">
   <style>
-    .base { fill: white; font-family: serif; font-size: 140px; }
+    .base { fill: white; font-family: serif; font-size: 180px; }
   </style>
   <rect width="100%" height="100%" fill="black"/>
-  <text x="1800px" y="1200px" class="base" dominant-baseline="middle" text-anchor="middle">Starfield of non-local assurances
+  <text x="1800px" y="1100px" class="base" dominant-baseline="middle" text-anchor="middle">Starfield of non-local assurances
   </text>
-  <text x="1800px" y="1400px" class="base" dominant-baseline="middle" text-anchor="middle">Aeons and epochs</text>
+  <text x="1800px" y="1350px" class="base" dominant-baseline="middle" text-anchor="middle">Aeons and epochs</text>
   <text x="1400px" y="1600px" class="base" dominant-baseline="middle" text-anchor="middle">Darwinian divergence</text>
-  <text x="1700px" y="1800px" class="base" dominant-baseline="middle" text-anchor="middle">dematerializing starlight</text>
-  <text x="1900px" y="2000px" class="base" dominant-baseline="middle" text-anchor="middle">enveloping ether endgame</text>
-   <text x="1800px" y="2200px" class="base" dominant-baseline="middle" text-anchor="middle">the principal player</text>
-  <text x="1700px" y="2400px" class="base" dominant-baseline="middle" text-anchor="middle">Cleansing the mirror</text>  
+  <text x="1700px" y="1850px" class="base" dominant-baseline="middle" text-anchor="middle">dematerializing starlight</text>
+  <text x="1900px" y="2100px" class="base" dominant-baseline="middle" text-anchor="middle">enveloping ether endgame</text>
+   <text x="1800px" y="2350px" class="base" dominant-baseline="middle" text-anchor="middle">the principal player</text>
+  <text x="1700px" y="2600px" class="base" dominant-baseline="middle" text-anchor="middle">Cleansing the mirror</text>  
 </svg>

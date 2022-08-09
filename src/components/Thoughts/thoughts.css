@@ -8,7 +8,7 @@ or simply rebuild this whole thing at some point */
   text-align: left;
   margin-top: 120px;
   margin-left: 72px;
-  margin-right: 120px;
+  margin-right: 150px;
   padding-bottom: 175px;
 }
 
@@ -59,7 +59,7 @@ or simply rebuild this whole thing at some point */
   justify-content: flex-start;
   margin-left: 77px;
   padding-top: 40px !important;
-  padding-right: 100px;
+  padding-right: 80px;
 }
 
 @media screen and (max-width: 992px) {
@@ -67,6 +67,7 @@ or simply rebuild this whole thing at some point */
     margin-left: 20px;
     /* margin-right: 20px; */
     padding-right: 40px;
+    padding-bottom: 20px;
   }
 }
 
@@ -153,4 +154,11 @@ img {
 
 .sliderWrapper {
   color: white !important;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .sliderWrapper {
+    margin-top: 1px;
+  }
 }

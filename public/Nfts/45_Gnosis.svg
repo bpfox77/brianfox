@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 3500 3500">
   <style>
-    .base { fill: white; font-family: serif; font-size: 140px; }
+    .base { fill: white; font-family: serif; font-size: 180px; }
   </style>
   <rect width="100%" height="100%" fill="black"/>
   <text x="1800px" y="1200px" class="base" dominant-baseline="middle" text-anchor="middle">Gnostic sight amidst an aura haze
   </text>
-  <text x="1700px" y="1400px" class="base" dominant-baseline="middle" text-anchor="middle">beginningless beginning</text>
-  <text x="1300px" y="1600px" class="base" dominant-baseline="middle" text-anchor="middle">Bhagavad battlefields</text>
-  <text x="1600px" y="1800px" class="base" dominant-baseline="middle" text-anchor="middle">blue light balance beam</text>
-  <text x="2000px" y="2000px" class="base" dominant-baseline="middle" text-anchor="middle">Slayer of my foes</text>
-   <text x="1700px" y="2200px" class="base" dominant-baseline="middle" text-anchor="middle">The mystery supreme</text>
+  <text x="1700px" y="1450px" class="base" dominant-baseline="middle" text-anchor="middle">beginningless beginning</text>
+  <text x="1300px" y="1700px" class="base" dominant-baseline="middle" text-anchor="middle">Bhagavad battlefields</text>
+  <text x="1600px" y="1950px" class="base" dominant-baseline="middle" text-anchor="middle">blue light balance beam</text>
+  <text x="2000px" y="2200px" class="base" dominant-baseline="middle" text-anchor="middle">Slayer of my foes</text>
+   <text x="1700px" y="2450px" class="base" dominant-baseline="middle" text-anchor="middle">The mystery supreme</text>
   
 </svg>

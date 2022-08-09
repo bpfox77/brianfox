@@ -24,8 +24,8 @@ or simply rebuild this whole thing at some point
 
 @media only screen and (max-width: 768px) {
   .teamWrapper {
-    margin-left: 0px;
-    margin-right: 40px;
+    margin-left: 10px;
+    margin-right: 20px;
     max-width: 100% !important;
   }
 }
@@ -58,6 +58,7 @@ or simply rebuild this whole thing at some point
   padding-top: 40px !important;
   text-align: left;
   justify-content: flex-start;
+  padding-bottom: 20px;
   /* margin-left: 77px; */
 }
 
