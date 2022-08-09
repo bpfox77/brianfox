@@ -76,11 +76,11 @@ function Home() {
                 {' '}
                 <b className="purple"> THOUGHTS.</b>{' '}
               </a>{' '}
-              The 49 piece collection is NFT native poetry. As language
-              stimulates the visual cortex, words paint the pictures. The
-              collection is a celebration of existence and transcendance. It is
-              an homage to the infinite possibilities of web3. It is a
-              mettá-verse.
+              The 49 piece collection is NFT native poetry. Language unleashes
+              the encoded metaphors in our collective consciousness, and thus,
+              words have the power to paint pictures. The collection is a
+              celebration of existence and transcendance. It is an homage to the
+              infinite possibilities of web3. It is a mettá-verse.
               <br />
               <br />
               Smart Contracts:
