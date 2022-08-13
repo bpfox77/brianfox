@@ -20,7 +20,12 @@ function Thoughts3() {
           pieces being a Koan unto itself.
           <div
             className="openSea"
-            onClick={() => window.open('https://opensea.io/', '_blank')}
+            onClick={() =>
+              window.open(
+                'https://opensea.io/collection/thoughts-nowdao',
+                '_blank'
+              )
+            }
           >
             {' '}
             <u>View the Collection on OpenSea</u>

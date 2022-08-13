@@ -1,7 +1,8 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { AiOutlineTwitter, AiFillInstagram } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import { AiOutlineTwitter, AiFillInstagram } from 'react-icons/ai';
+// import { FaLinkedinIn } from 'react-icons/fa';
+import { TbBrandDiscord } from 'react-icons/tb';
 
 function Footer() {
   return (
@@ -16,7 +17,7 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://twitter.com/buddhaloop"
-                style={{ color: "white" }}
+                style={{ color: 'white' }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -25,18 +26,18 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.linkedin.com/in/brianfox/"
-                style={{ color: "white" }}
+                href="https://discord.com/channels/990302496645853305/"
+                style={{ color: 'white' }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaLinkedinIn />
+                <TbBrandDiscord />
               </a>
             </li>
             <li className="social-icons">
               <a
-                href="https://www.instagram.com/b_p_fox/"
-                style={{ color: "white" }}
+                href="https://www.instagram.com/thoughts.nowdao/"
+                style={{ color: 'white' }}
                 target="_blank"
                 rel="noopener noreferrer"
               >

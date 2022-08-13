@@ -2,9 +2,6 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import myImg from '../../Assets/Tokenomics.svg';
 
-//import { AiOutlineTwitter, AiFillInstagram } from 'react-icons/ai';
-//import { FaLinkedinIn } from 'react-icons/fa';
-
 function Home() {
   return (
     <Container fluid className="home-about-section" id="about">
@@ -12,11 +9,7 @@ function Home() {
         <Row>
           <Col md={12} className="home-about-description">
             <div className="home-about-body">
-              <a
-                href="https:/young-violet-6800.on.fleek.co"
-                target="_self"
-                // rel="noopener noreferrer"
-              >
+              <a href="https:/app.now-dao.io" target="_self">
                 {' '}
                 <b className="purple">NowDao's</b>{' '}
               </a>
@@ -60,25 +53,19 @@ function Home() {
               this project is the culmination of a 15 year thought experiment
               made possible by the open source technology of the blockchain. You
               can find the roadmap, mechanics and references in{' '}
-              <a
-                href="https://hidden-forest-8380.on.fleek.co/#/info"
-                target="_self"
-              >
+              <a href="https://now-dao.io/info" target="_self">
                 {' '}
                 <b className="purple"> THE INFORMATION.</b>{' '}
               </a>{' '}
               <br />
               <br />
               The DAO and it's native token,{' '}
-              <a href="https://young-violet-6800.on.fleek.co" target="_self">
+              <a href="https://app.now-dao.io" target="_self">
                 {' '}
                 <b className="purple">PHOTON,</b>{' '}
               </a>
               will initially be fed through a cross cultural NFT narrative,{' '}
-              <a
-                href="https://hidden-forest-8380.on.fleek.co/#/thoughts"
-                target="_self"
-              >
+              <a href="https://now-dao.io/#/thoughts" target="_self">
                 {' '}
                 <b className="purple"> THOUGHTS.</b>{' '}
               </a>{' '}
@@ -154,47 +141,6 @@ function Home() {
             </div>
           </Col>
         </Row>
-        {/* <Row>
-          <Col md={12} className="home-about-social">
-            <h1>BE SOCIAL ON</h1>
-            <p>
-              Feel free to <b className="purple">connect </b>as I've too much
-              history to be anon.
-            </p>
-            <ul className="home-about-social-links">
-              <li className="social-icons">
-                <a
-                  href="https://twitter.com/buddhaloop"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/brianfox/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/b_p_fox/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li>
-            </ul>
-          </Col>
-        </Row> */}
       </Container>
     </Container>
   );
