@@ -31,7 +31,7 @@ function NavBar() {
       className={navColour ? 'sticky' : 'navbar'}
     >
       <Container>
-        <Navbar.Brand href="https://young-violet-6800.on.fleek.co">
+        <Navbar.Brand href="https://app.now-dao.io">
           <img src={logo} className="homelogo" alt="now dao" />
         </Navbar.Brand>
         <Navbar.Toggle
@@ -51,16 +51,6 @@ function NavBar() {
                 <GiFoxHead style={{ marginBottom: '2px' }} /> Home
               </Nav.Link>
             </Nav.Item>
-
-            {/* <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/thoughts"
-                onClick={() => updateExpanded(false)}
-              >
-                <GiDreamCatcher style={{ marginBottom: '2px' }} /> Thoughts NFT
-              </Nav.Link>
-            </Nav.Item> */}
 
             <Nav.Item>
               <Nav.Link
@@ -94,7 +84,7 @@ function NavBar() {
 
             <Nav.Item className="fork-btn">
               <Button
-                href="https://young-violet-6800.on.fleek.co"
+                href="https://app.now-dao.io"
                 target="_self"
                 className="fork-btn-inner"
               >
