@@ -222,7 +222,7 @@ export const ThoughtsData = [
 
   {
     url: 'Nfts/33_Avatars.svg',
-    name: 'Avatars',
+    name: 'Sages',
     price: '1',
     number: '33',
   },
@@ -271,7 +271,7 @@ export const ThoughtsData = [
 
   {
     url: 'Nfts/40_Metamorphis.svg',
-    name: 'Metamorphis',
+    name: 'Chrysalis',
     price: '1',
     number: '40',
   },
