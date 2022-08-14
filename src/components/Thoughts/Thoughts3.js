@@ -22,7 +22,7 @@ function Thoughts3() {
             className="openSea"
             onClick={() =>
               window.open(
-                'https://opensea.io/collection/thoughts-nowdao',
+                'https://opensea.io/collection/thoughts-nowdao?search[sortAscending]=true&search[sortBy]=CREATED_DATE',
                 '_blank'
               )
             }

@@ -33,7 +33,7 @@ export const ThoughtsData = [
 
   {
     url: 'Nfts/6_ECCO.svg',
-    name: 'ECCO',
+    name: 'E.C.C.O.',
     price: '1',
     number: '06',
   },
