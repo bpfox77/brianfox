@@ -244,7 +244,7 @@ export const ThoughtsData = [
   {
     url: 'Nfts/36_Now.svg',
     name: 'Now',
-    price: '.7',
+    price: '1',
     number: '36',
   },
 
