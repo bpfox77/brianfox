@@ -2,6 +2,7 @@
 import ImageSlider2 from './ImageSlider2';
 import { ThoughtsData } from './ThoughtsData';
 import './thoughts.css';
+import { Helmet } from 'react-helmet';
 
 const containerStyles = {
   width: '375px',
@@ -12,6 +13,14 @@ const containerStyles = {
 function Thoughts3() {
   return (
     <section className="thoughtWrapper">
+      <div>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Thoughts</title>
+          <link rel="canonical" href="http://now-dao.io/#/thoughts" />
+          <meta name="description" content="Science Fiction Satori" />
+        </Helmet>
+      </div>
       <div className="thoughts-about-body">
         <div>
           <b className="purple">THOUGHTS </b> tell the monomyth of
