@@ -1,11 +1,18 @@
-// straightforward copy and links
-
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Helmet } from 'react-helmet';
 
 function Info() {
   return (
     <Container fluid className="home-about-section2">
+      <div>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Information</title>
+          <link rel="canonical" href="http://now-dao.io/#/info" />
+          <meta name="description" content="Science Fiction Satori" />
+        </Helmet>
+      </div>
       <Container>
         <Row>
           <Col md={12} className="home-about-description2">

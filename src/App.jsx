@@ -3,8 +3,6 @@ import Preloader from '../src/components/Pre';
 import Navbar from './components/Navbar';
 import Home from './components/Home/Home';
 import Team from './components/Team/Team';
-// import Thoughts from './components/Thoughts/Thoughts';
-//import Thoughts2 from './components/Thoughts/Thoughts2';
 import Thoughts3 from './components/Thoughts/Thoughts3';
 // import Game from './components/Game/Game';
 import Footer from './components/Footer';
@@ -33,12 +31,12 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Switch>
-          <Route path="/" exact component={Home} />
+          <Route exact path="/" component={Home} />
           {/* <Route path="/thoughts" component={Thoughts} /> */}
 
-          <Route path="/thoughts" component={Thoughts3} />
-          <Route path="/info" component={Info} />
-          <Route path="/team" component={Team} />
+          <Route exact path="/thoughts" component={Thoughts3} />
+          <Route exact path="/info" component={Info} />
+          <Route exact path="/team" component={Team} />
         </Switch>
         <Footer />
       </div>
