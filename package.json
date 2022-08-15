@@ -28,6 +28,7 @@
     "react-pdf": "^5.7.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.0",
+    "react-snap": "^1.23.0",
     "react-swipeable": "^7.0.0",
     "react-tsparticles": "^2.1.0",
     "react-use": "^17.3.2",
