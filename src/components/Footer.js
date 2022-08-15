@@ -26,7 +26,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://discord.com/channels/990302496645853305/"
+                href="https://discord.gg/A3FqneqdAJ/"
                 style={{ color: 'white' }}
                 target="_blank"
                 rel="noopener noreferrer"
