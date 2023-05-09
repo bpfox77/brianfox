@@ -1,1 +1,1 @@
-A DAO to save humanity. 🙏🏽
+2023 🙏🏽
